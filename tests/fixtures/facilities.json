@@ -1,0 +1,371 @@
+{
+ "data": [
+  {
+   "attributes": {
+    "latitude": null,
+    "long_name": "Forest Hills Elevator 841 (Commuter Rail platform to lobby)",
+    "longitude": null,
+    "properties": [
+     {
+      "name": "alternate-service-text",
+      "value": "Please see station personnel or a train conductor for assistance. To exit, exit the train at Ruggles or Back Bay, then take a Forest Hills-bound train to Forest Hills and use Forest Hills Elevator 842. To board, use Forest Hills Elevator 842 to access the Orange Line platform, then take an Oak Grove-bound train to Ruggles or Back Bay and transfer to the Commuter Rail. Check the Commuter Rail train schedules for train arrival/departure times at Ruggles and Back Bay by visiting mbta.com/schedules."
+     },
+     {
+      "name": "excludes-stop",
+      "value": 10642
+     },
+     {
+      "name": "excludes-stop",
+      "value": 70001
+     }
+    ],
+    "short_name": "Commuter Rail platform to lobby",
+    "type": "ELEVATOR"
+   },
+   "id": "841",
+   "links": {
+    "self": "/facilities/841"
+   },
+   "relationships": {
+    "stop": {
+     "data": {
+      "id": "place-forhl",
+      "type": "stop"
+     }
+    }
+   },
+   "type": "facility"
+  },
+  {
+   "attributes": {
+    "latitude": null,
+    "long_name": "Alewife Escalator 356 (Garage level 2 to level 4)",
+    "longitude": null,
+    "properties": [
+     {
+      "name": "direction",
+      "value": "up"
+     },
+     {
+      "name": "excludes-stop",
+      "value": 14112
+     },
+     {
+      "name": "excludes-stop",
+      "value": 14118
+     }
+    ],
+    "short_name": "Garage level 2 to level 4",
+    "type": "ESCALATOR"
+   },
+   "id": "356",
+   "links": {
+    "self": "/facilities/356"
+   },
+   "relationships": {
+    "stop": {
+     "data": {
+      "id": "place-alfcl",
+      "type": "stop"
+     }
+    }
+   },
+   "type": "facility"
+  },
+  {
+   "attributes": {
+    "latitude": 42.39612,
+    "long_name": "Alewife Elevator 961 (Platform to Russell Field, Rindge Avenue lobby)",
+    "longitude": -71.139856,
+    "properties": [
+     {
+      "name": "alternate-service-text",
+      "value": "To exit, use Elevator 813 located at the opposite end of the platform to access the main lobby. To board, travel west down the Alewife Linear Path to the main station entrance and use Elevator 813."
+     },
+     {
+      "name": "excludes-stop",
+      "value": 14112
+     },
+     {
+      "name": "excludes-stop",
+      "value": 14118
+     }
+    ],
+    "short_name": "Platform to Russell Field, Rindge Avenue lobby",
+    "type": "ELEVATOR"
+   },
+   "id": "961",
+   "links": {
+    "self": "/facilities/961"
+   },
+   "relationships": {
+    "stop": {
+     "data": {
+      "id": "place-alfcl",
+      "type": "stop"
+     }
+    }
+   },
+   "type": "facility"
+  },
+  {
+   "attributes": {
+    "latitude": 42.396122,
+    "long_name": "Alewife Elevator 813 (Platform to main lobby)",
+    "longitude": -71.141487,
+    "properties": [
+     {
+      "name": "alternate-service-text",
+      "value": "To exit, use Elevator 961 located at the opposite end of the platform. To board, travel east down the Alewife Linear Path to the Russell Field entrance, and use Elevator 961."
+     },
+     {
+      "name": "excludes-stop",
+      "value": 14112
+     },
+     {
+      "name": "excludes-stop",
+      "value": 14118
+     }
+    ],
+    "short_name": "Platform to main lobby",
+    "type": "ELEVATOR"
+   },
+   "id": "813",
+   "links": {
+    "self": "/facilities/813"
+   },
+   "relationships": {
+    "stop": {
+     "data": {
+      "id": "place-alfcl",
+      "type": "stop"
+     }
+    }
+   },
+   "type": "facility"
+  },
+  {
+   "attributes": {
+    "latitude": null,
+    "long_name": "Porter Elevator 987 (Red Line platforms to lobby)",
+    "longitude": null,
+    "properties": [
+     {
+      "name": "alternate-service-text",
+      "value": "Please use nearby Porter Elevator 983 to access the Red Line platforms or lobby."
+     },
+     {
+      "name": "excludes-stop",
+      "value": "FR-0034"
+     },
+     {
+      "name": "excludes-stop",
+      "value": "FR-0034-01"
+     }
+    ],
+    "short_name": "Red Line platforms to lobby",
+    "type": "ELEVATOR"
+   },
+   "id": "987",
+   "links": {
+    "self": "/facilities/987"
+   },
+   "relationships": {
+    "stop": {
+     "data": {
+      "id": "place-portr",
+      "type": "stop"
+     }
+    }
+   },
+   "type": "facility"
+  },
+  {
+   "attributes": {
+    "latitude": null,
+    "long_name": "Davis Elevator 816 (Platform to lobby)",
+    "longitude": null,
+    "properties": [
+     {
+      "name": "alternate-service-text",
+      "value": "A shuttle bus will be available to transport customers between Harvard and Davis. To exit, exit the train at Harvard and find station personnel or use a station call box to request the shuttle bus to Davis. To board, find station personnel or use a station call box at Davis to request the shuttle bus to Harvard. Alternatively, customers may also use Bus Route 96 for transportation between Harvard and Davis."
+     },
+     {
+      "name": "excludes-stop",
+      "value": 5104
+     },
+     {
+      "name": "excludes-stop",
+      "value": "door-davis-busway"
+     }
+    ],
+    "short_name": "Platform to lobby",
+    "type": "ELEVATOR"
+   },
+   "id": "816",
+   "links": {
+    "self": "/facilities/816"
+   },
+   "relationships": {
+    "stop": {
+     "data": {
+      "id": "place-davis",
+      "type": "stop"
+     }
+    }
+   },
+   "type": "facility"
+  }
+ ],
+ "included": [
+  {
+   "attributes": {
+    "address": "Washington St and Hyde Park Ave, Jamaica Plain, MA 02130",
+    "at_street": null,
+    "description": null,
+    "latitude": 42.300713,
+    "location_type": 1,
+    "longitude": -71.113943,
+    "municipality": "Boston",
+    "name": "Forest Hills",
+    "on_street": null,
+    "platform_code": null,
+    "platform_name": null,
+    "vehicle_type": null,
+    "wheelchair_boarding": 1
+   },
+   "id": "place-forhl",
+   "links": {
+    "self": "/stops/place-forhl"
+   },
+   "relationships": {
+    "facilities": {
+     "links": {
+      "related": "/facilities/?filter[stop]=place-forhl"
+     }
+    },
+    "parent_station": {
+     "data": null
+    },
+    "zone": {
+     "data": {
+      "id": "CR-zone-1A",
+      "type": "zone"
+     }
+    }
+   },
+   "type": "stop"
+  },
+  {
+   "attributes": {
+    "address": "1899 Massachusetts Ave, Cambridge, MA 02140",
+    "at_street": null,
+    "description": null,
+    "latitude": 42.3884,
+    "location_type": 1,
+    "longitude": -71.119149,
+    "municipality": "Cambridge",
+    "name": "Porter",
+    "on_street": null,
+    "platform_code": null,
+    "platform_name": null,
+    "vehicle_type": null,
+    "wheelchair_boarding": 1
+   },
+   "id": "place-portr",
+   "links": {
+    "self": "/stops/place-portr"
+   },
+   "relationships": {
+    "facilities": {
+     "links": {
+      "related": "/facilities/?filter[stop]=place-portr"
+     }
+    },
+    "parent_station": {
+     "data": null
+    },
+    "zone": {
+     "data": {
+      "id": "CR-zone-1A",
+      "type": "zone"
+     }
+    }
+   },
+   "type": "stop"
+  },
+  {
+   "attributes": {
+    "address": "Alewife Brook Pkwy and Cambridge Park Dr, Cambridge, MA 02140",
+    "at_street": null,
+    "description": null,
+    "latitude": 42.39583,
+    "location_type": 1,
+    "longitude": -71.141287,
+    "municipality": "Cambridge",
+    "name": "Alewife",
+    "on_street": null,
+    "platform_code": null,
+    "platform_name": null,
+    "vehicle_type": null,
+    "wheelchair_boarding": 1
+   },
+   "id": "place-alfcl",
+   "links": {
+    "self": "/stops/place-alfcl"
+   },
+   "relationships": {
+    "facilities": {
+     "links": {
+      "related": "/facilities/?filter[stop]=place-alfcl"
+     }
+    },
+    "parent_station": {
+     "data": null
+    },
+    "zone": {
+     "data": null
+    }
+   },
+   "type": "stop"
+  },
+  {
+   "attributes": {
+    "address": "College Ave and Elm St, Somerville, MA",
+    "at_street": null,
+    "description": null,
+    "latitude": 42.39674,
+    "location_type": 1,
+    "longitude": -71.121815,
+    "municipality": "Somerville",
+    "name": "Davis",
+    "on_street": null,
+    "platform_code": null,
+    "platform_name": null,
+    "vehicle_type": null,
+    "wheelchair_boarding": 1
+   },
+   "id": "place-davis",
+   "links": {
+    "self": "/stops/place-davis"
+   },
+   "relationships": {
+    "facilities": {
+     "links": {
+      "related": "/facilities/?filter[stop]=place-davis"
+     }
+    },
+    "parent_station": {
+     "data": null
+    },
+    "zone": {
+     "data": null
+    }
+   },
+   "type": "stop"
+  }
+ ],
+ "jsonapi": {
+  "version": "1.0"
+ }
+}

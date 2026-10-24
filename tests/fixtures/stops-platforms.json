@@ -1,0 +1,524 @@
+{
+ "data": [
+  {
+   "attributes": {
+    "address": null,
+    "at_street": null,
+    "description": "Park Street - Green Line - Government Center & North",
+    "latitude": 42.3563946,
+    "location_type": 0,
+    "longitude": -71.0624242,
+    "municipality": "Boston",
+    "name": "Park Street",
+    "on_street": null,
+    "platform_code": null,
+    "platform_name": "Government Center & North",
+    "vehicle_type": 0,
+    "wheelchair_boarding": 1
+   },
+   "id": "70200",
+   "links": {
+    "self": "/stops/70200"
+   },
+   "relationships": {
+    "facilities": {
+     "links": {
+      "related": "/facilities/?filter[stop]=70200"
+     }
+    },
+    "parent_station": {
+     "data": {
+      "id": "place-pktrm",
+      "type": "stop"
+     }
+    },
+    "zone": {
+     "data": {
+      "id": "RapidTransit",
+      "type": "zone"
+     }
+    }
+   },
+   "type": "stop"
+  },
+  {
+   "attributes": {
+    "address": null,
+    "at_street": null,
+    "description": "Park Street - Green Line - (C) Cleveland Circle",
+    "latitude": 42.3563946,
+    "location_type": 0,
+    "longitude": -71.0624242,
+    "municipality": "Boston",
+    "name": "Park Street",
+    "on_street": null,
+    "platform_code": "C",
+    "platform_name": "Cleveland Circle",
+    "vehicle_type": 0,
+    "wheelchair_boarding": 1
+   },
+   "id": "70197",
+   "links": {
+    "self": "/stops/70197"
+   },
+   "relationships": {
+    "facilities": {
+     "links": {
+      "related": "/facilities/?filter[stop]=70197"
+     }
+    },
+    "parent_station": {
+     "data": {
+      "id": "place-pktrm",
+      "type": "stop"
+     }
+    },
+    "zone": {
+     "data": {
+      "id": "RapidTransit",
+      "type": "zone"
+     }
+    }
+   },
+   "type": "stop"
+  },
+  {
+   "attributes": {
+    "address": null,
+    "at_street": null,
+    "description": "Davis - Red Line - Ashmont/Braintree",
+    "latitude": 42.39674,
+    "location_type": 0,
+    "longitude": -71.121815,
+    "municipality": "Somerville",
+    "name": "Davis",
+    "on_street": null,
+    "platform_code": null,
+    "platform_name": "Ashmont/Braintree",
+    "vehicle_type": 1,
+    "wheelchair_boarding": 1
+   },
+   "id": "70063",
+   "links": {
+    "self": "/stops/70063"
+   },
+   "relationships": {
+    "facilities": {
+     "links": {
+      "related": "/facilities/?filter[stop]=70063"
+     }
+    },
+    "parent_station": {
+     "data": {
+      "id": "place-davis",
+      "type": "stop"
+     }
+    },
+    "zone": {
+     "data": {
+      "id": "RapidTransit",
+      "type": "zone"
+     }
+    }
+   },
+   "type": "stop"
+  },
+  {
+   "attributes": {
+    "address": null,
+    "at_street": null,
+    "description": "Alewife - Red Line",
+    "latitude": 42.396148,
+    "location_type": 0,
+    "longitude": -71.140698,
+    "municipality": "Cambridge",
+    "name": "Alewife",
+    "on_street": null,
+    "platform_code": null,
+    "platform_name": "Red Line",
+    "vehicle_type": 1,
+    "wheelchair_boarding": 1
+   },
+   "id": "70061",
+   "links": {
+    "self": "/stops/70061"
+   },
+   "relationships": {
+    "facilities": {
+     "links": {
+      "related": "/facilities/?filter[stop]=70061"
+     }
+    },
+    "parent_station": {
+     "data": {
+      "id": "place-alfcl",
+      "type": "stop"
+     }
+    },
+    "zone": {
+     "data": {
+      "id": "RapidTransit",
+      "type": "zone"
+     }
+    }
+   },
+   "type": "stop"
+  },
+  {
+   "attributes": {
+    "address": null,
+    "at_street": null,
+    "description": "Park Street - Green Line - (B) Boston College",
+    "latitude": 42.3563946,
+    "location_type": 0,
+    "longitude": -71.0624242,
+    "municipality": "Boston",
+    "name": "Park Street",
+    "on_street": null,
+    "platform_code": "B",
+    "platform_name": "Boston College",
+    "vehicle_type": 0,
+    "wheelchair_boarding": 1
+   },
+   "id": "70196",
+   "links": {
+    "self": "/stops/70196"
+   },
+   "relationships": {
+    "facilities": {
+     "links": {
+      "related": "/facilities/?filter[stop]=70196"
+     }
+    },
+    "parent_station": {
+     "data": {
+      "id": "place-pktrm",
+      "type": "stop"
+     }
+    },
+    "zone": {
+     "data": {
+      "id": "RapidTransit",
+      "type": "zone"
+     }
+    }
+   },
+   "type": "stop"
+  },
+  {
+   "attributes": {
+    "address": null,
+    "at_street": null,
+    "description": "Park Street - Green Line - (E) Heath Street",
+    "latitude": 42.3563946,
+    "location_type": 0,
+    "longitude": -71.0624242,
+    "municipality": "Boston",
+    "name": "Park Street",
+    "on_street": null,
+    "platform_code": "E",
+    "platform_name": "Heath Street",
+    "vehicle_type": 0,
+    "wheelchair_boarding": 1
+   },
+   "id": "70199",
+   "links": {
+    "self": "/stops/70199"
+   },
+   "relationships": {
+    "facilities": {
+     "links": {
+      "related": "/facilities/?filter[stop]=70199"
+     }
+    },
+    "parent_station": {
+     "data": {
+      "id": "place-pktrm",
+      "type": "stop"
+     }
+    },
+    "zone": {
+     "data": {
+      "id": "RapidTransit",
+      "type": "zone"
+     }
+    }
+   },
+   "type": "stop"
+  },
+  {
+   "attributes": {
+    "address": null,
+    "at_street": null,
+    "description": "Davis - Red Line - Alewife",
+    "latitude": 42.39674,
+    "location_type": 0,
+    "longitude": -71.121815,
+    "municipality": "Somerville",
+    "name": "Davis",
+    "on_street": null,
+    "platform_code": null,
+    "platform_name": "Alewife",
+    "vehicle_type": 1,
+    "wheelchair_boarding": 1
+   },
+   "id": "70064",
+   "links": {
+    "self": "/stops/70064"
+   },
+   "relationships": {
+    "facilities": {
+     "links": {
+      "related": "/facilities/?filter[stop]=70064"
+     }
+    },
+    "parent_station": {
+     "data": {
+      "id": "place-davis",
+      "type": "stop"
+     }
+    },
+    "zone": {
+     "data": {
+      "id": "RapidTransit",
+      "type": "zone"
+     }
+    }
+   },
+   "type": "stop"
+  },
+  {
+   "attributes": {
+    "address": null,
+    "at_street": null,
+    "description": "Park Street - Green Line - (D) Riverside",
+    "latitude": 42.3563946,
+    "location_type": 0,
+    "longitude": -71.0624242,
+    "municipality": "Boston",
+    "name": "Park Street",
+    "on_street": null,
+    "platform_code": "D",
+    "platform_name": "Riverside",
+    "vehicle_type": 0,
+    "wheelchair_boarding": 1
+   },
+   "id": "70198",
+   "links": {
+    "self": "/stops/70198"
+   },
+   "relationships": {
+    "facilities": {
+     "links": {
+      "related": "/facilities/?filter[stop]=70198"
+     }
+    },
+    "parent_station": {
+     "data": {
+      "id": "place-pktrm",
+      "type": "stop"
+     }
+    },
+    "zone": {
+     "data": {
+      "id": "RapidTransit",
+      "type": "zone"
+     }
+    }
+   },
+   "type": "stop"
+  },
+  {
+   "attributes": {
+    "address": null,
+    "at_street": null,
+    "description": "Park Street - Red Line - Ashmont/Braintree",
+    "latitude": 42.3563946,
+    "location_type": 0,
+    "longitude": -71.0624242,
+    "municipality": "Boston",
+    "name": "Park Street",
+    "on_street": null,
+    "platform_code": null,
+    "platform_name": "Ashmont/Braintree",
+    "vehicle_type": 1,
+    "wheelchair_boarding": 1
+   },
+   "id": "70075",
+   "links": {
+    "self": "/stops/70075"
+   },
+   "relationships": {
+    "facilities": {
+     "links": {
+      "related": "/facilities/?filter[stop]=70075"
+     }
+    },
+    "parent_station": {
+     "data": {
+      "id": "place-pktrm",
+      "type": "stop"
+     }
+    },
+    "zone": {
+     "data": {
+      "id": "RapidTransit",
+      "type": "zone"
+     }
+    }
+   },
+   "type": "stop"
+  },
+  {
+   "attributes": {
+    "address": null,
+    "at_street": null,
+    "description": "Park Street - Red Line - Alewife",
+    "latitude": 42.3563946,
+    "location_type": 0,
+    "longitude": -71.0624242,
+    "municipality": "Boston",
+    "name": "Park Street",
+    "on_street": null,
+    "platform_code": null,
+    "platform_name": "Alewife",
+    "vehicle_type": 1,
+    "wheelchair_boarding": 1
+   },
+   "id": "70076",
+   "links": {
+    "self": "/stops/70076"
+   },
+   "relationships": {
+    "facilities": {
+     "links": {
+      "related": "/facilities/?filter[stop]=70076"
+     }
+    },
+    "parent_station": {
+     "data": {
+      "id": "place-pktrm",
+      "type": "stop"
+     }
+    },
+    "zone": {
+     "data": {
+      "id": "RapidTransit",
+      "type": "zone"
+     }
+    }
+   },
+   "type": "stop"
+  }
+ ],
+ "included": [
+  {
+   "attributes": {
+    "address": "Tremont St and Winter St, Boston, MA 02108",
+    "at_street": null,
+    "description": null,
+    "latitude": 42.3563946,
+    "location_type": 1,
+    "longitude": -71.0624242,
+    "municipality": "Boston",
+    "name": "Park Street",
+    "on_street": null,
+    "platform_code": null,
+    "platform_name": null,
+    "vehicle_type": null,
+    "wheelchair_boarding": 1
+   },
+   "id": "place-pktrm",
+   "links": {
+    "self": "/stops/place-pktrm"
+   },
+   "relationships": {
+    "facilities": {
+     "links": {
+      "related": "/facilities/?filter[stop]=place-pktrm"
+     }
+    },
+    "parent_station": {
+     "data": null
+    },
+    "zone": {
+     "data": null
+    }
+   },
+   "type": "stop"
+  },
+  {
+   "attributes": {
+    "address": "Alewife Brook Pkwy and Cambridge Park Dr, Cambridge, MA 02140",
+    "at_street": null,
+    "description": null,
+    "latitude": 42.39583,
+    "location_type": 1,
+    "longitude": -71.141287,
+    "municipality": "Cambridge",
+    "name": "Alewife",
+    "on_street": null,
+    "platform_code": null,
+    "platform_name": null,
+    "vehicle_type": null,
+    "wheelchair_boarding": 1
+   },
+   "id": "place-alfcl",
+   "links": {
+    "self": "/stops/place-alfcl"
+   },
+   "relationships": {
+    "facilities": {
+     "links": {
+      "related": "/facilities/?filter[stop]=place-alfcl"
+     }
+    },
+    "parent_station": {
+     "data": null
+    },
+    "zone": {
+     "data": null
+    }
+   },
+   "type": "stop"
+  },
+  {
+   "attributes": {
+    "address": "College Ave and Elm St, Somerville, MA",
+    "at_street": null,
+    "description": null,
+    "latitude": 42.39674,
+    "location_type": 1,
+    "longitude": -71.121815,
+    "municipality": "Somerville",
+    "name": "Davis",
+    "on_street": null,
+    "platform_code": null,
+    "platform_name": null,
+    "vehicle_type": null,
+    "wheelchair_boarding": 1
+   },
+   "id": "place-davis",
+   "links": {
+    "self": "/stops/place-davis"
+   },
+   "relationships": {
+    "facilities": {
+     "links": {
+      "related": "/facilities/?filter[stop]=place-davis"
+     }
+    },
+    "parent_station": {
+     "data": null
+    },
+    "zone": {
+     "data": null
+    }
+   },
+   "type": "stop"
+  }
+ ],
+ "jsonapi": {
+  "version": "1.0"
+ }
+}

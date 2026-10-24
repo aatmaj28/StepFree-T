@@ -1,0 +1,4573 @@
+{
+ "stations": [
+  {
+   "id": "place-aport",
+   "name": "Airport",
+   "lines": [
+    "Blue"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.374262,
+   "lng": -71.030395
+  },
+  {
+   "id": "place-alfcl",
+   "name": "Alewife",
+   "lines": [
+    "Red"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.39583,
+   "lng": -71.141287
+  },
+  {
+   "id": "place-alsgr",
+   "name": "Allston Street",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.348701,
+   "lng": -71.137955
+  },
+  {
+   "id": "place-amory",
+   "name": "Amory Street",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.350992,
+   "lng": -71.114748
+  },
+  {
+   "id": "place-andrw",
+   "name": "Andrew",
+   "lines": [
+    "Red"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.330154,
+   "lng": -71.057655
+  },
+  {
+   "id": "place-aqucl",
+   "name": "Aquarium",
+   "lines": [
+    "Blue"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.359784,
+   "lng": -71.051652
+  },
+  {
+   "id": "place-armnl",
+   "name": "Arlington",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.351902,
+   "lng": -71.070893
+  },
+  {
+   "id": "place-asmnl",
+   "name": "Ashmont",
+   "lines": [
+    "Mattapan",
+    "Red"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.28452,
+   "lng": -71.063777
+  },
+  {
+   "id": "place-astao",
+   "name": "Assembly",
+   "lines": [
+    "Orange"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.392811,
+   "lng": -71.077257
+  },
+  {
+   "id": "place-babck",
+   "name": "Babcock Street",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.351616,
+   "lng": -71.119924
+  },
+  {
+   "id": "place-bbsta",
+   "name": "Back Bay",
+   "lines": [
+    "Orange"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.34735,
+   "lng": -71.075727
+  },
+  {
+   "id": "place-bckhl",
+   "name": "Back of the Hill",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.330139,
+   "lng": -71.111313
+  },
+  {
+   "id": "place-balsq",
+   "name": "Ball Square",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.399889,
+   "lng": -71.111003
+  },
+  {
+   "id": "place-bmmnl",
+   "name": "Beachmont",
+   "lines": [
+    "Blue"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.3975423,
+   "lng": -70.9923194
+  },
+  {
+   "id": "place-bcnfd",
+   "name": "Beaconsfield",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.335765,
+   "lng": -71.140455
+  },
+  {
+   "id": "place-bland",
+   "name": "Blandford Street",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.349293,
+   "lng": -71.100258
+  },
+  {
+   "id": "place-lake",
+   "name": "Boston College",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.340081,
+   "lng": -71.166769
+  },
+  {
+   "id": "place-bucen",
+   "name": "Boston University Central",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.350082,
+   "lng": -71.106865
+  },
+  {
+   "id": "place-buest",
+   "name": "Boston University East",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.349735,
+   "lng": -71.103889
+  },
+  {
+   "id": "place-bomnl",
+   "name": "Bowdoin",
+   "lines": [
+    "Blue"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.361365,
+   "lng": -71.062037
+  },
+  {
+   "id": "place-boyls",
+   "name": "Boylston",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.35302,
+   "lng": -71.06459
+  },
+  {
+   "id": "place-brntn",
+   "name": "Braintree",
+   "lines": [
+    "Red"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.2078543,
+   "lng": -71.0011385
+  },
+  {
+   "id": "place-bndhl",
+   "name": "Brandon Hall",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.340023,
+   "lng": -71.129082
+  },
+  {
+   "id": "place-brmnl",
+   "name": "Brigham Circle",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.334229,
+   "lng": -71.104609
+  },
+  {
+   "id": "place-brdwy",
+   "name": "Broadway",
+   "lines": [
+    "Red"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.342622,
+   "lng": -71.056967
+  },
+  {
+   "id": "place-brkhl",
+   "name": "Brookline Hills",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.331316,
+   "lng": -71.126683
+  },
+  {
+   "id": "place-bvmnl",
+   "name": "Brookline Village",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.332608,
+   "lng": -71.116857
+  },
+  {
+   "id": "place-butlr",
+   "name": "Butler",
+   "lines": [
+    "Mattapan"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.272429,
+   "lng": -71.062519
+  },
+  {
+   "id": "place-capst",
+   "name": "Capen Street",
+   "lines": [
+    "Mattapan"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.267563,
+   "lng": -71.087338
+  },
+  {
+   "id": "place-cedgr",
+   "name": "Cedar Grove",
+   "lines": [
+    "Mattapan"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.279629,
+   "lng": -71.060394
+  },
+  {
+   "id": "place-cntsq",
+   "name": "Central",
+   "lines": [
+    "Red"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.365486,
+   "lng": -71.103802
+  },
+  {
+   "id": "place-cenav",
+   "name": "Central Avenue",
+   "lines": [
+    "Mattapan"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.270027,
+   "lng": -71.073444
+  },
+  {
+   "id": "place-chmnl",
+   "name": "Charles/MGH",
+   "lines": [
+    "Red"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.361166,
+   "lng": -71.070628
+  },
+  {
+   "id": "place-chhil",
+   "name": "Chestnut Hill",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.326753,
+   "lng": -71.164699
+  },
+  {
+   "id": "place-chill",
+   "name": "Chestnut Hill Avenue",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.338169,
+   "lng": -71.15316
+  },
+  {
+   "id": "place-chncl",
+   "name": "Chinatown",
+   "lines": [
+    "Orange"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.352547,
+   "lng": -71.062752
+  },
+  {
+   "id": "place-chswk",
+   "name": "Chiswick Road",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.340805,
+   "lng": -71.150711
+  },
+  {
+   "id": "place-clmnl",
+   "name": "Cleveland Circle",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.336142,
+   "lng": -71.149326
+  },
+  {
+   "id": "place-ccmnl",
+   "name": "Community College",
+   "lines": [
+    "Orange"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.373622,
+   "lng": -71.069533
+  },
+  {
+   "id": "place-cool",
+   "name": "Coolidge Corner",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.342116,
+   "lng": -71.121263
+  },
+  {
+   "id": "place-coecl",
+   "name": "Copley",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.349974,
+   "lng": -71.077447
+  },
+  {
+   "id": "place-davis",
+   "name": "Davis",
+   "lines": [
+    "Red"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.39674,
+   "lng": -71.121815
+  },
+  {
+   "id": "place-denrd",
+   "name": "Dean Road",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.337656,
+   "lng": -71.142156
+  },
+  {
+   "id": "place-dwnxg",
+   "name": "Downtown Crossing",
+   "lines": [
+    "Orange",
+    "Red"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.355518,
+   "lng": -71.060225
+  },
+  {
+   "id": "place-esomr",
+   "name": "East Somerville",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.379467,
+   "lng": -71.086625
+  },
+  {
+   "id": "place-eliot",
+   "name": "Eliot",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.319045,
+   "lng": -71.216684
+  },
+  {
+   "id": "place-engav",
+   "name": "Englewood Avenue",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.337104,
+   "lng": -71.144852
+  },
+  {
+   "id": "place-fbkst",
+   "name": "Fairbanks Street",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.339725,
+   "lng": -71.131073
+  },
+  {
+   "id": "place-fenwy",
+   "name": "Fenway",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.345403,
+   "lng": -71.104213
+  },
+  {
+   "id": "place-fenwd",
+   "name": "Fenwood Road",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.333706,
+   "lng": -71.105728
+  },
+  {
+   "id": "place-fldcr",
+   "name": "Fields Corner",
+   "lines": [
+    "Red"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.300093,
+   "lng": -71.061667
+  },
+  {
+   "id": "place-forhl",
+   "name": "Forest Hills",
+   "lines": [
+    "Orange"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.300713,
+   "lng": -71.113943
+  },
+  {
+   "id": "place-gilmn",
+   "name": "Gilman Square",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.387928,
+   "lng": -71.096766
+  },
+  {
+   "id": "place-gover",
+   "name": "Government Center",
+   "lines": [
+    "Blue",
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.359705,
+   "lng": -71.059215
+  },
+  {
+   "id": "place-grnst",
+   "name": "Green Street",
+   "lines": [
+    "Orange"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.310525,
+   "lng": -71.107414
+  },
+  {
+   "id": "place-grigg",
+   "name": "Griggs Street",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.348545,
+   "lng": -71.134949
+  },
+  {
+   "id": "place-harsq",
+   "name": "Harvard",
+   "lines": [
+    "Red"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.373362,
+   "lng": -71.118956
+  },
+  {
+   "id": "place-harvd",
+   "name": "Harvard Avenue",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.350243,
+   "lng": -71.131355
+  },
+  {
+   "id": "place-hwsst",
+   "name": "Hawes Street",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.344906,
+   "lng": -71.111145
+  },
+  {
+   "id": "place-haecl",
+   "name": "Haymarket",
+   "lines": [
+    "Green",
+    "Orange"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.363021,
+   "lng": -71.05829
+  },
+  {
+   "id": "place-hsmnl",
+   "name": "Heath Street",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.328316,
+   "lng": -71.110252
+  },
+  {
+   "id": "place-hymnl",
+   "name": "Hynes Convention Center",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.347888,
+   "lng": -71.087903
+  },
+  {
+   "id": "place-jaksn",
+   "name": "Jackson Square",
+   "lines": [
+    "Orange"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.323132,
+   "lng": -71.099592
+  },
+  {
+   "id": "place-jfk",
+   "name": "JFK/UMass",
+   "lines": [
+    "Red"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.320685,
+   "lng": -71.052391
+  },
+  {
+   "id": "place-knncl",
+   "name": "Kendall/MIT",
+   "lines": [
+    "Red"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.3624908,
+   "lng": -71.0861765
+  },
+  {
+   "id": "place-kencl",
+   "name": "Kenmore",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.348949,
+   "lng": -71.095169
+  },
+  {
+   "id": "place-kntst",
+   "name": "Kent Street",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.344074,
+   "lng": -71.114197
+  },
+  {
+   "id": "place-lech",
+   "name": "Lechmere",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.371572,
+   "lng": -71.076584
+  },
+  {
+   "id": "place-longw",
+   "name": "Longwood",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.341702,
+   "lng": -71.109956
+  },
+  {
+   "id": "place-lngmd",
+   "name": "Longwood Medical Area",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.33596,
+   "lng": -71.100052
+  },
+  {
+   "id": "place-mgngl",
+   "name": "Magoun Square",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.393682,
+   "lng": -71.1063879
+  },
+  {
+   "id": "place-mlmnl",
+   "name": "Malden Center",
+   "lines": [
+    "Orange"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.426632,
+   "lng": -71.07411
+  },
+  {
+   "id": "place-masta",
+   "name": "Massachusetts Avenue",
+   "lines": [
+    "Orange"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.341512,
+   "lng": -71.083423
+  },
+  {
+   "id": "place-matt",
+   "name": "Mattapan",
+   "lines": [
+    "Mattapan"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.26762,
+   "lng": -71.092486
+  },
+  {
+   "id": "place-mvbcl",
+   "name": "Maverick",
+   "lines": [
+    "Blue"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.3691186,
+   "lng": -71.0395296
+  },
+  {
+   "id": "place-mdftf",
+   "name": "Medford/Tufts",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.407975,
+   "lng": -71.117044
+  },
+  {
+   "id": "place-miltt",
+   "name": "Milton",
+   "lines": [
+    "Mattapan"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.270349,
+   "lng": -71.067266
+  },
+  {
+   "id": "place-mispk",
+   "name": "Mission Park",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.333195,
+   "lng": -71.109756
+  },
+  {
+   "id": "place-mfa",
+   "name": "Museum of Fine Arts",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.337711,
+   "lng": -71.095512
+  },
+  {
+   "id": "place-newto",
+   "name": "Newton Centre",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.329443,
+   "lng": -71.192414
+  },
+  {
+   "id": "place-newtn",
+   "name": "Newton Highlands",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.322381,
+   "lng": -71.205509
+  },
+  {
+   "id": "place-nqncy",
+   "name": "North Quincy",
+   "lines": [
+    "Red"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.275275,
+   "lng": -71.029583
+  },
+  {
+   "id": "place-north",
+   "name": "North Station",
+   "lines": [
+    "Green",
+    "Orange"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.365577,
+   "lng": -71.06129
+  },
+  {
+   "id": "place-nuniv",
+   "name": "Northeastern University",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.340401,
+   "lng": -71.088806
+  },
+  {
+   "id": "place-ogmnl",
+   "name": "Oak Grove",
+   "lines": [
+    "Orange"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.43668,
+   "lng": -71.071097
+  },
+  {
+   "id": "place-orhte",
+   "name": "Orient Heights",
+   "lines": [
+    "Blue"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.386867,
+   "lng": -71.004736
+  },
+  {
+   "id": "place-brico",
+   "name": "Packard's Corner",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.351967,
+   "lng": -71.125031
+  },
+  {
+   "id": "place-pktrm",
+   "name": "Park Street",
+   "lines": [
+    "Green",
+    "Red"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.3563946,
+   "lng": -71.0624242
+  },
+  {
+   "id": "place-portr",
+   "name": "Porter",
+   "lines": [
+    "Red"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.3884,
+   "lng": -71.119149
+  },
+  {
+   "id": "place-prmnl",
+   "name": "Prudential",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.34557,
+   "lng": -71.081696
+  },
+  {
+   "id": "place-qamnl",
+   "name": "Quincy Adams",
+   "lines": [
+    "Red"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.233391,
+   "lng": -71.007153
+  },
+  {
+   "id": "place-qnctr",
+   "name": "Quincy Center",
+   "lines": [
+    "Red"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.251809,
+   "lng": -71.005409
+  },
+  {
+   "id": "place-rsmnl",
+   "name": "Reservoir",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.335088,
+   "lng": -71.148758
+  },
+  {
+   "id": "place-rbmnl",
+   "name": "Revere Beach",
+   "lines": [
+    "Blue"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.4078425,
+   "lng": -70.9925332
+  },
+  {
+   "id": "place-river",
+   "name": "Riverside",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.337352,
+   "lng": -71.252685
+  },
+  {
+   "id": "place-rvrwy",
+   "name": "Riverway",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.331684,
+   "lng": -71.111931
+  },
+  {
+   "id": "place-rcmnl",
+   "name": "Roxbury Crossing",
+   "lines": [
+    "Orange"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.331397,
+   "lng": -71.095451
+  },
+  {
+   "id": "place-rugg",
+   "name": "Ruggles",
+   "lines": [
+    "Orange"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.336377,
+   "lng": -71.088961
+  },
+  {
+   "id": "place-smary",
+   "name": "Saint Mary's Street",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.345974,
+   "lng": -71.107353
+  },
+  {
+   "id": "place-stpul",
+   "name": "Saint Paul Street",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.343327,
+   "lng": -71.116997
+  },
+  {
+   "id": "place-shmnl",
+   "name": "Savin Hill",
+   "lines": [
+    "Red"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.31129,
+   "lng": -71.053331
+  },
+  {
+   "id": "place-spmnl",
+   "name": "Science Park/West End",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.366664,
+   "lng": -71.067666
+  },
+  {
+   "id": "place-smmnl",
+   "name": "Shawmut",
+   "lines": [
+    "Red"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.2931258,
+   "lng": -71.065738
+  },
+  {
+   "id": "place-sstat",
+   "name": "South Station",
+   "lines": [
+    "Red"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.352271,
+   "lng": -71.055242
+  },
+  {
+   "id": "place-sougr",
+   "name": "South Street",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.3396,
+   "lng": -71.157661
+  },
+  {
+   "id": "place-state",
+   "name": "State",
+   "lines": [
+    "Blue",
+    "Orange"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.358978,
+   "lng": -71.057598
+  },
+  {
+   "id": "place-sbmnl",
+   "name": "Stony Brook",
+   "lines": [
+    "Orange"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.317062,
+   "lng": -71.104248
+  },
+  {
+   "id": "place-sdmnl",
+   "name": "Suffolk Downs",
+   "lines": [
+    "Blue"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.3905007,
+   "lng": -70.9971226
+  },
+  {
+   "id": "place-sull",
+   "name": "Sullivan Square",
+   "lines": [
+    "Orange"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.383975,
+   "lng": -71.076994
+  },
+  {
+   "id": "place-sumav",
+   "name": "Summit Avenue",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.34111,
+   "lng": -71.12561
+  },
+  {
+   "id": "place-sthld",
+   "name": "Sutherland Road",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.341614,
+   "lng": -71.146202
+  },
+  {
+   "id": "place-symcl",
+   "name": "Symphony",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.342687,
+   "lng": -71.085056
+  },
+  {
+   "id": "place-tapst",
+   "name": "Tappan Street",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.338459,
+   "lng": -71.138702
+  },
+  {
+   "id": "place-tumnl",
+   "name": "Tufts Medical Center",
+   "lines": [
+    "Orange"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.349662,
+   "lng": -71.063917
+  },
+  {
+   "id": "place-unsqu",
+   "name": "Union Square",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.377359,
+   "lng": -71.094761
+  },
+  {
+   "id": "place-valrd",
+   "name": "Valley Road",
+   "lines": [
+    "Mattapan"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.268347,
+   "lng": -71.081343
+  },
+  {
+   "id": "place-waban",
+   "name": "Waban",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.325845,
+   "lng": -71.230609
+  },
+  {
+   "id": "place-wrnst",
+   "name": "Warren Street",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "not_accessible",
+   "lat": 42.348343,
+   "lng": -71.140457
+  },
+  {
+   "id": "place-bcnwa",
+   "name": "Washington Square",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.339394,
+   "lng": -71.13533
+  },
+  {
+   "id": "place-wascm",
+   "name": "Washington Street",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.343864,
+   "lng": -71.142853
+  },
+  {
+   "id": "place-welln",
+   "name": "Wellington",
+   "lines": [
+    "Orange"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.40237,
+   "lng": -71.077082
+  },
+  {
+   "id": "place-wlsta",
+   "name": "Wollaston",
+   "lines": [
+    "Red"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.2665139,
+   "lng": -71.0203369
+  },
+  {
+   "id": "place-wondl",
+   "name": "Wonderland",
+   "lines": [
+    "Blue"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.41342,
+   "lng": -70.991648
+  },
+  {
+   "id": "place-wimnl",
+   "name": "Wood Island",
+   "lines": [
+    "Blue"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.3796403,
+   "lng": -71.0228654
+  },
+  {
+   "id": "place-woodl",
+   "name": "Woodland",
+   "lines": [
+    "Green"
+   ],
+   "wheelchairBoarding": "accessible",
+   "lat": 42.332902,
+   "lng": -71.243362
+  }
+ ],
+ "facilities": [
+  {
+   "id": "6",
+   "stationId": "place-state",
+   "type": "escalator",
+   "name": "State Escalator 6 (Oak Grove platform to Old State House lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "105",
+   "stationId": "place-ogmnl",
+   "type": "escalator",
+   "name": "Oak Grove Escalator 105 (Commuter Rail platform to unpaid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "112",
+   "stationId": "place-dwnxg",
+   "type": "escalator",
+   "name": "Downtown Crossing Escalator 112 (Ashmont/Braintree platform to Chauncy Street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "113",
+   "stationId": "place-dwnxg",
+   "type": "escalator",
+   "name": "Downtown Crossing Escalator 113 (Alewife platform to Hawley Street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "123",
+   "stationId": "place-andrw",
+   "type": "escalator",
+   "name": "Andrew Escalator 123 (Ashmont/Braintree platform to busway)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "124",
+   "stationId": "place-andrw",
+   "type": "escalator",
+   "name": "Andrew Escalator 124 (Ashmont/Braintree platform to busway)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "125",
+   "stationId": "place-bomnl",
+   "type": "escalator",
+   "name": "Bowdoin Escalator 125 (Lobby to street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "127",
+   "stationId": "place-forhl",
+   "type": "escalator",
+   "name": "Forest Hills Escalator 127 (Lower busway north to upper lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "128",
+   "stationId": "place-forhl",
+   "type": "escalator",
+   "name": "Forest Hills Escalator 128 (Lower busway south to upper lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "129",
+   "stationId": "place-forhl",
+   "type": "escalator",
+   "name": "Forest Hills Escalator 129 (Orange Line platform to upper lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "130",
+   "stationId": "place-forhl",
+   "type": "escalator",
+   "name": "Forest Hills Escalator 130 (Orange Line platform to upper lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "131",
+   "stationId": "place-grnst",
+   "type": "escalator",
+   "name": "Green Street Escalator 131 (Platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "132",
+   "stationId": "place-sbmnl",
+   "type": "escalator",
+   "name": "Stony Brook Escalator 132 (Platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "133",
+   "stationId": "place-jaksn",
+   "type": "escalator",
+   "name": "Jackson Square Escalator 133 (Platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "134",
+   "stationId": "place-rcmnl",
+   "type": "escalator",
+   "name": "Roxbury Crossing Escalator 134 (Platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "135",
+   "stationId": "place-rugg",
+   "type": "escalator",
+   "name": "Ruggles Escalator 135 (Lower busway to upper lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "136",
+   "stationId": "place-rugg",
+   "type": "escalator",
+   "name": "Ruggles Escalator 136 (Orange Line platform to upper lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "137",
+   "stationId": "place-rugg",
+   "type": "escalator",
+   "name": "Ruggles Escalator 137 (Orange Line platform to upper lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "138",
+   "stationId": "place-rugg",
+   "type": "escalator",
+   "name": "Ruggles Escalator 138 (Forsyth Street to upper lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "139",
+   "stationId": "place-masta",
+   "type": "escalator",
+   "name": "Massachusetts Avenue Escalator 139 (Platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "140",
+   "stationId": "place-bbsta",
+   "type": "escalator",
+   "name": "Back Bay Escalator 140 (Orange Line platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "141",
+   "stationId": "place-bbsta",
+   "type": "escalator",
+   "name": "Back Bay Escalator 141 (Orange Line platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "142",
+   "stationId": "place-bbsta",
+   "type": "escalator",
+   "name": "Back Bay Escalator 142 (Commuter Rail tracks 1 and 3 to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "143",
+   "stationId": "place-bbsta",
+   "type": "escalator",
+   "name": "Back Bay Escalator 143 (Lobby to Commuter Rail tracks 1 and 3)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "144",
+   "stationId": "place-bbsta",
+   "type": "escalator",
+   "name": "Back Bay Escalator 144 (Commuter Rail track 2 to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "145",
+   "stationId": "place-tumnl",
+   "type": "escalator",
+   "name": "Tufts Medical Center Escalator 145 (Lobby to Washington Street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "146",
+   "stationId": "place-tumnl",
+   "type": "escalator",
+   "name": "Tufts Medical Center Escalator 146 (Oak Grove platform to Washington Street lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "147",
+   "stationId": "place-tumnl",
+   "type": "escalator",
+   "name": "Tufts Medical Center Escalator 147 (Forest Hills platform to Washington Street lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "148",
+   "stationId": "place-tumnl",
+   "type": "escalator",
+   "name": "Tufts Medical Center Escalator 148 (Oak Grove platform to Tremont Street lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "149",
+   "stationId": "place-tumnl",
+   "type": "escalator",
+   "name": "Tufts Medical Center Escalator 149 (Forest Hills platform to Tremont Street lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "150",
+   "stationId": "place-prmnl",
+   "type": "escalator",
+   "name": "Prudential Escalator 150 (Prudential Center to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "151",
+   "stationId": "place-prmnl",
+   "type": "escalator",
+   "name": "Prudential Escalator 151 (Lobby to Prudential Center)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "152",
+   "stationId": "place-prmnl",
+   "type": "escalator",
+   "name": "Prudential Escalator 152 (Heath Street platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "301",
+   "stationId": "place-andrw",
+   "type": "escalator",
+   "name": "Andrew Escalator 301 (Alewife platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "302",
+   "stationId": "place-north",
+   "type": "escalator",
+   "name": "North Station Escalator 302 (Forest Hills, Copley & West platform to Valenti Way lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "303",
+   "stationId": "place-north",
+   "type": "escalator",
+   "name": "North Station Escalator 303 (Valenti Way lobby to Forest Hills, Copley & West platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "304",
+   "stationId": "place-north",
+   "type": "escalator",
+   "name": "North Station Escalator 304 (Oak Grove platform to Valenti Way lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "305",
+   "stationId": "place-ccmnl",
+   "type": "escalator",
+   "name": "Community College Escalator 305 (Platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "307",
+   "stationId": "place-sull",
+   "type": "escalator",
+   "name": "Sullivan Square Escalator 307 (Forest Hills platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "308",
+   "stationId": "place-sull",
+   "type": "escalator",
+   "name": "Sullivan Square Escalator 308 (Oak Grove platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "309",
+   "stationId": "place-welln",
+   "type": "escalator",
+   "name": "Wellington Escalator 309 (Forest Hills platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "310",
+   "stationId": "place-welln",
+   "type": "escalator",
+   "name": "Wellington Escalator 310 (Oak Grove platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "311",
+   "stationId": "place-mlmnl",
+   "type": "escalator",
+   "name": "Malden Center Escalator 311 (Paid lobby to Orange Line platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "312",
+   "stationId": "place-mlmnl",
+   "type": "escalator",
+   "name": "Malden Center Escalator 312 (Street level to Commuter Rail platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "313",
+   "stationId": "place-haecl",
+   "type": "escalator",
+   "name": "Haymarket Escalator 313 (Green Line lobby to busway, Sudbury Street, New Chardon Street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "315",
+   "stationId": "place-hymnl",
+   "type": "escalator",
+   "name": "Hynes Convention Center Escalator 315 (Kenmore & West platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "320",
+   "stationId": "place-pktrm",
+   "type": "escalator",
+   "name": "Park Street Escalator 320 (Government Center & North platform to Park Street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "322",
+   "stationId": "place-jfk",
+   "type": "escalator",
+   "name": "JFK/UMass Escalator 322 (Ashmont platform to Columbia Road)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "325",
+   "stationId": "place-nqncy",
+   "type": "escalator",
+   "name": "North Quincy Escalator 325 (Platform to Squantum Street paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "326",
+   "stationId": "place-nqncy",
+   "type": "escalator",
+   "name": "North Quincy Escalator 326 (Platform to northern paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "327",
+   "stationId": "place-nqncy",
+   "type": "escalator",
+   "name": "North Quincy Escalator 327 (Hancock Street parking to unpaid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "329",
+   "stationId": "place-wlsta",
+   "type": "escalator",
+   "name": "Wollaston Escalator 329 (Paid lobby to platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "330",
+   "stationId": "place-qnctr",
+   "type": "escalator",
+   "name": "Quincy Center Escalator 330 (Red Line platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "331",
+   "stationId": "place-dwnxg",
+   "type": "escalator",
+   "name": "Downtown Crossing Escalator 331 (Ashmont/Braintree platform to Oak Grove platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "332",
+   "stationId": "place-dwnxg",
+   "type": "escalator",
+   "name": "Downtown Crossing Escalator 332 (Alewife platform to Oak Grove platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "333",
+   "stationId": "place-brntn",
+   "type": "escalator",
+   "name": "Braintree Escalator 333 (Busway to Commuter Rail platform, parking garage)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "334",
+   "stationId": "place-brntn",
+   "type": "escalator",
+   "name": "Braintree Escalator 334 (Red Line platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "335",
+   "stationId": "place-brntn",
+   "type": "escalator",
+   "name": "Braintree Escalator 335 (Paid lobby to Red Line platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "336",
+   "stationId": "place-davis",
+   "type": "escalator",
+   "name": "Davis Escalator 336 (College Avenue landing to street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "337",
+   "stationId": "place-davis",
+   "type": "escalator",
+   "name": "Davis Escalator 337 (College Avenue street to landing)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "338",
+   "stationId": "place-davis",
+   "type": "escalator",
+   "name": "Davis Escalator 338 (Unpaid lobby to College Avenue landing)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "339",
+   "stationId": "place-davis",
+   "type": "escalator",
+   "name": "Davis Escalator 339 (College Avenue landing to unpaid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "340",
+   "stationId": "place-davis",
+   "type": "escalator",
+   "name": "Davis Escalator 340 (Red Line platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "341",
+   "stationId": "place-davis",
+   "type": "escalator",
+   "name": "Davis Escalator 341 (Red Line platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "342",
+   "stationId": "place-davis",
+   "type": "escalator",
+   "name": "Davis Escalator 342 (Holland Street to unpaid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "343",
+   "stationId": "place-davis",
+   "type": "escalator",
+   "name": "Davis Escalator 343 (Unpaid lobby to Holland Street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "344",
+   "stationId": "place-qamnl",
+   "type": "escalator",
+   "name": "Quincy Adams Escalator 344 (Platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "345",
+   "stationId": "place-qamnl",
+   "type": "escalator",
+   "name": "Quincy Adams Escalator 345 (Paid lobby to platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "346",
+   "stationId": "place-qamnl",
+   "type": "escalator",
+   "name": "Quincy Adams Escalator 346 (Unpaid lobby to garage level 2)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "347",
+   "stationId": "place-qamnl",
+   "type": "escalator",
+   "name": "Quincy Adams Escalator 347 (Garage level 2 to level 4)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "348",
+   "stationId": "place-qamnl",
+   "type": "escalator",
+   "name": "Quincy Adams Escalator 348 (Garage level 4 to level 2)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "349",
+   "stationId": "place-alfcl",
+   "type": "escalator",
+   "name": "Alewife Escalator 349 (Platform to Russell Field)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "350",
+   "stationId": "place-alfcl",
+   "type": "escalator",
+   "name": "Alewife Escalator 350 (Russell Field to platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "351",
+   "stationId": "place-alfcl",
+   "type": "escalator",
+   "name": "Alewife Escalator 351 (Main concourse to platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "352",
+   "stationId": "place-alfcl",
+   "type": "escalator",
+   "name": "Alewife Escalator 352 (Platform to main concourse)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "353",
+   "stationId": "place-alfcl",
+   "type": "escalator",
+   "name": "Alewife Escalator 353 (Main concourse to busway)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "354",
+   "stationId": "place-alfcl",
+   "type": "escalator",
+   "name": "Alewife Escalator 354 (Main concourse to garage level 2)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "355",
+   "stationId": "place-alfcl",
+   "type": "escalator",
+   "name": "Alewife Escalator 355 (Garage level 2 to level 3)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "356",
+   "stationId": "place-alfcl",
+   "type": "escalator",
+   "name": "Alewife Escalator 356 (Garage level 2 to level 4)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "357",
+   "stationId": "place-alfcl",
+   "type": "escalator",
+   "name": "Alewife Escalator 357 (Garage level 2 to level 5)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "359",
+   "stationId": "place-cntsq",
+   "type": "escalator",
+   "name": "Central Escalator 359 (Ashmont/Braintree platform to street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "360",
+   "stationId": "place-cntsq",
+   "type": "escalator",
+   "name": "Central Escalator 360 (Alewife platform to street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "362",
+   "stationId": "place-knncl",
+   "type": "escalator",
+   "name": "Kendall/MIT Escalator 362 (Alewife platform to street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "364",
+   "stationId": "place-dwnxg",
+   "type": "escalator",
+   "name": "Downtown Crossing Escalator 364 (Oak Grove platform to Franklin Street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "365",
+   "stationId": "place-dwnxg",
+   "type": "escalator",
+   "name": "Downtown Crossing Escalator 365 (Forest Hills platform to Washington Street, Winter Street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "366",
+   "stationId": "place-chncl",
+   "type": "escalator",
+   "name": "Chinatown Escalator 366 (Forest Hills platform to Washington Street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "367",
+   "stationId": "place-brdwy",
+   "type": "escalator",
+   "name": "Broadway Escalator 367 (Platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "372",
+   "stationId": "place-brdwy",
+   "type": "escalator",
+   "name": "Broadway Escalator 372 (Unpaid lobby to street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "373",
+   "stationId": "place-pktrm",
+   "type": "escalator",
+   "name": "Park Street Escalator 373 (Alewife platform to Tremont Street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "374",
+   "stationId": "place-state",
+   "type": "escalator",
+   "name": "State Escalator 374 (Oak Grove platform to City Hall Plaza)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "375",
+   "stationId": "place-pktrm",
+   "type": "escalator",
+   "name": "Park Street Escalator 375 (Ashmont/Braintree platform to Tremont Street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "377",
+   "stationId": "place-chncl",
+   "type": "escalator",
+   "name": "Chinatown Escalator 377 (Oak Grove platform to Washington Street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "378",
+   "stationId": "place-bmmnl",
+   "type": "escalator",
+   "name": "Beachmont Escalator 378 (Paid lobby to Bowdoin platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "379",
+   "stationId": "place-bmmnl",
+   "type": "escalator",
+   "name": "Beachmont Escalator 379 (Wonderland platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "380",
+   "stationId": "place-wimnl",
+   "type": "escalator",
+   "name": "Wood Island Escalator 380 (Wonderland platform to pedestrian bridge)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "382",
+   "stationId": "place-sstat",
+   "type": "escalator",
+   "name": "South Station Escalator 382 (Alewife platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "383",
+   "stationId": "place-nqncy",
+   "type": "escalator",
+   "name": "North Quincy Escalator 383 (Newport Avenue parking to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "384",
+   "stationId": "place-north",
+   "type": "escalator",
+   "name": "North Station Escalator 384 (Valenti Way lobby to street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "385",
+   "stationId": "place-north",
+   "type": "escalator",
+   "name": "North Station Escalator 385 (Valenti Way to Orange Line, Green Line lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "386",
+   "stationId": "place-sstat",
+   "type": "escalator",
+   "name": "South Station Escalator 386 (1 Financial Center to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "387",
+   "stationId": "place-sstat",
+   "type": "escalator",
+   "name": "South Station Escalator 387 (Lobby to 1 Financial Center)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "388",
+   "stationId": "place-sstat",
+   "type": "escalator",
+   "name": "South Station Escalator 388 (Lobby to CSA area)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "389",
+   "stationId": "place-sstat",
+   "type": "escalator",
+   "name": "South Station Escalator 389 (Ashmont/Braintree platform to CSA area)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "390",
+   "stationId": "place-sstat",
+   "type": "escalator",
+   "name": "South Station Escalator 390 (Ashmont/Braintree platform to Airport/Design Center platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "391",
+   "stationId": "place-north",
+   "type": "escalator",
+   "name": "North Station Escalator 391 (Causeway Street lobby to Forest Hills, Copley & West platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "392",
+   "stationId": "place-north",
+   "type": "escalator",
+   "name": "North Station Escalator 392 (Forest Hills, Copley & West platform to Causeway Street lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "393",
+   "stationId": "place-north",
+   "type": "escalator",
+   "name": "North Station Escalator 393 (Oak Grove platform to Causeway Street lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "394",
+   "stationId": "place-aqucl",
+   "type": "escalator",
+   "name": "Aquarium Escalator 394 (Wonderland platform to State Street lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "395",
+   "stationId": "place-aqucl",
+   "type": "escalator",
+   "name": "Aquarium Escalator 395 (Bowdoin platform to State Street lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "396",
+   "stationId": "place-aqucl",
+   "type": "escalator",
+   "name": "Aquarium Escalator 396 (State Street lobby to first landing)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "397",
+   "stationId": "place-aqucl",
+   "type": "escalator",
+   "name": "Aquarium Escalator 397 (First landing to State Street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "398",
+   "stationId": "place-sstat",
+   "type": "escalator",
+   "name": "South Station Escalator 398 (Alewife platform to Airport/Design Center platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "399",
+   "stationId": "place-sstat",
+   "type": "escalator",
+   "name": "South Station Escalator 399 (South Station platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "400",
+   "stationId": "place-sstat",
+   "type": "escalator",
+   "name": "South Station Escalator 400 (Ashmont/Braintree platform to South Station platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "405",
+   "stationId": "place-aqucl",
+   "type": "escalator",
+   "name": "Aquarium Escalator 405 (Unpaid lobby to Atlantic Avenue)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "406",
+   "stationId": "place-aqucl",
+   "type": "escalator",
+   "name": "Aquarium Escalator 406 (Atlantic Avenue to unpaid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "407",
+   "stationId": "place-aport",
+   "type": "escalator",
+   "name": "Airport Escalator 407 (Paid mezzanine to Wonderland platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "408",
+   "stationId": "place-aport",
+   "type": "escalator",
+   "name": "Airport Escalator 408 (Wonderland platform to paid mezzanine)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "409",
+   "stationId": "place-aport",
+   "type": "escalator",
+   "name": "Airport Escalator 409 (Bowdoin platform to paid mezzanine)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "410",
+   "stationId": "place-aport",
+   "type": "escalator",
+   "name": "Airport Escalator 410 (Paid mezzanine to Bowdoin platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "411",
+   "stationId": "place-sstat",
+   "type": "escalator",
+   "name": "South Station Escalator 411 (Airport/Design Center platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "419",
+   "stationId": "place-sstat",
+   "type": "escalator",
+   "name": "South Station Escalator 419 (Lobby to South Station platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "420",
+   "stationId": "place-sstat",
+   "type": "escalator",
+   "name": "South Station Escalator 420 (Alewife platform to South Station platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "423",
+   "stationId": "place-shmnl",
+   "type": "escalator",
+   "name": "Savin Hill Escalator 423 (Platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "424",
+   "stationId": "place-sstat",
+   "type": "escalator",
+   "name": "South Station Escalator 424 (Lobby to Dewey Square)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "425",
+   "stationId": "place-chmnl",
+   "type": "escalator",
+   "name": "Charles/MGH Escalator 425 (Lobby to Ashmont/Braintree platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "426",
+   "stationId": "place-chmnl",
+   "type": "escalator",
+   "name": "Charles/MGH Escalator 426 (Lobby to Alewife platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "427",
+   "stationId": "place-fldcr",
+   "type": "escalator",
+   "name": "Fields Corner Escalator 427 (Paid lobby to Alewife platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "428",
+   "stationId": "place-mvbcl",
+   "type": "escalator",
+   "name": "Maverick Escalator 428 (Unpaid lobby to Lewis Mall)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "429",
+   "stationId": "place-mvbcl",
+   "type": "escalator",
+   "name": "Maverick Escalator 429 (Lewis Mall to unpaid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "430",
+   "stationId": "place-kencl",
+   "type": "escalator",
+   "name": "Kenmore Escalator 430 (Lobby to busway, street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "431",
+   "stationId": "place-kencl",
+   "type": "escalator",
+   "name": "Kenmore Escalator 431 (Westbound platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "432",
+   "stationId": "place-kencl",
+   "type": "escalator",
+   "name": "Kenmore Escalator 432 (Park Street & North platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "433",
+   "stationId": "place-mvbcl",
+   "type": "escalator",
+   "name": "Maverick Escalator 433 (Unpaid lobby to Maverick Square)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "434",
+   "stationId": "place-mvbcl",
+   "type": "escalator",
+   "name": "Maverick Escalator 434 (Maverick Square to unpaid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "435",
+   "stationId": "place-armnl",
+   "type": "escalator",
+   "name": "Arlington Escalator 435 (Park Street & North platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "436",
+   "stationId": "place-armnl",
+   "type": "escalator",
+   "name": "Arlington Escalator 436 (Copley & West platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "437",
+   "stationId": "place-asmnl",
+   "type": "escalator",
+   "name": "Ashmont Escalator 437 (Ashmont platform to Peabody Square, busway)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "438",
+   "stationId": "place-asmnl",
+   "type": "escalator",
+   "name": "Ashmont Escalator 438 (Ashmont platform to Mattapan Line, busway)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "439",
+   "stationId": "place-coecl",
+   "type": "escalator",
+   "name": "Copley Escalator 439 (Kenmore & West, Heath Street lobby to street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "440",
+   "stationId": "place-orhte",
+   "type": "escalator",
+   "name": "Orient Heights Escalator 440 (Bowdoin platform to pedestrian bridge)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "441",
+   "stationId": "place-orhte",
+   "type": "escalator",
+   "name": "Orient Heights Escalator 441 (Wonderland platform to pedestrian bridge)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "442",
+   "stationId": "place-astao",
+   "type": "escalator",
+   "name": "Assembly Escalator 442 (Foley Street to unpaid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "443",
+   "stationId": "place-astao",
+   "type": "escalator",
+   "name": "Assembly Escalator 443 (Platform to Foley Street paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "444",
+   "stationId": "place-gover",
+   "type": "escalator",
+   "name": "Government Center Escalator 444 (North Station & North platform to street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "445",
+   "stationId": "place-gover",
+   "type": "escalator",
+   "name": "Government Center Escalator 445 (Copley & West, Blue Line platforms to street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "446",
+   "stationId": "place-gover",
+   "type": "escalator",
+   "name": "Government Center Escalator 446 (Blue Line platform to Green Line platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "447",
+   "stationId": "place-north",
+   "type": "escalator",
+   "name": "North Station Escalator 447 (Passageway to Commuter Rail, TD Garden)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "448",
+   "stationId": "place-wlsta",
+   "type": "escalator",
+   "name": "Wollaston Escalator 448 (Paid lobby to pedestrian bridge)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "449",
+   "stationId": "place-wlsta",
+   "type": "escalator",
+   "name": "Wollaston Escalator 449 (Platform to pedestrian bridge)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "450",
+   "stationId": "place-knncl",
+   "type": "escalator",
+   "name": "Kendall/MIT Escalator 450 (Ashmont/Braintree platform to Carleton St)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "451",
+   "stationId": "place-ogmnl",
+   "type": "escalator",
+   "name": "Oak Grove Escalator 451 (Parking, busway to unpaid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "452",
+   "stationId": "place-ogmnl",
+   "type": "escalator",
+   "name": "Oak Grove Escalator 452 (Washington Street to unpaid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "453",
+   "stationId": "place-ogmnl",
+   "type": "escalator",
+   "name": "Oak Grove Escalator 453 (Orange Line platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "501",
+   "stationId": "place-state",
+   "type": "escalator",
+   "name": "State Escalator 501 (Oak Grove platform to Wonderland platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "502",
+   "stationId": "place-state",
+   "type": "escalator",
+   "name": "State Escalator 502 (Wonderland platform to Old State House)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "503",
+   "stationId": "place-prmnl",
+   "type": "escalator",
+   "name": "Prudential Escalator 503 (Lobby to Huntington Avenue)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "504",
+   "stationId": "place-portr",
+   "type": "escalator",
+   "name": "Porter Escalator 504 (Street to unpaid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "505",
+   "stationId": "place-portr",
+   "type": "escalator",
+   "name": "Porter Escalator 505 (Unpaid lobby to street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "506",
+   "stationId": "place-portr",
+   "type": "escalator",
+   "name": "Porter Escalator 506 (Alewife platform south to Ashmont/Braintree platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "507",
+   "stationId": "place-portr",
+   "type": "escalator",
+   "name": "Porter Escalator 507 (Alewife platform north to Ashmont/Braintree platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "509",
+   "stationId": "place-portr",
+   "type": "escalator",
+   "name": "Porter Escalator 509 (Paid lobby to Ashmont/Braintree platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "510",
+   "stationId": "place-portr",
+   "type": "escalator",
+   "name": "Porter Escalator 510 (Ashmont/Braintree platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "511",
+   "stationId": "place-portr",
+   "type": "escalator",
+   "name": "Porter Escalator 511 (Ashmont/Braintree platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "512",
+   "stationId": "place-harsq",
+   "type": "escalator",
+   "name": "Harvard Escalator 512 (Mezzanine to Harvard Square)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "513",
+   "stationId": "place-harsq",
+   "type": "escalator",
+   "name": "Harvard Escalator 513 (Harvard Square to mezzanine)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "514",
+   "stationId": "place-harsq",
+   "type": "escalator",
+   "name": "Harvard Escalator 514 (Main lobby to Harvard Square mezzanine)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "515",
+   "stationId": "place-harsq",
+   "type": "escalator",
+   "name": "Harvard Escalator 515 (Harvard Square mezzanine to main lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "516",
+   "stationId": "place-harsq",
+   "type": "escalator",
+   "name": "Harvard Escalator 516 (Alewife platform to Church Street lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "523",
+   "stationId": "place-state",
+   "type": "escalator",
+   "name": "State Escalator 523 (Forest Hills platform to Washington Street, Milk Street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "701",
+   "stationId": "place-wondl",
+   "type": "elevator",
+   "name": "Wonderland Elevator 701 (Main lobby to garage)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "702",
+   "stationId": "place-wondl",
+   "type": "elevator",
+   "name": "Wonderland Elevator 702 (Main lobby to garage)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "703",
+   "stationId": "place-wondl",
+   "type": "elevator",
+   "name": "Wonderland Elevator 703 (Main lobby to garage)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "708",
+   "stationId": "place-wondl",
+   "type": "elevator",
+   "name": "Wonderland Elevator 708 (Main lobby to pedestrian bridge)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "709",
+   "stationId": "place-wondl",
+   "type": "elevator",
+   "name": "Wonderland Elevator 709 (North Shore Road Busway to pedestrian plaza)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "710",
+   "stationId": "place-wondl",
+   "type": "elevator",
+   "name": "Wonderland Elevator 710 (Wonderland platform to pedestrian plaza)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "711",
+   "stationId": "place-wondl",
+   "type": "elevator",
+   "name": "Wonderland Elevator 711 (Ocean Avenue to pedestrian plaza)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "712",
+   "stationId": "place-orhte",
+   "type": "elevator",
+   "name": "Orient Heights Elevator 712 (Bowdoin platform to paid pedestrian bridge)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "713",
+   "stationId": "place-orhte",
+   "type": "elevator",
+   "name": "Orient Heights Elevator 713 (Bennington Street Busway to unpaid pedestrian bridge)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "714",
+   "stationId": "place-orhte",
+   "type": "elevator",
+   "name": "Orient Heights Elevator 714 (Wonderland platform to paid pedestrian bridge)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "715",
+   "stationId": "place-orhte",
+   "type": "elevator",
+   "name": "Orient Heights Elevator 715 (Saratoga Street Busway to unpaid pedestrian bridge)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "716",
+   "stationId": "place-astao",
+   "type": "elevator",
+   "name": "Assembly Elevator 716 (Foley Street to unpaid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "717",
+   "stationId": "place-astao",
+   "type": "elevator",
+   "name": "Assembly Elevator 717 (Platform to Foley Street paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "718",
+   "stationId": "place-astao",
+   "type": "elevator",
+   "name": "Assembly Elevator 718 (Revolution Drive to unpaid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "719",
+   "stationId": "place-astao",
+   "type": "elevator",
+   "name": "Assembly Elevator 719 (Platform to Revolution Drive paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "720",
+   "stationId": "place-gover",
+   "type": "elevator",
+   "name": "Government Center Elevator 720 (Green Line platform to street)",
+   "servesPlatforms": [
+    "Green Line platform"
+   ]
+  },
+  {
+   "id": "721",
+   "stationId": "place-gover",
+   "type": "elevator",
+   "name": "Government Center Elevator 721 (Green Line platform to street)",
+   "servesPlatforms": [
+    "Green Line platform"
+   ]
+  },
+  {
+   "id": "722",
+   "stationId": "place-gover",
+   "type": "elevator",
+   "name": "Government Center Elevator 722 (Blue Line platform to Green Line platform)",
+   "servesPlatforms": [
+    "Blue Line platform",
+    "Green Line platform"
+   ]
+  },
+  {
+   "id": "723",
+   "stationId": "place-gover",
+   "type": "elevator",
+   "name": "Government Center Elevator 723 (Blue Line platform to Green Line platform)",
+   "servesPlatforms": [
+    "Blue Line platform",
+    "Green Line platform"
+   ]
+  },
+  {
+   "id": "724",
+   "stationId": "place-forhl",
+   "type": "elevator",
+   "name": "Forest Hills Elevator 724 (Orange Line platform to Southwest Corridor Park lobby)",
+   "servesPlatforms": [
+    "Orange Line platform"
+   ]
+  },
+  {
+   "id": "728",
+   "stationId": "place-rugg",
+   "type": "elevator",
+   "name": "Ruggles Elevator 728 (Lobby to lower busway center platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "729",
+   "stationId": "place-brntn",
+   "type": "elevator",
+   "name": "Braintree Elevator 729 (Busway to Commuter Rail platform, parking garage)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "730",
+   "stationId": "place-brntn",
+   "type": "elevator",
+   "name": "Braintree Elevator 730 (Busway to Commuter Rail platform, parking garage)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "731",
+   "stationId": "place-north",
+   "type": "elevator",
+   "name": "North Station Elevator 731 (Passageway to Causeway Street)",
+   "servesPlatforms": [
+    "Entrance"
+   ]
+  },
+  {
+   "id": "732",
+   "stationId": "place-north",
+   "type": "elevator",
+   "name": "North Station Elevator 732 (Passageway to Commuter Rail, TD Garden)",
+   "servesPlatforms": []
+  },
+  {
+   "id": "733",
+   "stationId": "place-wlsta",
+   "type": "elevator",
+   "name": "Wollaston Elevator 733 (Parking lot lobby to pedestrian bridge)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "734",
+   "stationId": "place-wlsta",
+   "type": "elevator",
+   "name": "Wollaston Elevator 734 (Newport Ave lobby to platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "735",
+   "stationId": "place-wlsta",
+   "type": "elevator",
+   "name": "Wollaston Elevator 735 (Platform to pedestrian bridge)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "736",
+   "stationId": "place-qamnl",
+   "type": "elevator",
+   "name": "Quincy Adams Elevator 736 (Lobby to platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "739",
+   "stationId": "place-nqncy",
+   "type": "elevator",
+   "name": "North Quincy Elevator 739 (Pick-up/drop-off area and northern lobby to parking garage)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "740",
+   "stationId": "place-nqncy",
+   "type": "elevator",
+   "name": "North Quincy Elevator 740 (Pick-up/drop-off area and northern lobby to parking garage)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "743",
+   "stationId": "place-ogmnl",
+   "type": "elevator",
+   "name": "Oak Grove Elevator 743 (Orange Line platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "744",
+   "stationId": "place-ogmnl",
+   "type": "elevator",
+   "name": "Oak Grove Elevator 744 (Washington Street to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "745",
+   "stationId": "place-ogmnl",
+   "type": "elevator",
+   "name": "Oak Grove Elevator 745 (Busway, parking lot to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "746",
+   "stationId": "place-ogmnl",
+   "type": "elevator",
+   "name": "Oak Grove Elevator 746 (Orange Line platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "753",
+   "stationId": "place-sstat",
+   "type": "elevator",
+   "name": "South Station Elevator 753 (Bus Terminal to Commuter Rail concourse)",
+   "servesPlatforms": []
+  },
+  {
+   "id": "754",
+   "stationId": "place-sstat",
+   "type": "elevator",
+   "name": "South Station Elevator 754 (Bus Terminal to Commuter Rail concourse)",
+   "servesPlatforms": []
+  },
+  {
+   "id": "756",
+   "stationId": "place-knncl",
+   "type": "elevator",
+   "name": "Kendall/MIT Elevator 756 (Ashmont/Braintree platform to Main Street)",
+   "servesPlatforms": [
+    "Ashmont/Braintree platform"
+   ]
+  },
+  {
+   "id": "757",
+   "stationId": "place-knncl",
+   "type": "elevator",
+   "name": "Kendall/MIT Elevator 757 (Ashmont/Braintree platform to Main Street)",
+   "servesPlatforms": [
+    "Ashmont/Braintree platform"
+   ]
+  },
+  {
+   "id": "762",
+   "stationId": "place-lech",
+   "type": "elevator",
+   "name": "Lechmere Elevator 762 (Platform to North First Street lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "763",
+   "stationId": "place-lech",
+   "type": "elevator",
+   "name": "Lechmere Elevator 763 (Platform to North First Street lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "764",
+   "stationId": "place-lech",
+   "type": "elevator",
+   "name": "Lechmere Elevator 764 (Platform to O'Brien Highway lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "765",
+   "stationId": "place-gilmn",
+   "type": "elevator",
+   "name": "Gilman Square Elevator 765 (Platform to Medford Street lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "766",
+   "stationId": "place-gilmn",
+   "type": "elevator",
+   "name": "Gilman Square Elevator 766 (Platform to School Street lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "767",
+   "stationId": "place-mgngl",
+   "type": "elevator",
+   "name": "Magoun Square Elevator 767 (Platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "768",
+   "stationId": "place-mgngl",
+   "type": "elevator",
+   "name": "Magoun Square Elevator 768 (Platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "769",
+   "stationId": "place-balsq",
+   "type": "elevator",
+   "name": "Ball Square Elevator 769 (Platform to Broadway lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "770",
+   "stationId": "place-mdftf",
+   "type": "elevator",
+   "name": "Medford/Tufts Elevator 770 (Platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "771",
+   "stationId": "place-unsqu",
+   "type": "elevator",
+   "name": "Union Square Elevator 771 (Platform to Prospect Street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "772",
+   "stationId": "place-mdftf",
+   "type": "elevator",
+   "name": "Medford/Tufts Elevator 772 (Platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "777",
+   "stationId": "place-knncl",
+   "type": "elevator",
+   "name": "Kendall/MIT Elevator 777 (Alewife platform to Main Street)",
+   "servesPlatforms": [
+    "Alewife platform"
+   ]
+  },
+  {
+   "id": "802",
+   "stationId": "place-state",
+   "type": "elevator",
+   "name": "State Elevator 802 (Oak Grove platform to Forest Hills, Wonderland platforms)",
+   "servesPlatforms": [
+    "Oak Grove platform",
+    "Forest Hills platform",
+    "Wonderland platform"
+   ]
+  },
+  {
+   "id": "803",
+   "stationId": "place-state",
+   "type": "elevator",
+   "name": "State Elevator 803 (Forest Hills platform to Washington Street, Milk Street)",
+   "servesPlatforms": [
+    "Forest Hills platform"
+   ]
+  },
+  {
+   "id": "804",
+   "stationId": "place-pktrm",
+   "type": "elevator",
+   "name": "Park Street Elevator 804 (Government Center & North lobby to Tremont Street, Winter Street)",
+   "servesPlatforms": [
+    "Entrance"
+   ]
+  },
+  {
+   "id": "805",
+   "stationId": "place-qamnl",
+   "type": "elevator",
+   "name": "Quincy Adams Elevator 805 (Lobby to platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "806",
+   "stationId": "place-qamnl",
+   "type": "elevator",
+   "name": "Quincy Adams Elevator 806 (Lobby to parking garage)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "807",
+   "stationId": "place-qamnl",
+   "type": "elevator",
+   "name": "Quincy Adams Elevator 807 (Lobby to parking garage)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "808",
+   "stationId": "place-pktrm",
+   "type": "elevator",
+   "name": "Park Street Elevator 808 (Red Line center platform to Government Center & North platform, Winter Street Concourse)",
+   "servesPlatforms": [
+    "Red Line platform",
+    "Government Center & North platform"
+   ]
+  },
+  {
+   "id": "810",
+   "stationId": "place-qnctr",
+   "type": "elevator",
+   "name": "Quincy Center Elevator 810 (Red Line platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "811",
+   "stationId": "place-brntn",
+   "type": "elevator",
+   "name": "Braintree Elevator 811 (Red Line platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "812",
+   "stationId": "place-pktrm",
+   "type": "elevator",
+   "name": "Park Street Elevator 812 (Green Line underpass to Government Center & North platform)",
+   "servesPlatforms": [
+    "Government Center & North platform"
+   ]
+  },
+  {
+   "id": "813",
+   "stationId": "place-alfcl",
+   "type": "elevator",
+   "name": "Alewife Elevator 813 (Platform to main lobby)",
+   "servesPlatforms": [
+    "Platform"
+   ]
+  },
+  {
+   "id": "814",
+   "stationId": "place-alfcl",
+   "type": "elevator",
+   "name": "Alewife Elevator 814 (Main lobby to street, parking garage)",
+   "servesPlatforms": [
+    "Entrance"
+   ]
+  },
+  {
+   "id": "815",
+   "stationId": "place-alfcl",
+   "type": "elevator",
+   "name": "Alewife Elevator 815 (Main lobby to street, parking garage)",
+   "servesPlatforms": [
+    "Entrance"
+   ]
+  },
+  {
+   "id": "816",
+   "stationId": "place-davis",
+   "type": "elevator",
+   "name": "Davis Elevator 816 (Platform to lobby)",
+   "servesPlatforms": [
+    "Platform"
+   ]
+  },
+  {
+   "id": "817",
+   "stationId": "place-davis",
+   "type": "elevator",
+   "name": "Davis Elevator 817 (Lobby to College Avenue)",
+   "servesPlatforms": [
+    "Entrance"
+   ]
+  },
+  {
+   "id": "821",
+   "stationId": "place-harsq",
+   "type": "elevator",
+   "name": "Harvard Elevator 821 (Lobby to Harvard Square)",
+   "servesPlatforms": [
+    "Entrance"
+   ]
+  },
+  {
+   "id": "823",
+   "stationId": "place-pktrm",
+   "type": "elevator",
+   "name": "Park Street Elevator 823 (Green Line underpass to Copley & West platform)",
+   "servesPlatforms": [
+    "Copley & West platform"
+   ]
+  },
+  {
+   "id": "830",
+   "stationId": "place-jfk",
+   "type": "elevator",
+   "name": "JFK/UMass Elevator 830 (Braintree branch platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "831",
+   "stationId": "place-jfk",
+   "type": "elevator",
+   "name": "JFK/UMass Elevator 831 (Ashmont branch platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "840",
+   "stationId": "place-sull",
+   "type": "elevator",
+   "name": "Sullivan Square Elevator 840 (Center platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "841",
+   "stationId": "place-forhl",
+   "type": "elevator",
+   "name": "Forest Hills Elevator 841 (Commuter Rail platform to lobby)",
+   "servesPlatforms": []
+  },
+  {
+   "id": "842",
+   "stationId": "place-forhl",
+   "type": "elevator",
+   "name": "Forest Hills Elevator 842 (Orange Line platform to main upper lobby)",
+   "servesPlatforms": [
+    "Orange Line platform"
+   ]
+  },
+  {
+   "id": "843",
+   "stationId": "place-forhl",
+   "type": "elevator",
+   "name": "Forest Hills Elevator 843 (Lower busway to upper lobby)",
+   "servesPlatforms": [
+    "Entrance"
+   ]
+  },
+  {
+   "id": "844",
+   "stationId": "place-grnst",
+   "type": "elevator",
+   "name": "Green Street Elevator 844 (Platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "845",
+   "stationId": "place-sbmnl",
+   "type": "elevator",
+   "name": "Stony Brook Elevator 845 (Platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "846",
+   "stationId": "place-jaksn",
+   "type": "elevator",
+   "name": "Jackson Square Elevator 846 (Platform to paid lobby)",
+   "servesPlatforms": [
+    "Platform"
+   ]
+  },
+  {
+   "id": "847",
+   "stationId": "place-rcmnl",
+   "type": "elevator",
+   "name": "Roxbury Crossing Elevator 847 (Platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "848",
+   "stationId": "place-rugg",
+   "type": "elevator",
+   "name": "Ruggles Elevator 848 (Lobby to lower busway side platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "849",
+   "stationId": "place-rugg",
+   "type": "elevator",
+   "name": "Ruggles Elevator 849 (Commuter Rail tracks 1 and 3 to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "850",
+   "stationId": "place-rugg",
+   "type": "elevator",
+   "name": "Ruggles Elevator 850 (Orange Line platform to upper lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "851",
+   "stationId": "place-rugg",
+   "type": "elevator",
+   "name": "Ruggles Elevator 851 (Forsyth Street to upper lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "852",
+   "stationId": "place-masta",
+   "type": "elevator",
+   "name": "Massachusetts Avenue Elevator 852 (Platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "853",
+   "stationId": "place-bbsta",
+   "type": "elevator",
+   "name": "Back Bay Elevator 853 (Orange Line platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "854",
+   "stationId": "place-bbsta",
+   "type": "elevator",
+   "name": "Back Bay Elevator 854 (Commuter Rail track 2 to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "855",
+   "stationId": "place-bbsta",
+   "type": "elevator",
+   "name": "Back Bay Elevator 855 (Commuter Rail tracks 1 and 3 to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "856",
+   "stationId": "place-bbsta",
+   "type": "elevator",
+   "name": "Back Bay Elevator 856 (Commuter Rail tracks 5 and 7 to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "857",
+   "stationId": "place-tumnl",
+   "type": "elevator",
+   "name": "Tufts Medical Center Elevator 857 (Lobby to Washington Street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "858",
+   "stationId": "place-tumnl",
+   "type": "elevator",
+   "name": "Tufts Medical Center Elevator 858 (Oak Grove platform to Washington Street lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "859",
+   "stationId": "place-tumnl",
+   "type": "elevator",
+   "name": "Tufts Medical Center Elevator 859 (Forest Hills platform to Washington Street lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "860",
+   "stationId": "place-cntsq",
+   "type": "elevator",
+   "name": "Central Elevator 860 (Alewife platform to Massachusetts Avenue)",
+   "servesPlatforms": [
+    "Alewife platform"
+   ]
+  },
+  {
+   "id": "861",
+   "stationId": "place-cntsq",
+   "type": "elevator",
+   "name": "Central Elevator 861 (Ashmont/Braintree platform to Massachusetts Avenue)",
+   "servesPlatforms": [
+    "Ashmont/Braintree platform"
+   ]
+  },
+  {
+   "id": "864",
+   "stationId": "place-welln",
+   "type": "elevator",
+   "name": "Wellington Elevator 864 (Oak Grove platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "865",
+   "stationId": "place-welln",
+   "type": "elevator",
+   "name": "Wellington Elevator 865 (Forest Hills platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "866",
+   "stationId": "place-knncl",
+   "type": "elevator",
+   "name": "Kendall/MIT Elevator 866 (Alewife platform to Main Street)",
+   "servesPlatforms": [
+    "Alewife platform"
+   ]
+  },
+  {
+   "id": "867",
+   "stationId": "place-brdwy",
+   "type": "elevator",
+   "name": "Broadway Elevator 867 (Platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "868",
+   "stationId": "place-brdwy",
+   "type": "elevator",
+   "name": "Broadway Elevator 868 (Lobby to street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "869",
+   "stationId": "place-dwnxg",
+   "type": "elevator",
+   "name": "Downtown Crossing Elevator 869 (Alewife platform to Summer Street Concourse)",
+   "servesPlatforms": [
+    "Alewife platform"
+   ]
+  },
+  {
+   "id": "870",
+   "stationId": "place-dwnxg",
+   "type": "elevator",
+   "name": "Downtown Crossing Elevator 870 (Ashmont/Braintree platform to Summer Street Concourse)",
+   "servesPlatforms": [
+    "Ashmont/Braintree platform"
+   ]
+  },
+  {
+   "id": "872",
+   "stationId": "place-andrw",
+   "type": "elevator",
+   "name": "Andrew Elevator 872 (Lobby to street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "876",
+   "stationId": "place-chncl",
+   "type": "elevator",
+   "name": "Chinatown Elevator 876 (Oak Grove platform to Washington St, Essex St)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "879",
+   "stationId": "place-andrw",
+   "type": "elevator",
+   "name": "Andrew Elevator 879 (Ashmont/Braintree platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "880",
+   "stationId": "place-andrw",
+   "type": "elevator",
+   "name": "Andrew Elevator 880 (Alewife platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "881",
+   "stationId": "place-sull",
+   "type": "elevator",
+   "name": "Sullivan Square Elevator 881 (Oak Grove platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "884",
+   "stationId": "place-rbmnl",
+   "type": "elevator",
+   "name": "Revere Beach Elevator 884 (Bowdoin platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "885",
+   "stationId": "place-rbmnl",
+   "type": "elevator",
+   "name": "Revere Beach Elevator 885 (Wonderland platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "886",
+   "stationId": "place-bmmnl",
+   "type": "elevator",
+   "name": "Beachmont Elevator 886 (Bowdoin platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "887",
+   "stationId": "place-bmmnl",
+   "type": "elevator",
+   "name": "Beachmont Elevator 887 (Wonderland platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "889",
+   "stationId": "place-wimnl",
+   "type": "elevator",
+   "name": "Wood Island Elevator 889 (Bowdoin platform to pedestrian bridge)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "890",
+   "stationId": "place-wimnl",
+   "type": "elevator",
+   "name": "Wood Island Elevator 890 (Wonderland platform to pedestrian bridge)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "891",
+   "stationId": "place-dwnxg",
+   "type": "elevator",
+   "name": "Downtown Crossing Elevator 891 (Oak Grove platform to Franklin Street)",
+   "servesPlatforms": [
+    "Oak Grove platform"
+   ]
+  },
+  {
+   "id": "892",
+   "stationId": "place-dwnxg",
+   "type": "elevator",
+   "name": "Downtown Crossing Elevator 892 (Forest Hills platform to Washington Street, Winter Street)",
+   "servesPlatforms": [
+    "Forest Hills platform"
+   ]
+  },
+  {
+   "id": "896",
+   "stationId": "place-qnctr",
+   "type": "elevator",
+   "name": "Quincy Center Elevator 896 (Commuter Rail platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "897",
+   "stationId": "place-nqncy",
+   "type": "elevator",
+   "name": "North Quincy Elevator 897 (Hancock Street parking to northern lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "898",
+   "stationId": "place-nqncy",
+   "type": "elevator",
+   "name": "North Quincy Elevator 898 (Newport Avenue to northern lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "899",
+   "stationId": "place-nqncy",
+   "type": "elevator",
+   "name": "North Quincy Elevator 899 (Platform to northern lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "900",
+   "stationId": "place-nqncy",
+   "type": "elevator",
+   "name": "North Quincy Elevator 900 (Platform to main lobby, busway)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "901",
+   "stationId": "place-sstat",
+   "type": "elevator",
+   "name": "South Station Elevator 901 (Ashmont/Braintree platform to Silver Line drop-off platform and lobby)",
+   "servesPlatforms": [
+    "Ashmont/Braintree platform"
+   ]
+  },
+  {
+   "id": "903",
+   "stationId": "place-haecl",
+   "type": "elevator",
+   "name": "Haymarket Elevator 903 (Oak Grove platform to Congress Street lobby)",
+   "servesPlatforms": [
+    "Oak Grove platform"
+   ]
+  },
+  {
+   "id": "904",
+   "stationId": "place-haecl",
+   "type": "elevator",
+   "name": "Haymarket Elevator 904 (Forest Hills platform to Congress Street lobby)",
+   "servesPlatforms": [
+    "Forest Hills platform"
+   ]
+  },
+  {
+   "id": "905",
+   "stationId": "place-haecl",
+   "type": "elevator",
+   "name": "Haymarket Elevator 905 (Underpass to Forest Hills platform)",
+   "servesPlatforms": [
+    "Forest Hills platform"
+   ]
+  },
+  {
+   "id": "906",
+   "stationId": "place-haecl",
+   "type": "elevator",
+   "name": "Haymarket Elevator 906 (Underpass to Green Line platforms, busway)",
+   "servesPlatforms": [
+    "Green Line platforms"
+   ]
+  },
+  {
+   "id": "907",
+   "stationId": "place-haecl",
+   "type": "elevator",
+   "name": "Haymarket Elevator 907 (Underpass to Oak Grove platform)",
+   "servesPlatforms": [
+    "Oak Grove platform"
+   ]
+  },
+  {
+   "id": "908",
+   "stationId": "place-haecl",
+   "type": "elevator",
+   "name": "Haymarket Elevator 908 (Green Line lobby to busway, Sudbury Street, New Chardon Street)",
+   "servesPlatforms": [
+    "Entrance"
+   ]
+  },
+  {
+   "id": "909",
+   "stationId": "place-north",
+   "type": "elevator",
+   "name": "North Station Elevator 909 (Orange Line, Green Line lobby to Valenti Way)",
+   "servesPlatforms": [
+    "Entrance"
+   ]
+  },
+  {
+   "id": "910",
+   "stationId": "place-north",
+   "type": "elevator",
+   "name": "North Station Elevator 910 (Lobby to Forest Hills, Copley & West platform)",
+   "servesPlatforms": [
+    "Forest Hills, Copley & West platform"
+   ]
+  },
+  {
+   "id": "911",
+   "stationId": "place-north",
+   "type": "elevator",
+   "name": "North Station Elevator 911 (Oak Grove platform to paid lobby)",
+   "servesPlatforms": [
+    "Oak Grove platform"
+   ]
+  },
+  {
+   "id": "912",
+   "stationId": "place-north",
+   "type": "elevator",
+   "name": "North Station Elevator 912 (Orange Line, Green Line lobby to Causeway Street)",
+   "servesPlatforms": [
+    "Entrance"
+   ]
+  },
+  {
+   "id": "913",
+   "stationId": "place-aqucl",
+   "type": "elevator",
+   "name": "Aquarium Elevator 913 (Wonderland platform to State Street lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "914",
+   "stationId": "place-aqucl",
+   "type": "elevator",
+   "name": "Aquarium Elevator 914 (Bowdoin platform to State Street lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "915",
+   "stationId": "place-aqucl",
+   "type": "elevator",
+   "name": "Aquarium Elevator 915 (State Street lobby to street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "917",
+   "stationId": "place-prmnl",
+   "type": "elevator",
+   "name": "Prudential Elevator 917 (Lobby to Huntington Avenue)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "918",
+   "stationId": "place-sstat",
+   "type": "elevator",
+   "name": "South Station Elevator 918 (Ashmont/Braintree platform to Airport/Design Center/Chelsea platform and lobby)",
+   "servesPlatforms": [
+    "Ashmont/Braintree platform"
+   ]
+  },
+  {
+   "id": "919",
+   "stationId": "place-sstat",
+   "type": "elevator",
+   "name": "South Station Elevator 919 (Alewife platform to Airport/Design Center/Chelsea platform)",
+   "servesPlatforms": [
+    "Alewife platform"
+   ]
+  },
+  {
+   "id": "920",
+   "stationId": "place-prmnl",
+   "type": "elevator",
+   "name": "Prudential Elevator 920 (Heath Street platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "921",
+   "stationId": "place-prmnl",
+   "type": "elevator",
+   "name": "Prudential Elevator 921 (Lechmere platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "922",
+   "stationId": "place-chncl",
+   "type": "elevator",
+   "name": "Chinatown Elevator 922 (Forest Hills platform to Boylston St, Washington St)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "923",
+   "stationId": "place-aqucl",
+   "type": "elevator",
+   "name": "Aquarium Elevator 923 (Bowdoin platform to Atlantic Avenue lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "924",
+   "stationId": "place-aqucl",
+   "type": "elevator",
+   "name": "Aquarium Elevator 924 (Wonderland platform to Atlantic Avenue lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "925",
+   "stationId": "place-aqucl",
+   "type": "elevator",
+   "name": "Aquarium Elevator 925 (Atlantic Avenue lobby to Long Wharf)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "926",
+   "stationId": "place-sstat",
+   "type": "elevator",
+   "name": "South Station Elevator 926 (Subway Lobby to Atlantic Avenue, Summer Street)",
+   "servesPlatforms": [
+    "Entrance"
+   ]
+  },
+  {
+   "id": "927",
+   "stationId": "place-sstat",
+   "type": "elevator",
+   "name": "South Station Elevator 927 (Alewife platform to Silver Line Drop-off platform)",
+   "servesPlatforms": [
+    "Alewife platform"
+   ]
+  },
+  {
+   "id": "931",
+   "stationId": "place-aport",
+   "type": "elevator",
+   "name": "Airport Elevator 931 (Wonderland platform to paid pedestrian bridge)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "932",
+   "stationId": "place-aport",
+   "type": "elevator",
+   "name": "Airport Elevator 932 (Bowdoin platform to paid pedestrian bridge)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "933",
+   "stationId": "place-ccmnl",
+   "type": "elevator",
+   "name": "Community College Elevator 933 (Paid lobby to platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "944",
+   "stationId": "place-mlmnl",
+   "type": "elevator",
+   "name": "Malden Center Elevator 944 (Lobby to Commuter Rail platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "945",
+   "stationId": "place-mlmnl",
+   "type": "elevator",
+   "name": "Malden Center Elevator 945 (Lobby to Orange Line platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "946",
+   "stationId": "place-shmnl",
+   "type": "elevator",
+   "name": "Savin Hill Elevator 946 (Platform to paid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "947",
+   "stationId": "place-shmnl",
+   "type": "elevator",
+   "name": "Savin Hill Elevator 947 (Sydney Street to unpaid lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "948",
+   "stationId": "place-kencl",
+   "type": "elevator",
+   "name": "Kenmore Elevator 948 (Lobby to Commonwealth Avenue)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "949",
+   "stationId": "place-sstat",
+   "type": "elevator",
+   "name": "South Station Elevator 949 (Lobby to Dewey Square)",
+   "servesPlatforms": [
+    "Entrance"
+   ]
+  },
+  {
+   "id": "951",
+   "stationId": "place-chmnl",
+   "type": "elevator",
+   "name": "Charles/MGH Elevator 951 (Ashmont/Braintree platform to lobby)",
+   "servesPlatforms": [
+    "Ashmont/Braintree platform"
+   ]
+  },
+  {
+   "id": "952",
+   "stationId": "place-chmnl",
+   "type": "elevator",
+   "name": "Charles/MGH Elevator 952 (Alewife platform to lobby)",
+   "servesPlatforms": [
+    "Alewife platform"
+   ]
+  },
+  {
+   "id": "953",
+   "stationId": "place-smmnl",
+   "type": "elevator",
+   "name": "Shawmut Elevator 953 (Alewife platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "954",
+   "stationId": "place-smmnl",
+   "type": "elevator",
+   "name": "Shawmut Elevator 954 (Ashmont platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "955",
+   "stationId": "place-aport",
+   "type": "elevator",
+   "name": "Airport Elevator 955 (Bremen Street lobby to unpaid pedestrian bridge)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "956",
+   "stationId": "place-aport",
+   "type": "elevator",
+   "name": "Airport Elevator 956 (Busway lobby to unpaid pedestrian bridge)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "957",
+   "stationId": "place-fldcr",
+   "type": "elevator",
+   "name": "Fields Corner Elevator 957 (Paid lobby to Alewife platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "958",
+   "stationId": "place-fldcr",
+   "type": "elevator",
+   "name": "Fields Corner Elevator 958 (Paid lobby to Ashmont platform)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "961",
+   "stationId": "place-alfcl",
+   "type": "elevator",
+   "name": "Alewife Elevator 961 (Platform to Russell Field, Rindge Avenue lobby)",
+   "servesPlatforms": [
+    "Platform"
+   ]
+  },
+  {
+   "id": "962",
+   "stationId": "place-armnl",
+   "type": "elevator",
+   "name": "Arlington Elevator 962 (Copley & West platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "963",
+   "stationId": "place-armnl",
+   "type": "elevator",
+   "name": "Arlington Elevator 963 (Park Street & North platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "964",
+   "stationId": "place-armnl",
+   "type": "elevator",
+   "name": "Arlington Elevator 964 (Lobby to Boylston Street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "965",
+   "stationId": "place-mvbcl",
+   "type": "elevator",
+   "name": "Maverick Elevator 965 (Platform to Maverick Square, busway)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "966",
+   "stationId": "place-mvbcl",
+   "type": "elevator",
+   "name": "Maverick Elevator 966 (Platform to Lewis Courtyard)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "967",
+   "stationId": "place-state",
+   "type": "elevator",
+   "name": "State Elevator 967 (Oak Grove platform to Forest Hills, Wonderland platforms)",
+   "servesPlatforms": [
+    "Oak Grove platform",
+    "Forest Hills platform",
+    "Wonderland platform"
+   ]
+  },
+  {
+   "id": "968",
+   "stationId": "place-asmnl",
+   "type": "elevator",
+   "name": "Ashmont Elevator 968 (Alewife platform to Peabody Square lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "969",
+   "stationId": "place-asmnl",
+   "type": "elevator",
+   "name": "Ashmont Elevator 969 (Alewife platform to Mattapan Line lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "970",
+   "stationId": "place-asmnl",
+   "type": "elevator",
+   "name": "Ashmont Elevator 970 (Ashmont platform to Mattapan Line lobby, busway)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "971",
+   "stationId": "place-kencl",
+   "type": "elevator",
+   "name": "Kenmore Elevator 971 (Westbound platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "972",
+   "stationId": "place-kencl",
+   "type": "elevator",
+   "name": "Kenmore Elevator 972 (Park Street & North platform to lobby, busway)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "973",
+   "stationId": "place-harsq",
+   "type": "elevator",
+   "name": "Harvard Elevator 973 (Upper busway to Brattle Square)",
+   "servesPlatforms": [
+    "Entrance"
+   ]
+  },
+  {
+   "id": "974",
+   "stationId": "place-state",
+   "type": "elevator",
+   "name": "State Elevator 974 (Bowdoin platform to Congress Street, 60 State Street)",
+   "servesPlatforms": [
+    "Bowdoin platform"
+   ]
+  },
+  {
+   "id": "975",
+   "stationId": "place-state",
+   "type": "elevator",
+   "name": "State Elevator 975 (Wonderland platform to Congress Street, 53 State Street)",
+   "servesPlatforms": [
+    "Wonderland platform"
+   ]
+  },
+  {
+   "id": "976",
+   "stationId": "place-coecl",
+   "type": "elevator",
+   "name": "Copley Elevator 976 (Park Street & North platform to Boylston Street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "977",
+   "stationId": "place-coecl",
+   "type": "elevator",
+   "name": "Copley Elevator 977 (Kenmore & West, Heath Street platform to Boylston Street)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "978",
+   "stationId": "place-pktrm",
+   "type": "elevator",
+   "name": "Park Street Elevator 978 (Copley & West platform to Boston Common)",
+   "servesPlatforms": [
+    "Copley & West platform"
+   ]
+  },
+  {
+   "id": "979",
+   "stationId": "place-pktrm",
+   "type": "elevator",
+   "name": "Park Street Elevator 979 (Red Line center platform to Copley & West platform)",
+   "servesPlatforms": [
+    "Red Line platform",
+    "Copley & West platform"
+   ]
+  },
+  {
+   "id": "980",
+   "stationId": "place-spmnl",
+   "type": "elevator",
+   "name": "Science Park/West End Elevator 980 (Copley & West platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "981",
+   "stationId": "place-spmnl",
+   "type": "elevator",
+   "name": "Science Park/West End Elevator 981 (Lechmere & North platform to lobby)",
+   "servesPlatforms": "unknown"
+  },
+  {
+   "id": "982",
+   "stationId": "place-portr",
+   "type": "elevator",
+   "name": "Porter Elevator 982 (Lobby to Somerville Avenue & Mass Avenue)",
+   "servesPlatforms": [
+    "Entrance"
+   ]
+  },
+  {
+   "id": "983",
+   "stationId": "place-portr",
+   "type": "elevator",
+   "name": "Porter Elevator 983 (Red Line platforms to lobby)",
+   "servesPlatforms": [
+    "Red Line platforms"
+   ]
+  },
+  {
+   "id": "985",
+   "stationId": "place-portr",
+   "type": "elevator",
+   "name": "Porter Elevator 985 (Lobby to Somerville Avenue)",
+   "servesPlatforms": [
+    "Entrance"
+   ]
+  },
+  {
+   "id": "986",
+   "stationId": "place-portr",
+   "type": "elevator",
+   "name": "Porter Elevator 986 (Commuter Rail platform to lobby)",
+   "servesPlatforms": []
+  },
+  {
+   "id": "987",
+   "stationId": "place-portr",
+   "type": "elevator",
+   "name": "Porter Elevator 987 (Red Line platforms to lobby)",
+   "servesPlatforms": [
+    "Red Line platforms"
+   ]
+  },
+  {
+   "id": "998",
+   "stationId": "place-dwnxg",
+   "type": "elevator",
+   "name": "Downtown Crossing Elevator 998 (Oak Grove platform to Alewife platform)",
+   "servesPlatforms": [
+    "Oak Grove platform",
+    "Alewife platform"
+   ]
+  },
+  {
+   "id": "999",
+   "stationId": "place-dwnxg",
+   "type": "elevator",
+   "name": "Downtown Crossing Elevator 999 (Oak Grove platform to Alewife platform)",
+   "servesPlatforms": [
+    "Oak Grove platform",
+    "Alewife platform"
+   ]
+  },
+  {
+   "id": "6476",
+   "stationId": "place-sstat",
+   "type": "elevator",
+   "name": "South Station Elevator 6476 (Red Line, Silver Line SL1/SL2/SL3 lobby to Commuter Rail lobby)",
+   "servesPlatforms": []
+  }
+ ],
+ "alerts": [
+  {
+   "id": "1001814",
+   "effect": "STATION_ISSUE",
+   "header": "The platform at Jackson Square is undergoing renovations to improve safety and accessibility. Sections of the platform are unlevel, which may make it difficult for some riders to board and exit trains.",
+   "description": "Please see station personnel or use a station call box to request assistance.",
+   "stationIds": [
+    "place-jaksn"
+   ],
+   "facilityIds": [],
+   "activePeriod": [
+    {
+     "start": "2025-09-27T03:00:00-04:00",
+     "end": null
+    }
+   ],
+   "severity": 1,
+   "updatedAt": "2026-07-21T20:49:43-04:00"
+  },
+  {
+   "id": "1001817",
+   "effect": "ESCALATOR_CLOSURE",
+   "header": "Bowdoin Escalator 125 (Lobby to street) is unavailable until further notice, pending replacement.",
+   "description": "The escalator will remain out of service for the foreseeable future. This decision was made after a thorough inspection determined that corrosion on the escalator’s steel truss was so severe that it could not be repaired further and that a complete replacement of the escalator would be required. Replacing the escalator at this location requires a more extended unit meeting modern escalator safety requirements. This longer unit will require significant alteration to the station entrance to meet code requirements. The MBTA has currently begun design work to understand what station upgrades will be needed.\r\n\r\nDue to these complexities, we expect the escalator will remain out of service for a significant time. We recognize the challenges this poses to our riders, and please know we are working to identify a solution as quickly as possible. In the meantime, Government Center Station, which is fully accessible and serves the Blue Line, is under a quarter-mile from Bowdoin Station.",
+   "stationIds": [
+    "place-bomnl"
+   ],
+   "facilityIds": [
+    "125"
+   ],
+   "activePeriod": [
+    {
+     "start": "2022-03-15T10:13:00-04:00",
+     "end": null
+    }
+   ],
+   "severity": 1,
+   "updatedAt": "2026-10-07T16:01:35-04:00"
+  },
+  {
+   "id": "1001818",
+   "effect": "ESCALATOR_CLOSURE",
+   "header": "Andrew Escalator 123 (Ashmont/Braintree platform to busway) is unavailable until further notice, pending replacement.",
+   "description": "",
+   "stationIds": [
+    "place-andrw"
+   ],
+   "facilityIds": [
+    "123"
+   ],
+   "activePeriod": [
+    {
+     "start": "2023-03-22T10:20:00-04:00",
+     "end": null
+    }
+   ],
+   "severity": 1,
+   "updatedAt": "2026-10-07T16:01:28-04:00"
+  },
+  {
+   "id": "1001819",
+   "effect": "ESCALATOR_CLOSURE",
+   "header": "Oak Grove Escalator 105 (Commuter Rail platform to unpaid lobby) unavailable",
+   "description": "",
+   "stationIds": [
+    "place-ogmnl"
+   ],
+   "facilityIds": [
+    "105"
+   ],
+   "activePeriod": [
+    {
+     "start": "2024-06-13T09:04:00-04:00",
+     "end": null
+    }
+   ],
+   "severity": 1,
+   "updatedAt": "2026-10-07T16:01:20-04:00"
+  },
+  {
+   "id": "1001820",
+   "effect": "ESCALATOR_CLOSURE",
+   "header": "State Escalator 6 (Oak Grove platform to Old State House lobby) unavailable",
+   "description": "",
+   "stationIds": [
+    "place-state"
+   ],
+   "facilityIds": [
+    "6"
+   ],
+   "activePeriod": [
+    {
+     "start": "2025-03-31T08:37:00-04:00",
+     "end": null
+    }
+   ],
+   "severity": 1,
+   "updatedAt": "2026-10-07T16:01:01-04:00"
+  },
+  {
+   "id": "1001821",
+   "effect": "ESCALATOR_CLOSURE",
+   "header": "Malden Center Escalator 312 (Street level to Commuter Rail platform) unavailable due to maintenance.",
+   "description": "",
+   "stationIds": [
+    "place-mlmnl"
+   ],
+   "facilityIds": [
+    "312"
+   ],
+   "activePeriod": [
+    {
+     "start": "2025-04-23T11:12:00-04:00",
+     "end": null
+    }
+   ],
+   "severity": 1,
+   "updatedAt": "2026-10-07T16:00:51-04:00"
+  },
+  {
+   "id": "1001861",
+   "effect": "STATION_ISSUE",
+   "header": "The stairway connecting the Jackson Square lobby and the south end of the platform is closed until winter 2026. Use the stairway at the north end of the platform. This closure is for the construction of a new stairway and a second elevator.",
+   "description": "Please see station personnel or use a station call box to request assistance.",
+   "stationIds": [
+    "place-jaksn"
+   ],
+   "facilityIds": [],
+   "activePeriod": [
+    {
+     "start": "2025-06-30T03:00:00-04:00",
+     "end": null
+    }
+   ],
+   "severity": 1,
+   "updatedAt": "2026-07-21T20:46:13-04:00"
+  },
+  {
+   "id": "1009001",
+   "effect": "ESCALATOR_CLOSURE",
+   "header": "Andrew Escalator 124 (Ashmont/Braintree platform to busway) is unavailable.",
+   "description": "",
+   "stationIds": [
+    "place-andrw"
+   ],
+   "facilityIds": [
+    "124"
+   ],
+   "activePeriod": [
+    {
+     "start": "2026-05-07T10:13:22-04:00",
+     "end": null
+    }
+   ],
+   "severity": 3,
+   "updatedAt": "2026-10-07T15:59:44-04:00"
+  },
+  {
+   "id": "1009729",
+   "effect": "ESCALATOR_CLOSURE",
+   "header": "Alewife Escalator 353 (Main concourse to busway) is unavailable due to maintenance.",
+   "description": "",
+   "stationIds": [
+    "place-alfcl"
+   ],
+   "facilityIds": [
+    "353"
+   ],
+   "activePeriod": [
+    {
+     "start": "2026-05-11T21:48:34-04:00",
+     "end": null
+    }
+   ],
+   "severity": 3,
+   "updatedAt": "2026-10-07T15:59:34-04:00"
+  },
+  {
+   "id": "1009804",
+   "effect": "ESCALATOR_CLOSURE",
+   "header": "Alewife Escalator 351 (Main concourse to platform) is unavailable due to maintenance.",
+   "description": "",
+   "stationIds": [
+    "place-alfcl"
+   ],
+   "facilityIds": [
+    "351"
+   ],
+   "activePeriod": [
+    {
+     "start": "2026-05-12T10:55:27-04:00",
+     "end": null
+    }
+   ],
+   "severity": 3,
+   "updatedAt": "2026-10-07T15:59:27-04:00"
+  },
+  {
+   "id": "1025806",
+   "effect": "STATION_CLOSURE",
+   "header": "Green Line C Branch:  Trains are not stopping at Brandon Hall through October 30 while accessibility upgrades are being done. Riders can board or alight at either Fairbanks St or Summit Ave, which are 0.1-0.2 miles away (or a 4- to 5-minute walk) ",
+   "description": "",
+   "stationIds": [
+    "place-bndhl"
+   ],
+   "facilityIds": [],
+   "activePeriod": [
+    {
+     "start": "2026-08-17T03:00:00-04:00",
+     "end": "2026-10-31T03:00:00-04:00"
+    }
+   ],
+   "severity": 7,
+   "updatedAt": "2026-10-14T12:01:33-04:00"
+  },
+  {
+   "id": "1026060",
+   "effect": "STATION_CLOSURE",
+   "header": "Green Line E Branch: Symphony station is closed for major accessibility upgrades. Riders can use Prudential or Northeastern to access E Branch service. The station is expected to reopen in 2029.",
+   "description": "Alternate Service Options:\r\n• Riders who typically board or disembark at Symphony can instead board or disembark at Northeastern University or Prudential, which are 0.3 miles away (or about a five-minute walk) from Symphony.\r\n\r\n• Riders are encouraged to instead consider travelling on the Orange Line at Massachusetts Avenue, which is 0.1 miles (or about a three-minute walk) from Symphony.\r\n\r\n• Riders may also use the Route 39, which operates parallel to the E branch in both directions along Huntington Avenue.\r\n\r\nBackground:\r\nCurrently, there are no step-free pathways from the entrances to the platforms at Symphony, and the station is not able to be accessed by people with wheeled mobility devices. When construction is complete in spring 2029, Symphony will be enhanced with four new accessible elevators, raised platforms for easier boarding, accessible bathrooms, improved wayfinding, more lighting, and upgraded safety features, making the station safer and easier to use for all riders.",
+   "stationIds": [
+    "place-symcl"
+   ],
+   "facilityIds": [],
+   "activePeriod": [
+    {
+     "start": "2026-06-06T03:00:00-04:00",
+     "end": null
+    }
+   ],
+   "severity": 7,
+   "updatedAt": "2026-08-05T23:03:08-04:00"
+  },
+  {
+   "id": "1030394",
+   "effect": "ESCALATOR_CLOSURE",
+   "header": "South Station Escalator 388 (Lobby to CSA area) is unavailable due to maintenance.",
+   "description": "",
+   "stationIds": [
+    "place-sstat"
+   ],
+   "facilityIds": [
+    "388"
+   ],
+   "activePeriod": [
+    {
+     "start": "2026-09-01T13:21:38-04:00",
+     "end": null
+    }
+   ],
+   "severity": 3,
+   "updatedAt": "2026-10-07T15:57:23-04:00"
+  },
+  {
+   "id": "1031518",
+   "effect": "ELEVATOR_CLOSURE",
+   "header": "Downtown Crossing Elevator 869 (Alewife platform to Summer Street Concourse) is unavailable due to maintenance through Tuesday, December 1.",
+   "description": "The elevator is closed for major equipment upgrades that will significantly improve the long-term reliability of this elevator.\r\n\r\nTo board a Red Line Train: Proceed to the Orange Line Oak Grove Platform at the opposite end of the concourse. Take elevator 998 or 999 to the Red Line passage, then follow signs to Alewife. \r\n  \r\nTo exit the station: Proceed to the north end of the platform to the Orange - Red Line passage. Take Elevator 998 or 999 to the Orange Line Oak Grove platform. Exit the station using the 101 Arch St Elevator on the Summer St concourse.\r\n",
+   "stationIds": [
+    "place-dwnxg"
+   ],
+   "facilityIds": [
+    "869"
+   ],
+   "activePeriod": [
+    {
+     "start": "2026-09-22T03:00:00-04:00",
+     "end": "2026-12-02T03:00:00-05:00"
+    }
+   ],
+   "severity": 3,
+   "updatedAt": "2026-10-12T11:54:37-04:00"
+  },
+  {
+   "id": "1031519",
+   "effect": "ELEVATOR_CLOSURE",
+   "header": "State Elevator 803 (Forest Hills platform to Washington Street, Milk Street) is unavailable due to maintenance through Tuesday, December 1. ",
+   "description": "The elevator is closed for major equipment upgrades that will significantly improve the long-term reliability of this elevator.\r\n\r\nTo board a Train to Forest Hills: Cross Milk St and go south on Washington St for one-tenth of a mile (two blocks) to the intersection of Washington St and Winter St. Take Downtown Crossing Elevator 892 to the Forest Hills platform. \r\n \r\nTo board a Train to Oak Grove: Cross Milk St and go south on Washington St for 500 ft (one block) to the intersection of Washington St and Franklin St. Take Downtown Crossing Elevator 891 to the Oak Grove platform. \r\n \r\nTo exit the station: Go to the end of the Forest Hills platform and continue down the hallway (follow signs for Oak Grove and Blue Line) to the Wonderland platform. At the Wonderland platform, go to the 53 State St lobby and use State Elevator 975 to exit. \r\n",
+   "stationIds": [
+    "place-state"
+   ],
+   "facilityIds": [
+    "803"
+   ],
+   "activePeriod": [
+    {
+     "start": "2026-09-22T03:00:00-04:00",
+     "end": "2026-12-02T03:00:00-05:00"
+    }
+   ],
+   "severity": 3,
+   "updatedAt": "2026-10-12T11:55:34-04:00"
+  },
+  {
+   "id": "1032947",
+   "effect": "STATION_ISSUE",
+   "header": "Due to construction, the staircase at the north end of the Savin Hill platform is out of service. Riders should follow station personnel and signage to the alternate staircase located in the center of the platform.",
+   "description": "Affected lines:\r\nRed Line",
+   "stationIds": [
+    "place-shmnl"
+   ],
+   "facilityIds": [],
+   "activePeriod": [
+    {
+     "start": "2026-09-15T17:29:00-04:00",
+     "end": null
+    }
+   ],
+   "severity": 1,
+   "updatedAt": "2026-09-15T17:30:13-04:00"
+  },
+  {
+   "id": "1033847",
+   "effect": "STATION_CLOSURE",
+   "header": "Green Line C Branch:  Trains are skipping Hawes St outbound through Nov 7 while accessibility upgrades are being done. Riders can board/alight one stop away at either Saint Mary’s St or Kent St, which are 0.2-0.3 miles away (about a 4 - 6 minute walk)",
+   "description": "Affected direction: westbound\r\n\r\nAffected stations:\r\nHawes Street",
+   "stationIds": [
+    "place-hwsst"
+   ],
+   "facilityIds": [],
+   "activePeriod": [
+    {
+     "start": "2026-10-19T03:00:00-04:00",
+     "end": "2026-11-08T03:00:00-05:00"
+    }
+   ],
+   "severity": 7,
+   "updatedAt": "2026-10-19T10:14:45-04:00"
+  },
+  {
+   "id": "1035010",
+   "effect": "ACCESS_ISSUE",
+   "header": "The Central Avenue mini-high platform (Ashmont side) is out of service. ",
+   "description": "To exit, exit the train at Milton Station. Travel to the Milton outbound mini-high platform. Take a Mattapan-bound trolley to Central Ave.\r\n\r\nTo board, go to the Central Ave outbound mini-high platform (to Mattapan). Take a Mattapan-bound trolley to Capen St. Travel to the Capen St inbound mini-high platform.",
+   "stationIds": [
+    "place-cenav"
+   ],
+   "facilityIds": [
+    "subplat-cenav-1"
+   ],
+   "activePeriod": [
+    {
+     "start": "2026-09-26T11:27:00-04:00",
+     "end": null
+    }
+   ],
+   "severity": 3,
+   "updatedAt": "2026-10-07T15:56:08-04:00"
+  },
+  {
+   "id": "1036421",
+   "effect": "ESCALATOR_CLOSURE",
+   "header": "Broadway Escalator 367 (Platform to paid lobby) is unavailable due to maintenance.",
+   "description": "",
+   "stationIds": [
+    "place-brdwy"
+   ],
+   "facilityIds": [
+    "367"
+   ],
+   "activePeriod": [
+    {
+     "start": "2026-10-02T18:47:01-04:00",
+     "end": null
+    }
+   ],
+   "severity": 3,
+   "updatedAt": "2026-10-07T15:54:32-04:00"
+  },
+  {
+   "id": "1036639",
+   "effect": "ELEVATOR_CLOSURE",
+   "header": "Revere Beach Elevator 885 (Wonderland platform to lobby) is unavailable due to maintenance.",
+   "description": "To exit, exit the train at Wonderland, then take a Bowdoin-bound train to Revere Beach and use Revere Beach Elevator 884. To board, use Revere Beach Elevator 884 to access the Bowdoin platform. Take a Bowdoin-bound train to Beachmont, then transfer to a Wonderland-bound train.",
+   "stationIds": [
+    "place-rbmnl"
+   ],
+   "facilityIds": [
+    "885"
+   ],
+   "activePeriod": [
+    {
+     "start": "2026-10-04T05:20:00-04:00",
+     "end": null
+    }
+   ],
+   "severity": 3,
+   "updatedAt": "2026-10-13T23:43:53-04:00"
+  },
+  {
+   "id": "1037250",
+   "effect": "ESCALATOR_CLOSURE",
+   "header": "Braintree Escalator 334 (Red Line platform to paid lobby) is unavailable due to maintenance.",
+   "description": "",
+   "stationIds": [
+    "place-brntn"
+   ],
+   "facilityIds": [
+    "334"
+   ],
+   "activePeriod": [
+    {
+     "start": "2026-10-07T05:20:01-04:00",
+     "end": null
+    }
+   ],
+   "severity": 3,
+   "updatedAt": "2026-10-07T15:54:01-04:00"
+  },
+  {
+   "id": "1037698",
+   "effect": "STATION_CLOSURE",
+   "header": "Green Line C Branch: Trains are skipping Saint Paul Street outbound through Nov 7 for accessibility upgrades. Riders can instead board or disembark one stop away at either Coolidge Corner or Kent Street, which are 0.2 miles away.",
+   "description": "Affected direction: westbound\r\n\r\nAffected stations:\r\nSaint Paul Street",
+   "stationIds": [
+    "place-stpul"
+   ],
+   "facilityIds": [],
+   "activePeriod": [
+    {
+     "start": "2026-10-19T03:00:00-04:00",
+     "end": "2026-11-08T03:00:00-05:00"
+    }
+   ],
+   "severity": 7,
+   "updatedAt": "2026-10-19T10:14:58-04:00"
+  },
+  {
+   "id": "1038209",
+   "effect": "ELEVATOR_CLOSURE",
+   "header": "Wonderland Elevator 711 (Ocean Avenue to pedestrian plaza) is unavailable due to maintenance.",
+   "description": "To access Ocean Blvd from the pedestrian plaza, travel along the plaza towards the station and use Wonderland Elevator 710 to access the Wonderland outbound platform. At the platform, exit through the gate and continue along the pathway to Ocean Blvd. To access the pedestrian plaza from Ocean Blvd, travel south on Ocean Blvd for approximately 300 feet, then turn right at the Wonderland pathway. Proceed to the Wonderland platform and use Wonderland Elevator 710.",
+   "stationIds": [
+    "place-wondl"
+   ],
+   "facilityIds": [
+    "711"
+   ],
+   "activePeriod": [
+    {
+     "start": "2026-10-11T14:46:01-04:00",
+     "end": null
+    }
+   ],
+   "severity": 3,
+   "updatedAt": "2026-10-11T14:46:01-04:00"
+  },
+  {
+   "id": "1038229",
+   "effect": "ELEVATOR_CLOSURE",
+   "header": "Back Bay Elevator 854 (Commuter Rail track 2 to lobby) is unavailable.",
+   "description": "To exit, exit the train at Ruggles or Forest Hills, then take an Oak Grove-bound train to Back Bay and use Back Bay Elevator 853. To board the Commuter Rail, use Back Bay Elevator 853 to access the Orange Line platform, then take a Forest Hills-bound train to Ruggles or Forest Hills and transfer to the Commuter Rail. Alternatively, board or exit Commuter Rail trains at South Station. Please see station personnel or a train conductor for assistance. In addition, check the Commuter Rail train schedules for train arrival/departure times at Ruggles and Forest Hills by visiting mbta.com/schedules.",
+   "stationIds": [
+    "place-bbsta"
+   ],
+   "facilityIds": [
+    "854"
+   ],
+   "activePeriod": [
+    {
+     "start": "2026-10-11T17:40:34-04:00",
+     "end": null
+    }
+   ],
+   "severity": 3,
+   "updatedAt": "2026-10-11T17:40:34-04:00"
+  },
+  {
+   "id": "1038753",
+   "effect": "ESCALATOR_CLOSURE",
+   "header": "Davis Escalator 339 (College Avenue landing to unpaid lobby) is unavailable due to maintenance.",
+   "description": "",
+   "stationIds": [
+    "place-davis"
+   ],
+   "facilityIds": [
+    "339"
+   ],
+   "activePeriod": [
+    {
+     "start": "2026-10-14T09:47:00-04:00",
+     "end": null
+    }
+   ],
+   "severity": 3,
+   "updatedAt": "2026-10-14T09:47:01-04:00"
+  },
+  {
+   "id": "1039191",
+   "effect": "ELEVATOR_CLOSURE",
+   "header": "Science Park/West End Elevator 981 (Lechmere & North platform to lobby) is unavailable due to maintenance.",
+   "description": "Science Park Elevator 981 (street to Lechmere & North platform) is out of service. Customers desiring to enter the station for Lechmere & North service must use the Copley & West elevator to North Station and transfer to Lechmere & North service to Lechmere. Customers desiring to exit at Science Park must continue to Lechmere and transfer to Copley & West service back to Science Park. ",
+   "stationIds": [
+    "place-spmnl"
+   ],
+   "facilityIds": [
+    "981"
+   ],
+   "activePeriod": [
+    {
+     "start": "2026-10-15T18:46:01-04:00",
+     "end": null
+    }
+   ],
+   "severity": 3,
+   "updatedAt": "2026-10-15T18:46:02-04:00"
+  },
+  {
+   "id": "1039823",
+   "effect": "ESCALATOR_CLOSURE",
+   "header": "Maverick Escalator 429 (Lewis Mall to unpaid lobby) is unavailable due to maintenance.",
+   "description": "",
+   "stationIds": [
+    "place-mvbcl"
+   ],
+   "facilityIds": [
+    "429"
+   ],
+   "activePeriod": [
+    {
+     "start": "2026-10-19T15:18:57-04:00",
+     "end": null
+    }
+   ],
+   "severity": 3,
+   "updatedAt": "2026-10-19T15:18:57-04:00"
+  },
+  {
+   "id": "1040249",
+   "effect": "ESCALATOR_CLOSURE",
+   "header": "State Escalator 374 (Oak Grove platform to City Hall Plaza) is unavailable due to maintenance.",
+   "description": "",
+   "stationIds": [
+    "place-state"
+   ],
+   "facilityIds": [
+    "374"
+   ],
+   "activePeriod": [
+    {
+     "start": "2026-10-21T09:15:00-04:00",
+     "end": null
+    }
+   ],
+   "severity": 3,
+   "updatedAt": "2026-10-21T09:15:01-04:00"
+  },
+  {
+   "id": "1040313",
+   "effect": "ESCALATOR_CLOSURE",
+   "header": "Chinatown Escalator 377 (Oak Grove platform to Washington Street) is unavailable due to maintenance.",
+   "description": "",
+   "stationIds": [
+    "place-chncl"
+   ],
+   "facilityIds": [
+    "377"
+   ],
+   "activePeriod": [
+    {
+     "start": "2026-10-21T13:10:01-04:00",
+     "end": null
+    }
+   ],
+   "severity": 3,
+   "updatedAt": "2026-10-21T13:10:02-04:00"
+  },
+  {
+   "id": "1040729",
+   "effect": "ESCALATOR_CLOSURE",
+   "header": "Porter Escalator 511 (Ashmont/Braintree platform to paid lobby) is unavailable due to maintenance.",
+   "description": "",
+   "stationIds": [
+    "place-portr"
+   ],
+   "facilityIds": [
+    "511"
+   ],
+   "activePeriod": [
+    {
+     "start": "2026-10-23T08:38:01-04:00",
+     "end": null
+    }
+   ],
+   "severity": 3,
+   "updatedAt": "2026-10-23T08:38:01-04:00"
+  },
+  {
+   "id": "1040767",
+   "effect": "ELEVATOR_CLOSURE",
+   "header": "Forest Hills Elevator 841 (Commuter Rail platform to lobby) is unavailable.",
+   "description": "Please see station personnel or a train conductor for assistance. To exit, exit the train at Ruggles or Back Bay, then take a Forest Hills-bound train to Forest Hills and use Forest Hills Elevator 842. To board, use Forest Hills Elevator 842 to access the Orange Line platform, then take an Oak Grove-bound train to Ruggles or Back Bay and transfer to the Commuter Rail. Check the Commuter Rail train schedules for train arrival/departure times at Ruggles and Back Bay by visiting mbta.com/schedules.",
+   "stationIds": [
+    "place-forhl"
+   ],
+   "facilityIds": [
+    "841"
+   ],
+   "activePeriod": [
+    {
+     "start": "2026-10-23T12:29:50-04:00",
+     "end": null
+    }
+   ],
+   "severity": 3,
+   "updatedAt": "2026-10-23T12:29:50-04:00"
+  },
+  {
+   "id": "1040924",
+   "effect": "ESCALATOR_CLOSURE",
+   "header": "Charles/MGH Escalator 426 (Lobby to Alewife platform) is unavailable due to maintenance.",
+   "description": "",
+   "stationIds": [
+    "place-chmnl"
+   ],
+   "facilityIds": [
+    "426"
+   ],
+   "activePeriod": [
+    {
+     "start": "2026-10-24T07:46:01-04:00",
+     "end": null
+    }
+   ],
+   "severity": 3,
+   "updatedAt": "2026-10-24T07:46:01-04:00"
+  },
+  {
+   "id": "1040925",
+   "effect": "ELEVATOR_CLOSURE",
+   "header": "Porter Elevator 987 (Red Line platforms to lobby) is unavailable due to maintenance.",
+   "description": "Please use nearby Porter Elevator 983 to access the Red Line platforms or lobby.",
+   "stationIds": [
+    "place-portr"
+   ],
+   "facilityIds": [
+    "987"
+   ],
+   "activePeriod": [
+    {
+     "start": "2026-10-24T07:48:01-04:00",
+     "end": null
+    }
+   ],
+   "severity": 3,
+   "updatedAt": "2026-10-24T07:48:01-04:00"
+  },
+  {
+   "id": "1040949",
+   "effect": "ELEVATOR_CLOSURE",
+   "header": "State Elevator 967 (Oak Grove platform to Forest Hills, Wonderland platforms) is unavailable due to maintenance.",
+   "description": "Please use nearby State Street Elevator 802. ",
+   "stationIds": [
+    "place-state"
+   ],
+   "facilityIds": [
+    "967"
+   ],
+   "activePeriod": [
+    {
+     "start": "2026-10-24T10:32:01-04:00",
+     "end": null
+    }
+   ],
+   "severity": 3,
+   "updatedAt": "2026-10-24T10:32:01-04:00"
+  }
+ ],
+ "fetchedAt": "2026-10-24T17:15:34.006Z",
+ "source": "live"
+}

@@ -1,0 +1,697 @@
+{
+ "data": [
+  {
+   "attributes": {
+    "active_period": [
+     {
+      "end": null,
+      "start": "2026-10-02T18:47:01-04:00"
+     }
+    ],
+    "banner": null,
+    "cause": "MAINTENANCE",
+    "closed_timestamp": null,
+    "created_at": "2026-10-02T18:47:01-04:00",
+    "description": null,
+    "duration_certainty": "UNKNOWN",
+    "effect": "ESCALATOR_CLOSURE",
+    "header": "Broadway Escalator 367 (Platform to paid lobby) is unavailable due to maintenance.",
+    "image": null,
+    "image_alternative_text": null,
+    "informed_entity": [
+     {
+      "stop": "70081",
+      "route_type": 1,
+      "route": "Red",
+      "activities": [
+       "USING_ESCALATOR"
+      ],
+      "facility": "367"
+     },
+     {
+      "stop": "70082",
+      "route_type": 1,
+      "route": "Red",
+      "activities": [
+       "USING_ESCALATOR"
+      ],
+      "facility": "367"
+     },
+     {
+      "stop": "door-brdwy-main",
+      "route_type": 1,
+      "route": "Red",
+      "activities": [
+       "USING_ESCALATOR"
+      ],
+      "facility": "367"
+     },
+     {
+      "stop": "place-brdwy",
+      "route_type": 1,
+      "route": "Red",
+      "activities": [
+       "USING_ESCALATOR"
+      ],
+      "facility": "367"
+     }
+    ],
+    "last_push_notification_timestamp": "2026-10-02T18:47:01-04:00",
+    "lifecycle": "ONGOING",
+    "reminder_times": null,
+    "service_effect": "Broadway escalator unavailable",
+    "severity": 3,
+    "short_header": "",
+    "timeframe": "ongoing",
+    "updated_at": "2026-10-07T15:54:32-04:00",
+    "url": null
+   },
+   "id": "1036421",
+   "links": {
+    "self": "/alerts/1036421"
+   },
+   "type": "alert"
+  },
+  {
+   "attributes": {
+    "active_period": [
+     {
+      "end": "1969-12-31T19:00:00-05:00",
+      "start": "1969-12-31T19:00:00-05:00"
+     }
+    ],
+    "banner": null,
+    "cause": "MAINTENANCE",
+    "closed_timestamp": "2026-10-24T11:48:02-04:00",
+    "created_at": "2026-10-24T07:37:01-04:00",
+    "description": "To exit, use Forest Hills Elevator 724 located at the opposite end of the platform to access the Southwest Corridor Park lobby. To board, use the Washington St exit, turn right and proceed to the intersection of Washington St and Arborway. Cross Arborway, turn right, then continue to the Southwest Corridor Park entrance and use Forest Hills Elevator 724.",
+    "duration_certainty": "KNOWN",
+    "effect": "ELEVATOR_CLOSURE",
+    "header": "Forest Hills Elevator 842 (Orange Line platform to main upper lobby) is unavailable due to maintenance.",
+    "image": null,
+    "image_alternative_text": null,
+    "informed_entity": [
+     {
+      "stop": "place-forhl",
+      "route_type": 3,
+      "route": "16",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "842"
+     },
+     {
+      "stop": "place-forhl",
+      "route_type": 3,
+      "route": "21",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "842"
+     },
+     {
+      "stop": "place-forhl",
+      "route_type": 3,
+      "route": "30",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "842"
+     },
+     {
+      "stop": "place-forhl",
+      "route_type": 3,
+      "route": "31",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "842"
+     },
+     {
+      "stop": "place-forhl",
+      "route_type": 3,
+      "route": "32",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "842"
+     },
+     {
+      "stop": "place-forhl",
+      "route_type": 3,
+      "route": "34",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "842"
+     },
+     {
+      "stop": "place-forhl",
+      "route_type": 3,
+      "route": "34E",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "842"
+     },
+     {
+      "stop": "place-forhl",
+      "route_type": 3,
+      "route": "35",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "842"
+     },
+     {
+      "stop": "place-forhl",
+      "route_type": 3,
+      "route": "36",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "842"
+     },
+     {
+      "stop": "place-forhl",
+      "route_type": 3,
+      "route": "37",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "842"
+     },
+     {
+      "stop": "place-forhl",
+      "route_type": 3,
+      "route": "38",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "842"
+     },
+     {
+      "stop": "place-forhl",
+      "route_type": 3,
+      "route": "39",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "842"
+     },
+     {
+      "stop": "place-forhl",
+      "route_type": 3,
+      "route": "40",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "842"
+     },
+     {
+      "stop": "place-forhl",
+      "route_type": 3,
+      "route": "42",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "842"
+     },
+     {
+      "stop": "place-forhl",
+      "route_type": 3,
+      "route": "50",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "842"
+     },
+     {
+      "stop": "place-forhl",
+      "route_type": 3,
+      "route": "51",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "842"
+     },
+     {
+      "stop": "place-forhl",
+      "route_type": 2,
+      "route": "CR-Franklin",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "842"
+     },
+     {
+      "stop": "place-forhl",
+      "route_type": 2,
+      "route": "CR-Needham",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "842"
+     },
+     {
+      "stop": "place-forhl",
+      "route_type": 2,
+      "route": "CR-Providence",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "842"
+     },
+     {
+      "stop": "70001",
+      "route_type": 1,
+      "route": "Orange",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "842"
+     },
+     {
+      "stop": "Forest Hills-01",
+      "route_type": 1,
+      "route": "Orange",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "842"
+     },
+     {
+      "stop": "Forest Hills-02",
+      "route_type": 1,
+      "route": "Orange",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "842"
+     },
+     {
+      "stop": "place-forhl",
+      "route_type": 1,
+      "route": "Orange",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "842"
+     }
+    ],
+    "last_push_notification_timestamp": "2026-10-24T11:48:02-04:00",
+    "lifecycle": "NEW",
+    "reminder_times": null,
+    "service_effect": "Forest Hills elevator unavailable",
+    "severity": 3,
+    "short_header": "",
+    "timeframe": null,
+    "updated_at": "2026-10-24T11:48:02-04:00",
+    "url": null
+   },
+   "id": "1040922",
+   "links": {
+    "self": "/alerts/1040922"
+   },
+   "type": "alert"
+  },
+  {
+   "attributes": {
+    "active_period": [
+     {
+      "end": "2026-12-02T03:00:00-05:00",
+      "start": "2026-09-22T03:00:00-04:00"
+     }
+    ],
+    "banner": null,
+    "cause": "MAINTENANCE",
+    "closed_timestamp": null,
+    "created_at": "2026-09-08T14:16:12-04:00",
+    "description": "The elevator is closed for major equipment upgrades that will significantly improve the long-term reliability of this elevator.\r\n\r\nTo board a Red Line Train: Proceed to the Orange Line Oak Grove Platform at the opposite end of the concourse. Take elevator 998 or 999 to the Red Line passage, then follow signs to Alewife. \r\n  \r\nTo exit the station: Proceed to the north end of the platform to the Orange - Red Line passage. Take Elevator 998 or 999 to the Orange Line Oak Grove platform. Exit the station using the 101 Arch St Elevator on the Summer St concourse.\r\n",
+    "duration_certainty": "KNOWN",
+    "effect": "ELEVATOR_CLOSURE",
+    "header": "Downtown Crossing Elevator 869 (Alewife platform to Summer Street Concourse) is unavailable due to maintenance through Tuesday, December 1.",
+    "image": null,
+    "image_alternative_text": null,
+    "informed_entity": [
+     {
+      "stop": "place-dwnxg",
+      "route_type": 1,
+      "route": "Orange",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "869"
+     },
+     {
+      "stop": "70078",
+      "route_type": 1,
+      "route": "Red",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "869"
+     },
+     {
+      "stop": "door-dwnxg-101arch",
+      "route_type": 1,
+      "route": "Red",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "869"
+     },
+     {
+      "stop": "door-dwnxg-macys",
+      "route_type": 1,
+      "route": "Red",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "869"
+     },
+     {
+      "stop": "door-dwnxg-rochebros",
+      "route_type": 1,
+      "route": "Red",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "869"
+     },
+     {
+      "stop": "door-dwnxg-summer",
+      "route_type": 1,
+      "route": "Red",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "869"
+     },
+     {
+      "stop": "door-dwnxg-summereast",
+      "route_type": 1,
+      "route": "Red",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "869"
+     },
+     {
+      "stop": "place-dwnxg",
+      "route_type": 1,
+      "route": "Red",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "869"
+     }
+    ],
+    "last_push_notification_timestamp": "2026-09-08T14:23:25-04:00",
+    "lifecycle": "ONGOING",
+    "reminder_times": null,
+    "service_effect": "Downtown Crossing elevator unavailable",
+    "severity": 3,
+    "short_header": "",
+    "timeframe": "through December 1",
+    "updated_at": "2026-10-12T11:54:37-04:00",
+    "url": null
+   },
+   "id": "1031518",
+   "links": {
+    "self": "/alerts/1031518"
+   },
+   "type": "alert"
+  },
+  {
+   "attributes": {
+    "active_period": [
+     {
+      "end": null,
+      "start": "2025-09-27T03:00:00-04:00"
+     }
+    ],
+    "banner": null,
+    "cause": "UNKNOWN_CAUSE",
+    "closed_timestamp": null,
+    "created_at": "2026-03-20T23:20:55-04:00",
+    "description": "Please see station personnel or use a station call box to request assistance.",
+    "duration_certainty": "UNKNOWN",
+    "effect": "STATION_ISSUE",
+    "header": "The platform at Jackson Square is undergoing renovations to improve safety and accessibility. Sections of the platform are unlevel, which may make it difficult for some riders to board and exit trains.",
+    "image": null,
+    "image_alternative_text": null,
+    "informed_entity": [
+     {
+      "stop": "70006",
+      "route_type": 1,
+      "route": "Orange",
+      "activities": [
+       "BOARD"
+      ]
+     },
+     {
+      "stop": "70007",
+      "route_type": 1,
+      "route": "Orange",
+      "activities": [
+       "BOARD"
+      ]
+     },
+     {
+      "stop": "place-jaksn",
+      "route_type": 1,
+      "route": "Orange",
+      "activities": [
+       "BOARD"
+      ]
+     }
+    ],
+    "last_push_notification_timestamp": null,
+    "lifecycle": "ONGOING",
+    "reminder_times": null,
+    "service_effect": "Station issue at Jackson Square",
+    "severity": 1,
+    "short_header": "",
+    "timeframe": "ongoing",
+    "updated_at": "2026-07-21T20:49:43-04:00",
+    "url": "http://www.mbta.com/JacksonSquare"
+   },
+   "id": "1001814",
+   "links": {
+    "self": "/alerts/1001814"
+   },
+   "type": "alert"
+  },
+  {
+   "attributes": {
+    "active_period": [
+     {
+      "end": null,
+      "start": "2026-06-06T03:00:00-04:00"
+     }
+    ],
+    "banner": null,
+    "cause": "UNKNOWN_CAUSE",
+    "closed_timestamp": null,
+    "created_at": "2026-08-05T14:16:05-04:00",
+    "description": "Alternate Service Options:\r\n\u2022 Riders who typically board or disembark at Symphony can instead board or disembark at Northeastern University or Prudential, which are 0.3 miles away (or about a five-minute walk) from Symphony.\r\n\r\n\u2022 Riders are encouraged to instead consider travelling on the Orange Line at Massachusetts Avenue, which is 0.1 miles (or about a three-minute walk) from Symphony.\r\n\r\n\u2022 Riders may also use the Route 39, which operates parallel to the E branch in both directions along Huntington Avenue.\r\n\r\nBackground:\r\nCurrently, there are no step-free pathways from the entrances to the platforms at Symphony, and the station is not able to be accessed by people with wheeled mobility devices. When construction is complete in spring 2029, Symphony will be enhanced with four new accessible elevators, raised platforms for easier boarding, accessible bathrooms, improved wayfinding, more lighting, and upgraded safety features, making the station safer and easier to use for all riders.",
+    "duration_certainty": "UNKNOWN",
+    "effect": "STATION_CLOSURE",
+    "header": "Green Line E Branch: Symphony station is closed for major accessibility upgrades. Riders can use Prudential or Northeastern to access E Branch service. The station is expected to reopen in 2029.",
+    "image": null,
+    "image_alternative_text": null,
+    "informed_entity": [
+     {
+      "stop": "70241",
+      "route_type": 0,
+      "route": "Green-E",
+      "activities": [
+       "BOARD",
+       "EXIT"
+      ]
+     },
+     {
+      "stop": "70242",
+      "route_type": 0,
+      "route": "Green-E",
+      "activities": [
+       "BOARD",
+       "EXIT"
+      ]
+     },
+     {
+      "stop": "place-symcl",
+      "route_type": 0,
+      "route": "Green-E",
+      "activities": [
+       "BOARD",
+       "EXIT"
+      ]
+     }
+    ],
+    "last_push_notification_timestamp": null,
+    "lifecycle": "ONGOING",
+    "reminder_times": null,
+    "service_effect": "Symphony closed",
+    "severity": 7,
+    "short_header": "",
+    "timeframe": "ongoing",
+    "updated_at": "2026-08-05T23:03:08-04:00",
+    "url": null
+   },
+   "id": "1026060",
+   "links": {
+    "self": "/alerts/1026060"
+   },
+   "type": "alert"
+  },
+  {
+   "attributes": {
+    "active_period": [
+     {
+      "end": null,
+      "start": "2026-09-26T11:27:00-04:00"
+     }
+    ],
+    "banner": null,
+    "cause": "UNKNOWN_CAUSE",
+    "closed_timestamp": null,
+    "created_at": "2026-09-26T11:27:49-04:00",
+    "description": "To exit, exit the train at Milton Station. Travel to the Milton outbound mini-high platform. Take a Mattapan-bound trolley to Central Ave.\r\n\r\nTo board, go to the Central Ave outbound mini-high platform (to Mattapan). Take a Mattapan-bound trolley to Capen St. Travel to the Capen St inbound mini-high platform.",
+    "duration_certainty": "UNKNOWN",
+    "effect": "ACCESS_ISSUE",
+    "header": "The Central Avenue mini-high platform (Ashmont side) is out of service. ",
+    "image": null,
+    "image_alternative_text": null,
+    "informed_entity": [
+     {
+      "stop": "70270",
+      "route_type": 0,
+      "route": "Mattapan",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "subplat-cenav-1"
+     },
+     {
+      "stop": "door-cenav-ashmont",
+      "route_type": 0,
+      "route": "Mattapan",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "subplat-cenav-1"
+     },
+     {
+      "stop": "door-cenav-mattapan",
+      "route_type": 0,
+      "route": "Mattapan",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "subplat-cenav-1"
+     },
+     {
+      "stop": "place-cenav",
+      "route_type": 0,
+      "route": "Mattapan",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "subplat-cenav-1"
+     }
+    ],
+    "last_push_notification_timestamp": null,
+    "lifecycle": "ONGOING",
+    "reminder_times": null,
+    "service_effect": "Central Avenue access issue",
+    "severity": 3,
+    "short_header": "",
+    "timeframe": "ongoing",
+    "updated_at": "2026-10-07T15:56:08-04:00",
+    "url": null
+   },
+   "id": "1035010",
+   "links": {
+    "self": "/alerts/1035010"
+   },
+   "type": "alert"
+  },
+  {
+   "attributes": {
+    "active_period": [
+     {
+      "end": null,
+      "start": "2026-10-24T07:48:01-04:00"
+     }
+    ],
+    "banner": null,
+    "cause": "MAINTENANCE",
+    "closed_timestamp": null,
+    "created_at": "2026-10-24T07:48:01-04:00",
+    "description": "Please use nearby Porter Elevator 983 to access the Red Line platforms or lobby.",
+    "duration_certainty": "UNKNOWN",
+    "effect": "ELEVATOR_CLOSURE",
+    "header": "Porter Elevator 987 (Red Line platforms to lobby) is unavailable due to maintenance.",
+    "image": null,
+    "image_alternative_text": null,
+    "informed_entity": [
+     {
+      "stop": "place-portr",
+      "route_type": 2,
+      "route": "CR-Fitchburg",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "987"
+     },
+     {
+      "stop": "70065",
+      "route_type": 1,
+      "route": "Red",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "987"
+     },
+     {
+      "stop": "70066",
+      "route_type": 1,
+      "route": "Red",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "987"
+     },
+     {
+      "stop": "place-portr",
+      "route_type": 1,
+      "route": "Red",
+      "activities": [
+       "USING_WHEELCHAIR"
+      ],
+      "facility": "987"
+     }
+    ],
+    "last_push_notification_timestamp": "2026-10-24T07:48:01-04:00",
+    "lifecycle": "NEW",
+    "reminder_times": null,
+    "service_effect": "Porter elevator unavailable",
+    "severity": 3,
+    "short_header": "",
+    "timeframe": null,
+    "updated_at": "2026-10-24T07:48:01-04:00",
+    "url": null
+   },
+   "id": "1040925",
+   "links": {
+    "self": "/alerts/1040925"
+   },
+   "type": "alert"
+  }
+ ],
+ "jsonapi": {
+  "version": "1.0"
+ }
+}

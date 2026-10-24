@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "name": "Run tests on save",
+  "description": "When a file in lib/ or tests/ is saved, run the full Vitest suite so a broken engine or data change is caught immediately.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["lib/**/*.ts", "tests/**/*.ts"]
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "npx vitest run"
+  }
+}

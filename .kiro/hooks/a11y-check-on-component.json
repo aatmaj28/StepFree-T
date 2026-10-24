@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "name": "Accessibility check on component save",
+  "description": "When a file in components/ is saved, review it against .kiro/steering/accessibility.md and report every violation.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["components/**/*.tsx"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Review the component file that was just saved against #[[file:.kiro/steering/accessibility.md]]. Go through the 11 rules one by one. Report each violation as: rule number, line, what is wrong, and the exact fix. Check especially: contrast pairs, icon plus text for every state, aria-live and role on status/loading/error regions, visible labels, 44px tap targets (min-h-[44px]), focus not removed, heading order, and loading/empty/error states for any fetch. If there are no violations, reply 'No accessibility violations found' and list the rules you checked."
+  }
+}
