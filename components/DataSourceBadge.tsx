@@ -1,3 +1,4 @@
+import { Radio, FlaskConical, Archive } from "lucide-react";
 import type { DataSource } from "@/lib/types";
 
 interface Props {
@@ -5,21 +6,45 @@ interface Props {
   fetchedAt?: string;
 }
 
-const COPY: Record<DataSource, { text: string; cls: string }> = {
-  live: { text: "Live", cls: "bg-green-100 text-green-900 border-green-800" },
-  snapshot: { text: "Offline snapshot, not live", cls: "bg-amber-100 text-amber-900 border-amber-800" },
-  demo: { text: "Simulated demo data", cls: "bg-violet-100 text-violet-900 border-violet-800" },
+// Text strings are part of the component contract (asserted by tests) and are user-facing.
+const COPY: Record<DataSource, { text: string; cls: string; Icon: typeof Radio; live: boolean }> = {
+  live: {
+    text: "Live",
+    cls: "bg-status-free-tint text-status-free border-green-200",
+    Icon: Radio,
+    live: true,
+  },
+  snapshot: {
+    text: "Offline snapshot, not live",
+    cls: "bg-amber-50 text-amber-900 border-amber-200",
+    Icon: Archive,
+    live: false,
+  },
+  demo: {
+    text: "Simulated demo data",
+    cls: "bg-violet-50 text-violet-900 border-violet-200",
+    Icon: FlaskConical,
+    live: false,
+  },
 };
 
 export default function DataSourceBadge({ source, fetchedAt }: Props) {
   const c = COPY[source];
+  const Icon = c.Icon;
   return (
     <p
-      className={`inline-flex items-center gap-2 rounded-full border-2 px-3 py-1 text-base font-semibold ${c.cls}`}
+      className={`chip border px-3 py-1.5 ${c.cls}`}
       data-source={source}
       aria-label={`Data source: ${c.text}${fetchedAt ? `, from ${fetchedAt}` : ""}`}
     >
-      <span aria-hidden="true">{source === "live" ? "●" : source === "demo" ? "◆" : "▲"}</span>
+      {c.live ? (
+        <span className="relative flex h-2.5 w-2.5" aria-hidden="true">
+          <span className="absolute inline-flex h-full w-full animate-pulse-dot rounded-full bg-status-free" />
+          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-status-free" />
+        </span>
+      ) : (
+        <Icon className="h-4 w-4" aria-hidden="true" />
+      )}
       {c.text}
     </p>
   );
