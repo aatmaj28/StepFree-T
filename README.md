@@ -32,7 +32,6 @@ Other scripts:
 | `ANTHROPIC_API_KEY` | optional | Turns on AI rewriting in `/api/explain`. Without it, built-in plain-language templates are used. |
 | `ANTHROPIC_MODEL` | optional | Model for `/api/explain` (default `claude-haiku-4-5`). |
 | `EXPLAIN_AI_LIMIT_PER_MINUTE` | optional | AI rewrites per client per minute (default 10). Over the limit, riders get the templates (header `x-ai-rate-limited: 1`). Counted per server instance. |
-| `NEXT_PUBLIC_FEEDBACK_EMAIL` | optional | Where "Was this right?" sends feedback (opens the rider's email app). Without it, the link opens a new GitHub issue on this repo. |
 | `FORCE_OFFLINE` | testing | `1` skips the live MBTA call and uses the committed snapshot. |
 | `SNAPSHOT_WRITE` | optional | `0` stops the dev server from rewriting the snapshot file after each live fetch. |
 
@@ -106,13 +105,13 @@ For a real Plan B case, try Davis to Kendall/MIT with live data: Davis Elevator 
 ```
 app/                 pages (/, /trip/new) and Route Handlers in app/api/*
 components/          StatusBanner, TripForm, AlertCard, AlternativeCard, DataSourceBadge, DemoSwitch,
-                     HeaderNav, Logo, RouteSchematic, StatusSkeleton, PlanBCard, LaterTodayCard, FeedbackLink
+                     HeaderNav, Logo, RouteSchematic, StatusSkeleton, PlanBCard, LaterTodayCard
 lib/types.ts         shared contract (unchanged by Plan B: its types live in lib/engine/plan-b.ts)
 lib/data/            mbta-client, normalize, platform-map, snapshot, cache, schemas, demo-snapshot, snapshots/
 lib/engine/          evaluate-trip, rules, find-alternative, geo, plan-b, later-today, constants
 lib/ai/              explain (Anthropic + validation), fallback-templates
 lib/api/             Zod schemas, HTTP helpers, trip-payload (result + Plan B + later today), rate-limit
-lib/client/          browser-only helpers (localStorage, demo store, status hook, format, feedback link, line colours)
+lib/client/          browser-only helpers (localStorage, demo store, status hook, format, line colours)
 scripts/             refresh-snapshots.ts, check-gtfs-platforms.ts, a11y-audit.ts
 tests/               engine (property + example), data, api, components, fixtures (real MBTA responses)
 .kiro/               steering, hooks, specs (EARS requirements, design, tasks)
@@ -146,9 +145,9 @@ Coverage tests check that the generators reach every outcome, so no property pas
 
 ## Status
 
-This branch includes the UI redesign from `main` (commit `71446a3`, design system, lucide icons, two-column dashboard) with Plan B, later today and the feedback link built into it.
+This branch includes the UI redesign from `main` (commit `71446a3`, design system, lucide icons, two-column dashboard) with Plan B and later today built into it.
 
-Checked on this branch: `npm test` (126 passed), `npm run typecheck` and `npm run build` all pass. `npm run a11y` finds no violations on any screen.
+Checked on this branch: `npm test` (124 passed), `npm run typecheck` and `npm run build` all pass. `npm run a11y` finds no violations on any screen.
 
 ### Done
 
@@ -165,7 +164,6 @@ Checked on this branch: `npm test` (126 passed), `npm run typecheck` and `npm ru
 - Plain-language explanations from templates, with optional AI rewriting (tested against a stub only). AI calls are rate limited per client.
 - Demo mode with six labelled simulated scenarios, also reachable as `/?demo=<scenario>`.
 - Mobile UI. The verdict is in an `aria-live` region, and the banner says "According to MBTA data updated at 3:05 PM."
-- "Was this right?" link: email or a GitHub issue, filled in, sent only if the rider chooses. No tracking.
 - Trip saved in `localStorage`. No accounts.
 - API routes: health, stations, alerts, facilities, status, alternatives, explain, demo.
 - GTFS cross-check: all 9 elevator ids in the committed alert snapshot, and all 68 platform-map ids, appear in GTFS `pathways.txt` (MBTA GTFS "Fall 2026, version D"). Findings are in the header of `lib/data/platform-map.ts`. Davis 816 was confirmed as the only elevator to its platform and changed to verified.

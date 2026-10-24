@@ -11,8 +11,6 @@ import AlternativeCard from "@/components/AlternativeCard";
 import TripForm from "@/components/TripForm";
 import PlanBCard from "@/components/PlanBCard";
 import LaterTodayCard from "@/components/LaterTodayCard";
-import FeedbackLink from "@/components/FeedbackLink";
-import { feedbackHref } from "@/lib/client/feedback";
 import type { PlanB } from "@/lib/engine/plan-b";
 import type { Alert, Station } from "@/lib/types";
 
@@ -161,26 +159,5 @@ describe("LaterTodayCard", () => {
     expect(html).toContain("this trip may not be step-free");
     expect(html).toContain("check again before you leave");
     expect(html).toContain("Original MBTA notice");
-  });
-});
-
-describe("FeedbackLink", () => {
-  const ctx = { route: "Davis to Park Street", profile: "wheelchair" as const, status: "STEP_FREE" as const, dataTime: "3:05 PM", dataSource: "live" };
-
-  it("uses email when an address is set, and GitHub otherwise", () => {
-    expect(feedbackHref(ctx, "team@example.org").href.startsWith("mailto:team@example.org?subject=")).toBe(true);
-    const gh = feedbackHref(ctx, undefined);
-    expect(gh.kind).toBe("github");
-    expect(gh.href).toContain("github.com/tanishq-007/Stepfree-T/issues/new?");
-    expect(decodeURIComponent(gh.href.replace(/\+/g, " "))).toContain("AccessPath said: Step-free");
-    expect(feedbackHref(ctx, "not an email").kind).toBe("github");
-  });
-
-  it("is a labelled link with a 44px target that warns about a new tab", () => {
-    const html = renderToStaticMarkup(<FeedbackLink context={ctx} email={undefined} />);
-    expect(html).toContain("Was this right?");
-    expect(html).toContain("min-h-[44px]");
-    expect(html).toContain("(opens in a new tab)");
-    expect(html).toContain('rel="noopener noreferrer"');
   });
 });

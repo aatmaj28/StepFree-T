@@ -15,7 +15,6 @@ import type { Alert, Trip } from "@/lib/types";
 import AlertCard from "@/components/AlertCard";
 import AlternativeCard from "@/components/AlternativeCard";
 import DataSourceBadge from "@/components/DataSourceBadge";
-import FeedbackLink from "@/components/FeedbackLink";
 import LaterTodayCard from "@/components/LaterTodayCard";
 import PlanBCard from "@/components/PlanBCard";
 import StatusBanner from "@/components/StatusBanner";
@@ -179,7 +178,7 @@ function Result({
         ) : null}
       </div>
 
-      {/* Secondary column: route, alternative, Plan B, reasoning, refresh, feedback. */}
+      {/* Secondary column: route, alternative, Plan B, reasoning, refresh. */}
       <aside className="space-y-5 lg:col-span-2">
         <RouteSchematic
           origin={result.trip.origin}
@@ -211,16 +210,6 @@ function Result({
           <RefreshCw className="h-5 w-5" aria-hidden="true" />
           Refresh
         </button>
-
-        <FeedbackLink
-          context={{
-            route,
-            profile: result.trip.profile,
-            status: result.status,
-            dataTime: formatTime(result.fetchedAt),
-            dataSource: result.dataSource,
-          }}
-        />
       </aside>
     </div>
   );
