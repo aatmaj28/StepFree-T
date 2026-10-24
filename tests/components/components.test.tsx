@@ -1,4 +1,7 @@
-// Server-render the presentational components and check the accessibility contract in the markup.
+// Server-render the presentational components and check the ACCESSIBILITY CONTRACT in the markup.
+// These assertions intentionally focus on semantics (roles, labels, icon+text, status data
+// attributes) rather than specific Tailwind colour classes, so visual restyles do not break them
+// while the accessibility guarantees stay enforced.
 import { describe, expect, it } from "vitest";
 import { renderToStaticMarkup } from "react-dom/server";
 import StatusBanner from "@/components/StatusBanner";
@@ -16,17 +19,20 @@ const station: Station = { id: "place-davis", name: "Davis", lines: ["Red"], whe
 
 describe("StatusBanner: icon AND text for every state, never colour alone", () => {
   it.each([
-    ["STEP_FREE", "Step-free", "bg-green-800"],
-    ["NOT_STEP_FREE", "Not step-free", "bg-red-800"],
-    ["UNKNOWN", "Cannot confirm", "bg-gray-700"],
-  ] as const)("%s", (status, label, colour) => {
+    ["STEP_FREE", "Step-free"],
+    ["NOT_STEP_FREE", "Not step-free"],
+    ["UNKNOWN", "Cannot confirm"],
+  ] as const)("%s", (status, label) => {
     const html = renderToStaticMarkup(<StatusBanner status={status} headline="Plain words." routeLabel="A to B" />);
+    // Text label present (not colour-only).
     expect(html).toContain(label);
-    expect(html).toContain(colour);
+    // An icon is rendered alongside the text, and is hidden from assistive tech.
     expect(html).toContain("<svg");
     expect(html).toContain('aria-hidden="true"');
+    // Heading and accessible name are present.
     expect(html).toContain("<h2");
     expect(html).toContain("aria-label=");
+    // Status is machine-readable (used by downstream styling/tests) independent of colour.
     expect(html).toContain('data-status="' + status + '"');
   });
 });
@@ -37,16 +43,22 @@ describe("DataSourceBadge", () => {
     ["snapshot", "Offline snapshot, not live"],
     ["demo", "Simulated demo data"],
   ] as const)("%s", (source, text) => {
-    expect(renderToStaticMarkup(<DataSourceBadge source={source} />)).toContain(text);
+    const html = renderToStaticMarkup(<DataSourceBadge source={source} />);
+    expect(html).toContain(text);
+    // Non-colour signal: the data source is exposed as a data attribute and an aria-label.
+    expect(html).toContain('data-source="' + source + '"');
+    expect(html).toContain("aria-label=");
   });
 });
 
 describe("AlertCard and AlternativeCard", () => {
-  it("labels a blocking alert with a symbol and words, and shows the plain text first", () => {
+  it("labels a blocking alert with words, and shows the plain text first", () => {
     const html = renderToStaticMarkup(<AlertCard alert={alert} blocking explanation="An elevator is out." />);
     expect(html).toContain("Blocks your trip");
     expect(html).toContain("An elevator is out.");
     expect(html).toContain("Original MBTA notice");
+    // Icon accompanies the text label and is hidden from AT.
+    expect(html).toContain("<svg");
   });
 
   it("falls back to the MBTA header when there is no explanation", () => {
@@ -64,12 +76,21 @@ describe("AlertCard and AlternativeCard", () => {
 });
 
 describe("TripForm", () => {
-  it("has visible labels, a radio group with a legend, and a 56px submit button", () => {
+  it("has visible From/To labels, a swap control, a radio group with a legend, and a 56px submit button", () => {
     const html = renderToStaticMarkup(<TripForm stations={[station]} onSave={() => undefined} />);
-    expect(html).toContain("Start station");
-    expect(html).toContain("End station");
+    // Directional endpoint labels (visible and associated with the selects).
+    expect(html).toContain("From");
+    expect(html).toContain("To");
+    expect(html).toContain('for="origin-search"');
+    expect(html).toContain('for="destination-search"');
+    expect(html).toContain('aria-label="From: choose a station"');
+    expect(html).toContain('aria-label="To: choose a station"');
+    // Working swap control with an accessible name.
+    expect(html).toContain('aria-label="Swap start and end stations"');
+    // Travel-profile radio group.
     expect(html).toContain("<legend");
     expect(html.match(/type="radio"/g)).toHaveLength(3);
+    // Submit affordance and live region.
     expect(html).toContain("Save trip");
     expect(html).toContain("min-h-[56px]");
     expect(html).toContain('aria-live="polite"');
