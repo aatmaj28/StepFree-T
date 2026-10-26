@@ -1,101 +1,119 @@
-# AccessPath AI
+# Hackachusetts 2026 · Civic Action Track
 
-A mobile-first web app that checks whether an MBTA subway trip can be done **step-free right now**. A rider saves a trip (start station, end station, and a profile: wheelchair, stroller, or no stairs). The app reads live MBTA V3 data, runs a decision engine, and shows one of three states: **STEP_FREE** (green), **NOT_STEP_FREE** (red), **UNKNOWN** (gray). It explains problems in plain language, names the working elevator to use, and suggests the nearest verified accessible station.
+## StepFree T
 
-On a step-free day it also shows **Plan B**: which single elevator the trip depends on, and which checked station to use if that elevator breaks. It warns about **planned outages later today** (next 12 hours) that would affect the trip.
+> StepFree T checks live MBTA elevator alerts against your saved trip and tells you in plain language if it’s step-free right now, and where to go instead if it isn’t.
 
-Optionally, with a Google Maps key, it also lists **wheelchair-accessible restrooms near each trip station** and shows a **map and street-level photos of the station's accessible entrances**. These are extras. They never change the step-free result.
+![StepFree T: a step-free verdict for Alewife to Park Street, with the journey map showing every station's status](docs/screenshots/results-map.png)
 
-Hackathon demo. Subway only (Red, Orange, Blue, Green, Mattapan). No transfers, buses, Commuter Rail, accounts or push notifications.
+**Team:** Aatmaj · Himani · Tanishq · Pradyumna
 
-## Run it
+In the app's header the product is called **AccessPath AI**, its working name during the hackathon.
 
-Needs Node.js 20 or newer.
+---
 
-```bash
-npm install
-npm run snapshots        # fetch live MBTA data and write lib/data/snapshots/mbta-snapshot.json
-npm run build
-npm test                 # unit, API, component and property tests (Vitest + fast-check)
-npm run dev              # http://localhost:3000
-```
+## Why we built it
 
-Other scripts:
+The MBTA publishes elevator outages as alerts, one at a time, in transit language. A rider who uses a wheelchair, pushes a stroller or cannot use stairs has to work out three things before leaving home:
 
-- `npm run typecheck`, `npm start` (after `build`).
-- `npm run check:gtfs -- <folder>`: cross-checks `lib/data/platform-map.ts` against MBTA GTFS `pathways.txt`. Download https://cdn.mbta.com/MBTA_GTFS.zip (about 21 MB) and unzip it first. The folder defaults to `$GTFS_DIR`, then `<temp>/mbta-gtfs`. Read-only.
-- `npm run a11y -- [base-url]`: axe-core audit (WCAG 2.2 A/AA + best practice) in a real Chrome on every screen and every demo state, plus a 320 px reflow check. Start the app first. Set `CHROME_PATH` if Chrome is not in the default place.
+1. Is any elevator at my start or end station out right now?
+2. If one is out, does another working elevator reach the same platform, or am I stuck?
+3. If I am stuck, which station nearby on the same line works instead?
 
-### Environment variables (`.env.example`)
+StepFree T answers all three for the rider's own trip, in one plain sentence, and shows it on a map.
 
-| Name | Needed? | What it does |
-|---|---|---|
-| `MBTA_API_KEY` | optional | Sent as `x-api-key`. Without it the MBTA allows 20 requests per minute. One refresh uses 8 requests and is cached for 60 s. |
-| `ANTHROPIC_API_KEY` | optional | Turns on AI rewriting in `/api/explain`. Without it, built-in plain-language templates are used. |
-| `ANTHROPIC_MODEL` | optional | Model for `/api/explain` (default `claude-haiku-4-5`). |
-| `EXPLAIN_AI_LIMIT_PER_MINUTE` | optional | AI rewrites per client per minute (default 10). Over the limit, riders get the templates (header `x-ai-rate-limited: 1`). Counted per server instance. |
-| `GOOGLE_MAPS_API_KEY` | optional | **Server-only.** Turns on restrooms, entrance photos and the entrance map (see "Google features"). Enable "Places API (New)", "Street View Static API" and "Maps Static API" for the key. Without it, those three are hidden and nothing else changes. Never give it a `NEXT_PUBLIC_` prefix. |
-| `FORCE_OFFLINE` | testing | `1` skips the live MBTA call and uses the committed snapshot. |
-| `SNAPSHOT_WRITE` | optional | `0` stops the dev server from rewriting the snapshot file after each live fetch. |
+## The track
 
-The app works with no keys set. Copy `.env.example` to `.env.local` to set them. `.env.local` is git-ignored.
+**Civic action:** *"Strengthen the places, communities, and opportunities that shape daily life."*
 
-### Try the API
+StepFree T is closest to two of the track's challenges:
 
-```bash
-B=http://localhost:3000
-curl $B/api/health
-curl $B/api/stations
-curl "$B/api/alerts?stationId=place-alfcl"
-curl "$B/api/facilities?stationId=place-alfcl"
-curl "$B/api/status?origin=place-alfcl&destination=place-pktrm&profile=wheelchair"
-curl "$B/api/alternatives?stationId=place-alfcl&profile=wheelchair"
-curl "$B/api/demo?scenario=elevator-outage-alewife"      # see the demo scenarios below
-curl "$B/api/restrooms?stationId=place-alfcl&radius=400"   # needs GOOGLE_MAPS_API_KEY
-curl "$B/api/entrances?stationId=place-alfcl"             # names and links work without a key; photos need it
-# pictures: open these in a browser (key needed)
-#   $B/api/entrance-map?stationId=place-alfcl
-#   $B/api/streetview/image?entranceId=door-alfcl-alewife   (use an id from /api/entrances)
-curl -X POST $B/api/explain -H 'content-type: application/json' \
-  -d '{"profile":"wheelchair","tripResult":{ ...a /api/status result... }}'
-```
+- **V3 · Safer and connected places** ("The last mile is a street, a bike, or a crash"). For many riders the last mile includes an elevator.
+- **V2 · Responsive and resilient communities** ("Volume hides who is waiting, and who an alert misses"). A citywide alert feed often misses the rider who needs one particular elevator.
 
-Bad input returns `400 {"error","details"}`. If MBTA is down the routes use the offline snapshot (`"dataSource":"snapshot"`). If the snapshot is also unreadable they return `502` with `"status":"UNKNOWN"`.
+It is built on the track's **MBTA V3 API** data: live service alerts, subway routes, stops and facilities (elevators). The track's starter kit describes the alert feed this way: *"Use it to tell a rider what changed, in plain language, before they are already on the platform."* That is exactly what StepFree T does.
 
-`/api/status` and `/api/demo` also return `planB` (null unless the trip is STEP_FREE now) and `laterToday` (a list of planned changes, empty for stale data).
+---
 
-### Deploy to Vercel
+## What it does
 
-1. Push the repo to GitHub.
-2. In Vercel choose **Add New, Project**, import the repo. The framework is detected as Next.js. No build settings need changing.
-3. Optional: add `MBTA_API_KEY` and `ANTHROPIC_API_KEY` under **Settings, Environment Variables**.
-4. Deploy. The committed snapshot ships with the API functions (`outputFileTracingIncludes` in `next.config.mjs`). Vercel's filesystem is read-only, so snapshot writes are skipped.
+| | |
+|---|---|
+| ![Landing page](docs/screenshots/landing.png) | ![Trip form](docs/screenshots/trip-form.png) |
+| **Save a trip once.** Pick a start, an end and how you travel (wheelchair, stroller or no stairs). The trip stays in your browser; there are no accounts. | **Pick stations by name.** Type to search all 125 subway stations, then choose how you travel. |
 
-Or from a terminal: `npx vercel` then `npx vercel --prod`. (Not done in this repo: it needs your Vercel account.)
+### One clear answer
+
+The app reads live MBTA data and gives one of three results for the whole trip:
+
+- **Step-free** (green): both stations are accessible and nothing blocks the way right now.
+- **Not step-free** (red): something blocks it, for example both platform elevators are out.
+- **Cannot confirm** (gray): the data is too old, missing, or does not let us check an elevator. The app never guesses green.
+
+It explains the result in plain language. When one elevator is out but another reaches the same platform, it names that elevator: *"Use Alewife Elevator 961 instead."*
+
+### Journey map
+
+Every subway station is drawn on a real map, coloured by **its own** step-free result for your profile. A green dot means that station passed every check, not just "no alert". Your route is drawn on the official MBTA line shape. A station list gives the same information as text, so keyboard and screen-reader users get it too.
+
+### Where to go instead, and Plan B
+
+| | |
+|---|---|
+| ![Not step-free at Alewife, with Davis suggested as the recommended alternative on the map](docs/screenshots/outage-alternative.png) | ![Step-free from Davis, with Porter shown on the map as the backup if Davis's only elevator fails](docs/screenshots/plan-b-backup.png) |
+| **A problem right now.** Both Alewife platform elevators are out, so the trip is not step-free. Davis, the nearest checked station on the same line, is circled in green on the map. | **Plan B before anything breaks.** The trip works now, but Davis has only one elevator to the platform. If it breaks, use Porter, circled in blue. |
+
+*Both screenshots use the app's labelled demo scenarios (simulated data).*
+
+Plan B works by pretending each working elevator at your two stations breaks, one at a time, and re-running the same check. The app also warns about **planned outages later today** (next 12 hours) that would affect your trip.
+
+### Plan a trip on the map
+
+<img src="docs/screenshots/plan-on-map.png" alt="Planning on the map: Harvard chosen as the new end, marked 'not checked yet', with its station details" width="480">
+
+Tap a station to see its details and any MBTA alerts there, with what each alert means for you. Then press **Start here** or **Go here**. Nothing changes until you press **Check accessibility**. Until then the map says plainly that the new trip is not checked yet.
+
+### On a phone
+
+| | |
+|---|---|
+| <img src="docs/screenshots/mobile.png" alt="Verdict on a phone" width="300"> | <img src="docs/screenshots/mobile-map.png" alt="Journey map on a phone" width="300"> |
+
+The design is mobile-first. The verdict comes first and is announced to screen readers, tap targets are at least 44 px, and the page does not scroll sideways on a phone.
+
+### Also
+
+- **Accessible entrances** at each trip station, from MBTA's own data, with "Open in Google Maps" links. With a Google Maps key the app also shows street-level photos of the entrances and nearby wheelchair-accessible restrooms. These extras never change the step-free result.
+- **Demo mode** (switch in the footer) with six clearly labelled simulated scenarios, so a presenter can show each state on cue.
+- **Offline fallback**: if the MBTA is unreachable, the app uses a saved snapshot and says so. Old data gives "Cannot confirm", never green.
+
+---
 
 ## How it decides
 
-The rules live in `lib/engine/` (pure functions, no I/O) and are written in `.kiro/steering/product.md`.
+The rules live in `lib/engine/` (pure functions, no I/O) and are written down in `.kiro/steering/product.md`.
 
-1. Missing, invalid or stale (older than 10 minutes) data gives **UNKNOWN**. The offline snapshot keeps its original time, so it is normally stale and gives UNKNOWN.
-2. **STEP_FREE** needs both stations to be accessible per MBTA and no active blocking alert at either one.
-3. Blocking alerts: station or stop closure, access issue, uneven platform, and an elevator outage that has no working verified elevator on the same platform.
-4. If the platform an elevator serves is not verified in `lib/data/platform-map.ts`, the result is **UNKNOWN** (`PLATFORM_UNVERIFIED`), never STEP_FREE.
-5. Escalator outages are information only. Expired alerts never block.
+1. Missing, invalid or stale data (older than 10 minutes) gives **Cannot confirm** (`UNKNOWN`).
+2. **Step-free** needs both stations to be accessible per the MBTA and no active blocking alert at either one.
+3. Blocking alerts are station or stop closures, access issues, uneven platforms, and an elevator outage with no working, verified elevator to the same platform.
+4. If the platform an elevator serves is not verified in `lib/data/platform-map.ts`, the result is `UNKNOWN` (`PLATFORM_UNVERIFIED`), never step-free.
+5. Escalator outages are information only, and expired alerts never block.
 6. A suggested alternative is on the same line, accessible, has no blocking alert, is verified step-free, and is never a trip endpoint.
-7. When a broken elevator is covered, the app names the backup: "Porter Elevator 987 is out. Use Porter Elevator 983 instead." Only verified elevators are ever named.
+7. Only verified elevators are ever named as a backup.
 
-**Plan B** (`lib/engine/plan-b.ts`) runs only when the trip is STEP_FREE now. For each working elevator at the two stations, it adds a simulated outage of that one elevator and re-runs the same station check:
+**Plan B** (`lib/engine/plan-b.ts`) runs only when the trip is step-free now. For each working elevator at the two stations it simulates an outage of that one elevator:
 
-- still STEP_FREE: it has a backup (or is not on a subway path);
-- NOT_STEP_FREE: it is a single point of failure, and Plan B is the nearest station that is verified STEP_FREE with that elevator out;
-- UNKNOWN: we could not check it, and the app says so. It is never called a single point of failure.
+- still step-free: it has a backup (or is not on a subway path);
+- not step-free: it is a single point of failure, and Plan B is the nearest station that stays verified step-free with that elevator out;
+- cannot confirm: we could not check it, and the app says so.
 
 The trip is **Resilient** only when no single elevator can break it.
 
-**Later today** (`lib/engine/later-today.ts`) looks at alerts for the two stations that start in the next 12 hours. It warns when one of them would make the trip worse than it is now. It never forecasts from stale data, and it never changes the "now" result.
+**The map** (`components/map/`) only displays engine output. Each marker is `evaluateStation()` for that station (`lib/engine/station-map.ts`), so a marker can never disagree with the trip verdict. MBTA line geometry is labelled as a reference, not a verified itinerary. The highlighted route is drawn only for a trip on one line. For a trip that changes lines, the likely transfer station is shown and marked "not checked".
 
-Demo mode (switch in the footer, `/?demo=<scenario>`, or `/api/demo`) uses a **simulated** snapshot, labelled "Simulated demo data", so a presenter can show each state on command. Real routes never use it.
+### Demo scenarios
+
+Demo mode uses a **simulated** snapshot that is labelled on every screen. Real routes never use it. Open it from the footer switch, with `/?demo=<scenario>`, or through `/api/demo`.
 
 | Scenario | Trip | Shows |
 |---|---|---|
@@ -106,149 +124,161 @@ Demo mode (switch in the footer, `/?demo=<scenario>`, or `/api/demo`) uses a **s
 | `all-clear` | Alewife to Park Street | Green |
 | `api-down` | Alewife to Park Street | Gray: data 3 hours old |
 
-For a real Plan B case, try Davis to Kendall/MIT with live data: Davis Elevator 816 is the only elevator to the Davis platform.
+For a real Plan B case with live data, try Davis to Kendall/MIT: Davis Elevator 816 is the only elevator to the Davis platform.
 
-## Google features (optional)
+---
 
-Set `GOOGLE_MAPS_API_KEY` in `.env.local`. Nothing about the key is ever sent to the browser: the server calls Google, and the browser only receives our own JSON or picture bytes.
+## Run it
 
-**Accessible restrooms nearby.** `GET /api/restrooms?stationId=&radius=` (radius 1 to 800 meters, default 400). The server asks Google Places API (New) for libraries, cafes, restaurants, shopping malls and transit stations within 800 m of the station, keeps only places where Google says `wheelchairAccessibleRestroom` is `true`, sorts them by straight-line distance and returns up to 5. Missing information is always "unknown", never "yes". Results are cached in memory for one hour per station. Each trip station gets a collapsed card on the home page.
+Needs Node.js 20 or newer.
 
-**Accessible entrances.** `GET /api/entrances?stationId=` lists up to 3 entrances, in MBTA's own order, and **only entrances MBTA marks wheelchair accessible** (`wheelchair_boarding` = 1 in MBTA's data, with coordinates). If MBTA marks none, the answer is `entrances: []` and the card says "We couldn't find an entrance marked wheelchair accessible for this station." There is no photo and no map in that case, and a generic station photo is never shown as an entrance. With a key, each entrance gets a Street View photo (`/api/streetview/image?entranceId=`), and the station gets one map (`/api/entrance-map?stationId=`) with pins numbered like the list and an S for the station. The image route only serves ids that MBTA says are accessible entrances.
+```bash
+npm install              # also copies the MapLibre map worker into public/vendor
+npm run dev              # http://localhost:3000
+```
 
-**Without a key**, the restroom card, the photos and the map are hidden. The entrance card still shows the heading, the numbered entrance names, and an "Open in Google Maps" link for each (those need no key).
+The app works with no keys at all: it uses the public MBTA API and falls back to the committed snapshot.
 
-### Limits and things that do not work well
+Other scripts:
 
-- **The entrance map is not verified against the real Google API.** The Maps Static API was not enabled for the project key (Google answered 403 "This API is not activated"). The map route is tested with mocked answers only. Enable "Maps Static API" in Google Cloud and open `/api/entrance-map?stationId=place-alfcl` to check it. Until then the card hides the map when it fails to load, and the names, photos and links still work.
-- **The photo often does not show the entrance.** Street View gives the nearest photo to the entrance point and we aim the camera at it. In real answers the nearest photo was sometimes inside the station (ticket machines, a concrete wall) or blocked by a bus. The card says "A nearby building or vehicle may block the view." Many photos are from third parties (the card names them) and some are from 2015 to 2022.
-- **Not every station has accessible entrances in MBTA's data.** 36 of 125 subway stations have no entrance records at all, and some stations have entrances that are all marked not accessible (for example Bowdoin). They get the "couldn't find" message. This does not mean the station has no step-free way in: use the step-free result above it.
-- **MBTA's order, not the nearest.** The first three accessible entrances in MBTA's list are shown. A closer one may exist.
-- **Google restroom data may be incomplete.** Many places have no accessibility information (10 of the 20 nearest places at Alewife had none). We only list places Google positively says have an accessible restroom. Some restrooms are for customers only.
-- **"Open now" can be up to an hour old** (results are cached for an hour). The card shows when Google was asked.
-- **Walking times are rough.** They use straight-line distance at 60 meters a minute.
-- **Only the 20 nearest places are searched**, so in a very busy area a restroom further out can be missed.
-- **The Google routes have no rate limit.** Station and entrance ids are checked against MBTA data (so the key cannot be used to look up other places), results are cached, and browsers cache pictures for an hour, but a script could still request many pictures. Before a public deploy, set a quota cap and a budget alert for the key in Google Cloud and restrict it to the three APIs above.
-- **Cost.** Google bills a Places request at the highest tier of any field asked for. "Open now" (`currentOpeningHours`) is a higher tier than the other fields, so it makes every restroom search cost more. Removing `places.currentOpeningHours.openNow` from `RESTROOM_FIELD_MASK` in `lib/google/restrooms.ts` lowers the price and drops the open / closed line. Street View metadata is free; each picture counts against quota. Prices are not stated here because they change.
-- **More MBTA calls.** The entrance list uses one MBTA call per station (cached an hour), and it also runs when `FORCE_OFFLINE=1`. Without `MBTA_API_KEY` (20 requests a minute) a busy minute can hit the MBTA limit.
-- The entrance card shows "Looking for accessible entrances" while loading, and the restroom card shows nothing while loading, so the page can grow when they arrive. Both show a short error with Try again if something fails.
-- Checked in a real Chrome with axe-core: 0 violations with the cards open, tap targets at least 44 px, no sideways scrolling at 320 px. Not tested with VoiceOver or TalkBack.
+| Command | What it does |
+|---|---|
+| `npm test` | Unit, API, component and property tests (Vitest + fast-check) |
+| `npm run typecheck` | TypeScript check |
+| `npm run build` / `npm start` | Production build and server |
+| `npm run snapshots` | Fetch live MBTA data into `lib/data/snapshots/mbta-snapshot.json` (the offline copy) |
+| `npm run network` | Refresh the committed MBTA line geometry for the map (`lib/data/snapshots/mbta-network.json`) |
+| `npm run check:gtfs -- <folder>` | Cross-check `lib/data/platform-map.ts` against MBTA GTFS `pathways.txt` (download and unzip https://cdn.mbta.com/MBTA_GTFS.zip first) |
+| `npm run a11y -- [base-url]` | axe-core audit (WCAG 2.2 A/AA) in Chrome on every screen and demo state, plus a 320 px reflow check. Start the app first; set `CHROME_PATH` if needed |
+
+### Environment variables
+
+Copy `.env.example` to `.env.local` (git-ignored) to set any of these. All of them are optional.
+
+| Name | What it does |
+|---|---|
+| `MBTA_API_KEY` | Sent as `x-api-key`. Without it the MBTA allows 20 requests per minute. One refresh uses 8 requests and is cached for 60 s. |
+| `ANTHROPIC_API_KEY` | Turns on AI rewording of the explanations in `/api/explain`. Without it, built-in plain-language templates are used. |
+| `ANTHROPIC_MODEL` | Model for `/api/explain` (default `claude-haiku-4-5`). |
+| `EXPLAIN_AI_LIMIT_PER_MINUTE` | AI rewrites per client per minute (default 10). Over the limit, riders get the templates. |
+| `GOOGLE_MAPS_API_KEY` | **Server-only.** Turns on restrooms, entrance photos and the entrance map. Enable "Places API (New)", "Street View Static API" and "Maps Static API" for the key. Never give it a `NEXT_PUBLIC_` prefix, and never commit it. |
+| `FORCE_OFFLINE` | `1` skips live MBTA calls and uses the committed snapshots (testing). |
+| `SNAPSHOT_WRITE` | `0` stops the dev server from rewriting the snapshot file after each live fetch. |
+
+### API
+
+```bash
+B=http://localhost:3000
+curl $B/api/health
+curl $B/api/stations
+curl "$B/api/status?origin=place-alfcl&destination=place-pktrm&profile=wheelchair"
+curl "$B/api/alternatives?stationId=place-alfcl&profile=wheelchair"
+curl "$B/api/demo?scenario=elevator-outage-alewife"
+curl $B/api/network                                       # MBTA line geometry for the map
+curl "$B/api/alerts?stationId=place-alfcl"
+curl "$B/api/facilities?stationId=place-alfcl"
+curl "$B/api/entrances?stationId=place-alfcl"             # names and links work without a key
+curl "$B/api/restrooms?stationId=place-alfcl&radius=400"  # needs GOOGLE_MAPS_API_KEY
+```
+
+`/api/status` and `/api/demo` return the engine's result plus `planB`, `laterToday`, and, for the map, `stations` (every station's own result), `stationAlerts` and `journey` (same line, change of line, or unknown). Bad input returns `400 {"error","details"}`. If the MBTA is down, the routes use the offline snapshot (`"dataSource":"snapshot"`).
+
+### Deploy to Vercel
+
+Import the repo in Vercel (it is detected as Next.js), optionally add `MBTA_API_KEY` and `ANTHROPIC_API_KEY`, and deploy. The committed snapshots ship with the API functions (`outputFileTracingIncludes` in `next.config.mjs`). This repo has not been deployed yet.
+
+---
+
+## Tech stack
+
+- **Next.js 15** (App Router, Route Handlers), **React 19**, **TypeScript**, **Tailwind CSS**, **Zod**
+- **MapLibre GL** with **OpenFreeMap** tiles for the journey map
+- **MBTA V3 API** for stations, alerts, facilities and route patterns
+- **Vitest** and **fast-check** for example and property-based tests
+- Optional: **Anthropic** for wording explanations, **Google Maps Platform** for restrooms and entrance photos
+- **Kiro** for specs, steering and hooks (`.kiro/`: 5 specs, 4 steering files, 2 hooks)
 
 ## Project layout
 
 ```
 app/                 pages (/, /trip/new) and Route Handlers in app/api/*
-components/          StatusBanner, TripForm, AlertCard, AlternativeCard, DataSourceBadge, DemoSwitch,
-                     HeaderNav, Logo, RouteSchematic, StatusSkeleton, PlanBCard, LaterTodayCard, RestroomCard, AccessibleEntranceCard
-lib/types.ts         shared contract (unchanged by Plan B: its types live in lib/engine/plan-b.ts)
-lib/data/            mbta-client, normalize, entrances, platform-map, snapshot, cache, schemas, demo-snapshot, snapshots/
-lib/engine/          evaluate-trip, rules, find-alternative, geo (distance and bearing), plan-b, later-today, constants
-lib/ai/              explain (Anthropic + validation), fallback-templates
-lib/google/          Google Places, Street View and Maps Static: key handling, lenient schemas, restrooms, photos, map
-lib/api/             Zod schemas, HTTP helpers, trip-payload (result + Plan B + later today), rate-limit
-lib/client/          browser-only helpers (localStorage, demo store, status hook, format, line colours)
-scripts/             refresh-snapshots.ts, check-gtfs-platforms.ts, a11y-audit.ts
+components/          verdict banner, trip form, alert, alternative, Plan B, later-today, restroom and entrance cards
+components/map/      JourneyMap, TransitMap (MapLibre), TripPlannerBar, StationList, StationDetail, MapLegend
+lib/types.ts         shared contract
+lib/engine/          evaluate-trip, rules, find-alternative, plan-b, later-today, station-map, journey, geo
+lib/data/            MBTA client, normalizing, platform map, network geometry, snapshot, cache, demo snapshot
+lib/ai/              explanation (Anthropic + validation) and plain-language templates
+lib/google/          Google Places, Street View and Maps Static (server-only)
+lib/api/             Zod schemas, HTTP helpers, trip payload, map payload, rate limit
+lib/client/          browser-only helpers: storage, demo store, status hook, trip draft, map geometry, Plan B view
+scripts/             snapshot and network refresh, GTFS check, accessibility audit, map worker copy
 tests/               engine (property + example), data, api, components, fixtures (real MBTA responses)
-.kiro/               steering, hooks, specs (EARS requirements, design, tasks)
+docs/screenshots/    the pictures in this README
+.kiro/               steering, hooks and specs (EARS requirements, design, tasks)
 ```
 
-Owners: data = Himani, engine = Tanishq, UI and deploy = Aatmaj, AI and integration = Pradyannya.
+## Tests
 
-## Tests and property names
+`npm test` runs 25 files and 295 tests. The property tests use fast-check to generate stations, alerts and platform maps and check rules such as these:
 
-`npm test` runs 18 files and 251 tests. The property tests use fast-check on generated stations, alerts and platform maps. New properties use the guide's P-numbers. The original a to g names are kept, with the closest P-number:
+<details>
+<summary>Properties checked</summary>
 
 | Test | Rule |
 |---|---|
-| a (P1) | An active blocking alert on a trip station is never STEP_FREE |
-| b, b2 (P6, P15) | Stale or invalid data is UNKNOWN, never STEP_FREE; the 10-minute boundary is exact |
-| c (P3) | Escalator-only alerts never change a result |
-| d | Filtering never drops an active alert for a trip station |
-| e (P9) | A suggested alternative is verified step-free and never a trip endpoint |
-| f | Same inputs, same output |
-| g (P14, part) | An expired alert never blocks |
+| P1 | An active blocking alert on a trip station is never step-free |
+| P6, P15 | Stale or invalid data is `UNKNOWN`, never step-free; the 10-minute boundary is exact |
+| P3 | Escalator-only alerts never change a result |
+| P9 | A suggested alternative is verified step-free and never a trip endpoint |
 | P4 | Closing a facility never improves a verdict |
 | P8 | The trip verdict equals the worst station verdict |
-| P10 | The summary only gives good news for STEP_FREE, and only names a checked station |
-| P11 | A Resilient trip stays STEP_FREE when any single working elevator is removed |
-| P12 | Listed single points of failure break the trip when removed; elevators with a backup do not |
-| P13 | Every Plan B station is STEP_FREE with that elevator removed, shares a line, and is not an endpoint |
-| P14 | Outages that start after now never change the "now" result; later-today warnings are exact |
-| P16a, b, c | Conflicting sources (unknown elevator id, elevator missing from the map, unknown MBTA flag) are never STEP_FREE |
-| G1 | The Google accessibility mapping never turns a missing or undefined field into "yes" |
-| G2 | The compass bearing is always in [0, 360), and the bearing to a point's exact eastward neighbour is about 90 |
-| G3 | `/api/restrooms` never returns a place whose `wheelchairRestroom` is not "yes" |
-| G4 | `/api/entrances` never returns an entrance MBTA does not mark accessible, never more than 3, always in MBTA order |
-| G5 | The map's pin labels and the list's numbers always match in count and order |
+| P10 | The summary only gives good news for step-free, and only names a checked station |
+| P11, P12, P13 | Plan B: a Resilient trip survives any single elevator outage; listed single points of failure really break the trip; every Plan B station stays step-free without that elevator |
+| P14 | Outages that start later never change the "now" result |
+| P16 | Conflicting sources (unknown elevator id, elevator missing from the map, unknown MBTA flag) are never step-free |
+| I3, I4 | Map markers always equal that station's own engine result, and stale data turns every marker gray |
+| Map | The route segment is a slice of the official line shape, and is never drawn for a change of line |
+| Plan B view | The map only ever shows the engine's alternative or planB()'s backup, never both, and never an invented station |
+| G1, G3, G4 | Google data never turns "unknown" into "yes", restrooms are listed only when Google says "yes", and only MBTA-marked accessible entrances are shown |
 
 Coverage tests check that the generators reach every outcome, so no property passes by never running.
 
-## Status
+</details>
 
-This branch includes the UI redesign from `main` (commit `71446a3`, design system, lucide icons, two-column dashboard) with Plan B and later today built into it.
+## Google features (optional)
 
-Checked on this branch: `npm test` (251 passed), `npm run typecheck` and `npm run build` all pass. `npm run a11y` found no violations on any screen before the Google features were added. It was not re-run after; the new cards were checked separately with axe-core on the real home page (0 violations).
+With `GOOGLE_MAPS_API_KEY` set, the server (never the browser) calls Google:
 
-### Done
+- **Accessible restrooms nearby** (`/api/restrooms`): places within 800 m where Google says `wheelchairAccessibleRestroom` is `true`, sorted by straight-line distance, up to 5. Missing information is always "unknown", never "yes".
+- **Accessible entrances** (`/api/entrances`): up to 3 entrances that the MBTA marks wheelchair accessible, in MBTA's order, each with a Street View photo, plus one map of them. A generic station photo is never shown as an entrance.
 
-- Step-free check for one origin and one destination against live MBTA alerts, with three results: STEP_FREE, NOT_STEP_FREE, UNKNOWN.
-- Profiles: wheelchair, stroller, no stairs (see Known limitations for how they differ).
-- Live MBTA V3 data cached for 60 s, with an offline snapshot when MBTA is down.
-- UNKNOWN by default: data older than 10 minutes, a bad timestamp, or an unmapped or unverified elevator.
-- Conflicting-source checks (P16): an elevator alert whose facility is not in the MBTA facility data, an elevator missing from the platform map, or an MBTA flag of "unknown" gives UNKNOWN. "Not accessible" gives NOT_STEP_FREE.
-- Backup elevator check, and the app names the elevator to use ("Use Porter Elevator 983 instead").
-- Plan B (Layer 2): single points of failure, a checked Plan B station, and a Plan B card.
-- Later today (Layer 3): warnings for planned outages in the next 12 hours.
-- Escalator outages are information only.
-- Nearest verified alternative on the same line (straight-line distance, never a trip endpoint).
-- Plain-language explanations from templates, with optional AI rewriting (tested against a stub only). AI calls are rate limited per client.
-- Demo mode with six labelled simulated scenarios, also reachable as `/?demo=<scenario>`.
-- Mobile UI. The verdict is in an `aria-live` region, and the banner says "According to MBTA data updated at 3:05 PM."
-- Trip saved in `localStorage`. No accounts.
-- API routes: health, stations, alerts, facilities, status, alternatives, explain, demo.
-- GTFS cross-check: all 9 elevator ids in the committed alert snapshot, and all 68 platform-map ids, appear in GTFS `pathways.txt` (MBTA GTFS "Fall 2026, version D"). Findings are in the header of `lib/data/platform-map.ts`. Davis 816 was confirmed as the only elevator to its platform and changed to verified.
-- Automated accessibility audit with axe-core in Chrome: 0 violations on all 8 screens, and no horizontal scrolling at 320 px. The audit found and we fixed three real issues:
-  - the data-source badge used `aria-label` on a `<p>`, which screen readers may ignore;
-  - after the redesign, the demo-mode caption was grey at 4.2:1 contrast on its tinted background (AA needs 4.5:1);
-  - after the redesign, the header nav pushed the page 7 px sideways at 320 px wide; it now wraps.
+<details>
+<summary>Limits of the Google features</summary>
 
-  axe still asks for a human check of text on the gradient header, because it cannot measure contrast on gradients.
-- Google restrooms and accessible entrances (spec 05): tested with mocked Google and MBTA answers built from saved real responses (`tests/fixtures`), and checked with live calls and a real key, except the entrance map (see Google features). No test sends a real request.
-- Kiro: 5 specs, 4 steering files, 2 hooks. The engine spec and product rules now include Plan B and later today.
+- The entrance map was tested with mocked answers only; the Maps Static API was not enabled for the key we had.
+- The nearest Street View photo sometimes shows the inside of the station or is blocked by a vehicle. The card says so.
+- 36 of 125 subway stations have no entrance records in MBTA's data, and some have none marked accessible. They get a clear "couldn't find" message, which does not mean the station has no step-free way in.
+- Google restroom data is often incomplete, and "open now" can be up to an hour old (results are cached).
+- The Google routes have no rate limit. Before a public deploy, set a quota cap and budget alert for the key and restrict it to the three APIs above.
 
-### To do
-
-These need a person, an account or a team decision:
-
-1. Test `/api/explain` with a real `ANTHROPIC_API_KEY`. No key was available here.
-2. Deploy to Vercel with `MBTA_API_KEY` set (and `ANTHROPIC_API_KEY` if AI is used). Needs your Vercel account.
-3. VoiceOver and TalkBack pass, and a real-phone test. Automated checks cannot replace these.
-4. Hand-check, in person or against MBTA station maps, the entries still marked for review in `platform-map.ts` (State, North Station, Haymarket, Park Street).
-5. Update the pitch and guide to match this code: Next.js and fast-check, three results, the P-numbers above.
-6. Demo video (under 3 minutes) and the Kiro write-up. No property test has caught a real engine bug yet, so do not claim one. The axe audit did catch the badge issue above.
-
-Next, if the team wants it:
-
-- Replace the platform map with station graphs built from GTFS `pathways.txt`. The facility-id check passed, so this is possible. It changes the core engine, so do it on its own branch.
-- Transfers and direction of travel (both need the station graph).
+</details>
 
 ## Known limitations
 
-- **The platform map is only partly verified.** It was built by reading MBTA facility names and then cross-checked against GTFS `pathways.txt`, not by visiting stations. It covers 16 stations; 28 of the 68 entries are marked `verified: false`. Elevators outside these 16 stations are unmapped, so an outage there gives UNKNOWN, and Plan B there says "could not check".
-- **Plan B depends on the platform map.** Street-entrance elevators are unverified, so at most stations Plan B lists them under "could not check" and the overall Plan B is "not fully checked" rather than "Resilient".
-- Later today only sees planned outages that the MBTA has already posted, and it looks 12 hours ahead, not to the end of the service day.
-- No transfers, buses or Commuter Rail. A trip is one origin and one destination.
-- Direction of travel is not modelled. An elevator outage is judged on every platform that elevator serves, so a result can be more cautious than needed.
-- Street-entrance elevators are treated as an "Entrance" platform with `verified: false`, so an outage there usually gives UNKNOWN.
-- A station-closure alert for one direction (for example "skipping Saint Paul Street outbound") blocks the whole station.
-- "Nearest" alternative is straight-line distance on the same line, not walking or ride time.
-- Station accessibility comes from the MBTA `wheelchair_boarding` field. We do not check stairs inside a station or mini-high platform details beyond alerts.
-- The stroller profile uses exactly the same rules as wheelchair. Only no-stairs differs: uneven-platform alerts are shown as information and do not block.
-- Conflicting sources are only partly checked. An elevator alert whose facility is not in the MBTA facility data, or an elevator missing from the platform map, gives UNKNOWN. This check covers elevator-closure alerts only. The MBTA `wheelchair_boarding` flag is followed as given, not cross-checked against an actual path inside the station.
-- The MBTA test URL `stops?filter[route_type]=0,1&filter[location_type]=1` returns an empty list; stations are fetched per line instead (see `.kiro/specs/01-mbta-data/design.md`).
-- The keyless MBTA limit is 20 requests per minute and each serverless instance has its own cache. Set `MBTA_API_KEY` for any public deploy.
-- The AI path was tested against a stubbed Anthropic API only. It has not been run against the real API (no key was available), though a bad key correctly falls back to templates.
-- The `/api/explain` AI rate limit is in memory, per server instance. It caps cost from one client; it is not a security boundary.
-- Accessibility was checked with axe-core and Lighthouse in headless Chrome. No screen reader pass or real-phone test has been done.
-- Not deployed to Vercel.
-- The TypeScript version is pinned to 5.x: Next 15 cannot read `tsconfig` paths with the TypeScript 7 native compiler.
+- **Only the start and end stations are checked.** For a trip that changes lines, the transfer station is shown on the map but not checked. Buses and Commuter Rail are not covered.
+- **The platform map is only partly verified.** It covers 16 stations and was cross-checked against GTFS `pathways.txt`, not by visiting stations. An outage at an unmapped elevator gives "Cannot confirm", and Plan B there says "could not check".
+- Direction of travel is not modelled, so a result can be more cautious than needed.
+- "Nearest" alternative means straight-line distance on the same line, not walking or ride time.
+- The stroller profile uses the same rules as wheelchair. Only "no stairs" differs (uneven platforms are information only).
+- Later-today warnings only see planned outages the MBTA has already posted, 12 hours ahead.
+- MBTA line geometry on the map is scheduled reference data. The map tiles need an internet connection; without WebGL the app shows a simple route diagram instead.
+- The AI rewording was tested against a stubbed API only. Without a key the app uses its templates.
+- Accessibility was checked with axe-core in Chrome. No screen-reader pass (VoiceOver, TalkBack) or real-phone test has been done.
+
+## Data and credits
+
+- Transit data: [MBTA V3 API](https://www.mbta.com/developers/v3-api). MBTA terms apply. This is a hackathon project, not an official MBTA product. Always check with station staff if you are unsure.
+- Map tiles: [OpenFreeMap](https://openfreemap.org), © [OpenMapTiles](https://openmaptiles.org), data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors.
+- Optional: Google Maps Platform (Places API (New), Street View Static API, Maps Static API).
+
+Built at **Hackachusetts 2026** (October 24, 2026), Civic Action track, by Aatmaj, Himani, Tanishq and Pradyumna.
