@@ -1,8 +1,16 @@
 import type { ExplainResponse } from "@/lib/api/schemas";
+import type { MapPayload } from "@/lib/api/map-payload";
 import type { TripPayload } from "@/lib/api/trip-payload";
+import type { RouteRelationship } from "@/lib/engine/journey";
+import type { StationMarker } from "@/lib/engine/station-map";
 
-/** /api/status and /api/demo answer with a TripResult plus Plan B, later-today warnings and display fields. */
-export interface StatusResponse extends TripPayload {
+export type { StationMarker, RouteRelationship };
+
+/**
+ * /api/status and /api/demo answer with a TripResult plus Plan B, later-today warnings, display fields and
+ * the journey map fields. The map fields are optional for safety: without them the map falls back to a schematic.
+ */
+export interface StatusResponse extends TripPayload, Partial<MapPayload> {
   simulated?: boolean;
   label?: string;
   scenario?: string;

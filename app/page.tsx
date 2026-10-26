@@ -20,12 +20,12 @@ import LaterTodayCard from "@/components/LaterTodayCard";
 import PlanBCard from "@/components/PlanBCard";
 import RestroomCard from "@/components/RestroomCard";
 import StatusBanner from "@/components/StatusBanner";
-import RouteSchematic from "@/components/RouteSchematic";
 import StatusSkeleton from "@/components/StatusSkeleton";
+import JourneyMap from "@/components/map/JourneyMap";
 import { LATER_TODAY_HOURS } from "@/lib/engine/constants";
 import { setDemoScenario, useDemoScenario } from "@/lib/client/demo-store";
 import { formatTime } from "@/lib/client/format";
-import { loadTrip } from "@/lib/client/storage";
+import { loadTrip, saveTrip } from "@/lib/client/storage";
 import { useStatus } from "@/lib/client/use-status";
 import { DEMO_SCENARIOS, type ExplainPayload, type StatusResponse } from "@/lib/client/types";
 
@@ -65,11 +65,14 @@ function Result({
   explanation,
   checkedAt,
   onRefresh,
+  onApplyTrip,
 }: {
   result: StatusResponse;
   explanation: ExplainPayload | null;
   checkedAt: string;
   onRefresh: () => void;
+  /** Apply a trip chosen on the map (saves it and checks it through the normal workflow). */
+  onApplyTrip: (trip: Trip) => void;
 }) {
   const text = new Map(explanation?.explanations.map((e) => [e.alertId, e.text] as const));
   const route =
@@ -133,6 +136,9 @@ function Result({
           </p>
         ) : null}
 
+        {/* Every station's own verdict, the route, the alternative and Plan B backups, on a map. */}
+        <JourneyMap result={result} checkedAt={checkedAt} onApplyTrip={onApplyTrip} />
+
         {result.laterToday.length > 0 ? (
           <LaterTodayCard
             changes={result.laterToday}
@@ -189,15 +195,8 @@ function Result({
         ))}
       </div>
 
-      {/* Secondary column: route, alternative, Plan B, reasoning, accessible entrances, refresh. */}
+      {/* Secondary column: alternative, Plan B, reasoning, accessible entrances, refresh. */}
       <aside className="space-y-5 lg:col-span-2">
-        <RouteSchematic
-          origin={result.trip.origin}
-          destination={result.trip.destination}
-          status={result.status}
-          alternative={result.alternative}
-        />
-
         {result.alternative ? (
           <AlternativeCard station={result.alternative} instead={problemStationName(result)} />
         ) : null}
@@ -365,6 +364,13 @@ export default function HomePage() {
   }, []);
   const { state, refresh } = useStatus(trip, demo);
 
+  /** A trip picked on the map. Demo data is switched off first so simulated and real data never mix. */
+  function applyTrip(next: Trip) {
+    if (demo) setDemoScenario(null);
+    saveTrip(next);
+    setTrip(next);
+  }
+
   if (!loaded) return <StatusSkeleton />;
 
   if (!trip && !demo) return <Landing />;
@@ -403,7 +409,13 @@ export default function HomePage() {
       ) : null}
 
       {state.phase === "ready" ? (
-        <Result result={state.result} explanation={state.explanation} checkedAt={state.checkedAt} onRefresh={refresh} />
+        <Result
+          result={state.result}
+          explanation={state.explanation}
+          checkedAt={state.checkedAt}
+          onRefresh={refresh}
+          onApplyTrip={applyTrip}
+        />
       ) : null}
     </div>
   );

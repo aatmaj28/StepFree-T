@@ -45,12 +45,14 @@ export function useStatus(trip: Trip | null, demo: DemoScenarioId | null): { sta
       try {
         const result = await getJson<StatusResponse>(url, { signal: controller.signal });
         const explainProfile = demo ? "wheelchair" : profile ?? "wheelchair";
+        // The map fields (every station's marker) are not part of the TripResult the explainer reads.
+        const { stations, stationAlerts, journey, ...tripResult } = result;
         let explanation: ExplainPayload | null = null;
         try {
           explanation = await getJson<ExplainPayload>("/api/explain", {
             method: "POST",
             headers: { "content-type": "application/json" },
-            body: JSON.stringify({ tripResult: result, profile: explainProfile }),
+            body: JSON.stringify({ tripResult, profile: explainProfile }),
             signal: controller.signal,
           });
         } catch {
@@ -66,4 +68,38 @@ export function useStatus(trip: Trip | null, demo: DemoScenarioId | null): { sta
   }, [originId, destinationId, profile, demo, tick]);
 
   return { state, refresh };
+}
+
+/** Station network geometry for the map, fetched once per page load. */
+export interface NetworkLine {
+  id: string;
+  routeId: string;
+  line: string;
+  name: string;
+  coordinates: [number, number][];
+  stationIds: string[];
+}
+export type NetworkState =
+  | { phase: "loading" }
+  | { phase: "error"; message: string }
+  | { phase: "ready"; lines: NetworkLine[]; dataSource: string; fetchedAt: string };
+
+let networkPromise: Promise<NetworkState> | null = null;
+
+export function useNetwork(): NetworkState {
+  const [state, setState] = useState<NetworkState>({ phase: "loading" });
+  useEffect(() => {
+    let alive = true;
+    networkPromise ??= getJson<{ lines: NetworkLine[]; dataSource: string; fetchedAt: string }>("/api/network")
+      .then((b): NetworkState => ({ phase: "ready", lines: b.lines, dataSource: b.dataSource, fetchedAt: b.fetchedAt }))
+      .catch((e: unknown): NetworkState => {
+        networkPromise = null; // allow a retry on the next mount
+        return { phase: "error", message: e instanceof Error ? e.message : "Line geometry unavailable" };
+      });
+    void networkPromise.then((s) => alive && setState(s));
+    return () => {
+      alive = false;
+    };
+  }, []);
+  return state;
 }

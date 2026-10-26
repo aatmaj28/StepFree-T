@@ -66,6 +66,32 @@ summary {
     @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-sm font-semibold;
   }
 
+  /* Section heading used by the map's station panel. */
+  .eyebrow {
+    @apply text-xs font-bold uppercase tracking-wider text-ink-muted;
+  }
+
+  /* Map container controls: keep MapLibre's buttons at a 44px touch target. */
+  .transit-map .maplibregl-ctrl-group button {
+    width: 44px;
+    height: 44px;
+  }
+  .transit-map .maplibregl-ctrl-attrib {
+    font-size: 11px;
+  }
+  /* Attribution links must not rely on colour alone (WCAG 1.4.1). */
+  .transit-map .maplibregl-ctrl-attrib a {
+    text-decoration: underline;
+  }
+  /* MapLibre's controls get the same focus ring as the rest of the app (its own CSS removes the outline). */
+  .transit-map .maplibregl-ctrl button:focus-visible,
+  .transit-map .maplibregl-ctrl summary:focus-visible,
+  .transit-map .maplibregl-ctrl-attrib a:focus-visible {
+    outline: 3px solid #0f766e;
+    outline-offset: 2px;
+    box-shadow: none;
+  }
+
   /* Loading skeleton */
   .skeleton {
     @apply relative overflow-hidden rounded-xl bg-surface-sunken;
@@ -95,4 +121,30 @@ summary {
   .skeleton::after {
     animation: none !important;
   }
+}
+
+/* Map selection markers (start pin, end flag). Decorative: text equivalents live in the planner bar. */
+.trip-end-marker {
+  pointer-events: none;
+}
+.trip-end-marker > span {
+  display: flex;
+  height: 28px;
+  width: 28px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px 9999px 9999px 2px;
+  transform: rotate(-45deg);
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.35);
+  color: #ffffff;
+}
+.trip-end-marker > span > svg {
+  transform: rotate(45deg);
+}
+.trip-end-origin > span {
+  background: #0f172a;
+}
+.trip-end-destination > span {
+  background: #0f766e;
 }

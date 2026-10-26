@@ -1,5 +1,6 @@
 import { DemoQuerySchema } from "@/lib/api/schemas";
 import { parseQuery } from "@/lib/api/http";
+import { mapPayload } from "@/lib/api/map-payload";
 import { buildTripPayload } from "@/lib/api/trip-payload";
 import { buildDemoSnapshot, demoTrip } from "@/lib/data/demo-snapshot";
 
@@ -16,6 +17,8 @@ export async function GET(request: Request): Promise<Response> {
   const trip = { ...demoTrip(scenario), profile: "wheelchair" as const };
   return Response.json({
     ...buildTripPayload(trip, snapshot, now),
+    // Markers come only from the simulated snapshot. Line geometry is MBTA reference data.
+    ...(await mapPayload(trip, snapshot, now)),
     simulated: true,
     label: "Simulated demo data",
     scenario,
